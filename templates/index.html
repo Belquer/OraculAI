@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OraculAI</title>
+</head>
+<body>
+  <h1>Welcome to OraculAI</h1>
+
+  <h2>{{ quote }}</h2>
+
+  {% if image_url %}
+    <img src="{{ image_url }}" alt="AI generated image" width="400">
+  {% else %}
+    <p>No image generated.</p>
+  {% endif %}
+
+  <p>
+    <a href="/regen">New Oracle Message</a> ·
+    <a href="/refresh">Refresh Sources</a> ·
+    <a href="/?nocache=1">Bypass Cache</a>
+  </p>
+
+  <form action="/query" method="post">
+    <input type="text" name="user_query" placeholder="Ask the Oracle">
+    <button type="submit">Ask</button>
+  </form>
+</body>
+</html>

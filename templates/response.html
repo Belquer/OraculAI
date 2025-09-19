@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OraculAI - Response</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.5; }
+    .src { padding: .75rem; border: 1px solid #ddd; border-radius: 8px; margin: .5rem 0; background: #fafafa; }
+    .src small { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Oracle Response</h1>
+
+  <p><strong>Your question:</strong> {{ query }}</p>
+  <p><strong>Oracle says:</strong> {{ response }}</p>
+
+  {% if sources and response != "I don’t have that in my sources yet." %}
+    <h3>Sources</h3>
+    {% for s in sources %}
+      <div class="src">
+        <div><strong>{{ s.file }}</strong>{% if s.score %} — score: {{ "%.3f"|format(s.score) }}{% endif %}</div>
+        <small>{{ s.snippet }}</small>
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  <p><a href="/">Back to home</a></p>
+</body>
+</html>
