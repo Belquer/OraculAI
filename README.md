@@ -36,3 +36,27 @@ Payments: Stripe
 Contribution: We welcome contributions from developers, researchers, and anyone passionate about this project.
 
 Contact: For support, questions, or collaboration inquiries, please contact us at [your email or a contact page link].
+
+## Developer notes
+
+To keep the webserver lean, heavy ML libraries and embedding/model work are done offline.
+
+- Prepare text chunks for ingestion:
+
+```bash
+make prepare-chunks
+```
+
+- Install runtime dependencies (fast, no heavy ML libs):
+
+```bash
+make install
+```
+
+- To install developer/ingestion dependencies (transformers, sentence-transformers, torch):
+
+```bash
+make dev-install
+```
+
+Use `make build-index` or `./.venv/bin/python manage.py build` to run the offline index build (this will import the embedding/vector-store extras when needed).

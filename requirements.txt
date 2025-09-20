@@ -57,8 +57,8 @@ openai==1.108.0
 packaging==25.0
 pandas==2.2.3
 pillow==11.3.0
-pinecone-client==6.0.0
 pinecone-plugin-interface==0.0.7
+pinecone==7.0.1
 platformdirs==4.4.0
 propcache==0.3.2
 pydantic==2.11.9

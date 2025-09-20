@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ask OraculAI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center}
+    form{width:100%;max-width:680px}
+    input[type=text]{width:100%;padding:.75rem 1rem;border-radius:8px;border:1px solid #ddd;font-size:1rem}
+    button{margin-top:.75rem;padding:.75rem 1.25rem;background:#3758ff;color:#fff;border-radius:10px;border:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Ask OraculAI</h1>
+    <form action="/query" method="post">
+      <input type="text" name="user_query" placeholder="Enter your question here" autocomplete="off" required>
+      <div style="text-align:center"><button type="submit">Ask</button></div>
+    </form>
+    <p><a href="/">Back</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+transformers==4.56.2
+sentence-transformers==5.1.0
+torch>=1.11.0
+scikit-learn
+scipy
+safetensors

@@ -8,3 +8,7 @@ daily_content.json
 backups/
 *.zip
 app.py.bak
+
+# Virtual environments
+.venv/
+venv/

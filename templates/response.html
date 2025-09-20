@@ -3,28 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>OraculAI - Response</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.5; }
-    .src { padding: .75rem; border: 1px solid #ddd; border-radius: 8px; margin: .5rem 0; background: #fafafa; }
-    .src small { color: #666; }
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center}
+    .card{max-width:800px;width:100%;padding:1.25rem;border-radius:12px;border:1px solid #eee;background:#fff}
+    h1{margin:0 0 1rem}
+    p{margin:.5rem 0}
+    .back{display:inline-block;margin-top:1rem;color:#3758ff}
   </style>
 </head>
 <body>
-  <h1>Oracle Response</h1>
+  <div class="wrap">
+    <div class="card">
+      <h1>Oracle Response</h1>
+      <p><strong>Your question:</strong></p>
+      <p>{{ query }}</p>
 
-  <p><strong>Your question:</strong> {{ query }}</p>
-  <p><strong>Oracle says:</strong> {{ response }}</p>
+      <hr>
+      <p><strong>Answer (sourced):</strong></p>
+      <p>{{ response }}</p>
 
-  {% if sources and response != "I don’t have that in my sources yet." %}
-    <h3>Sources</h3>
-    {% for s in sources %}
-      <div class="src">
-        <div><strong>{{ s.file }}</strong>{% if s.score %} — score: {{ "%.3f"|format(s.score) }}{% endif %}</div>
-        <small>{{ s.snippet }}</small>
-      </div>
-    {% endfor %}
-  {% endif %}
-
-  <p><a href="/">Back to home</a></p>
+      <a class="back" href="/">← Back</a>
+    </div>
+  </div>
 </body>
 </html>

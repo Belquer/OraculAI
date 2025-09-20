@@ -1,35 +1,47 @@
-import os
-os.environ["TOKENIZERS_PARALLELISM"] = "false"  # silence HF tokenizer warning
+"""Flask app powering OraculAI."""
+
+from __future__ import annotations
 
 import json
+import os
 import random
 import re
 from datetime import date
-from flask import Flask, render_template, request
-from pinecone import Pinecone, ServerlessSpec
+from typing import Any, Dict, List, Optional, Tuple
 
-# LlamaIndex / OpenAI for LlamaIndex
-from llama_index.core import SimpleDirectoryReader, VectorStoreIndex, StorageContext, Settings
-from llama_index.llms.openai import OpenAI as LlamaOpenAI
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.vector_stores.pinecone import PineconeVectorStore
+os.environ["TOKENIZERS_PARALLELISM"] = "false"  # silence HF tokenizer warning
+
+from flask import Flask, render_template, request
+
+try:  # ensure runtime surfaces actionable guidance when extras are missing
+    from pinecone import Pinecone, ServerlessSpec
+except ImportError as exc:  # pragma: no cover - import guard
+    raise ImportError(
+        "Missing optional dependency 'pinecone'. Install it via 'pip install pinecone'."
+    ) from exc
+
+from llama_index.core import (
+    Settings,
+    SimpleDirectoryReader,
+    StorageContext,
+    VectorStoreIndex,
+)
 from llama_index.core.prompts import PromptTemplate
 
-print("Loading OraculAI app v2.5 (sources-only QA + interpretive daily quote + hot refresh)")
+# Heavy ML / vector-store imports are performed lazily inside the index build
+# function to keep the webserver start fast. See _build_index_and_engine().
 
-# --- Flask app ---
+print("Loading OraculAI app (sources-only QA + interpretive daily quote)")
+
 app = Flask(__name__)
 
-# --- Env vars ---
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
-PINECONE_ENVIRONMENT = os.environ.get("PINECONE_ENVIRONMENT")  # e.g., "us-east-1"
+PINECONE_ENVIRONMENT = os.environ.get("PINECONE_ENVIRONMENT")  # e.g. "us-east-1"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
-# --- LlamaIndex global settings ---
-Settings.llm = LlamaOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
-Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
+# Settings.llm and Settings.embed_model are configured lazily during index
+# build so the webserver avoids heavy ML imports at startup.
 
-# --- STRICT sources-only QA prompt (used by /query) ---
 STRICT_QA_PROMPT = PromptTemplate(
     """You answer questions using ONLY the provided context.
 If the answer is not explicitly present in the context, reply exactly:
@@ -45,7 +57,6 @@ Question: {query_str}
 Answer (from context only):"""
 )
 
-# --- INTERPRETIVE daily quote prompt (sources-grounded paraphrase) ---
 INTERPRETIVE_QUOTE_PROMPT = PromptTemplate(
     """You will receive context chunks from the user's private sources.
 Synthesize ONE concise, aphoristic sentence (your own words) that captures a key idea present in the context.
@@ -64,39 +75,66 @@ Instruction: Produce one paraphrased, reflective sentence grounded in the contex
 Answer:"""
 )
 
-# --- Globals so /refresh can rebuild them ---
-index = None
+index: Optional[VectorStoreIndex] = None
 query_engine = None
 
-# --- Pinecone helpers ---
-def _existing_index_names(pc: Pinecone):
+# Chunking tuning for ingestion (chars, not strict tokens). We prefer larger
+# chunks to keep runtime vector counts low and retrieval fast. These constants
+# are used by the ingestion path; they do not force heavy imports at server
+# startup.
+CHUNK_MAX_CHARS = 4000  # ~ 500-800 tokens depending on content
+CHUNK_OVERLAP = 200
+
+
+def _existing_index_names(pc: Pinecone) -> set[str]:
     idx = pc.list_indexes()
     if hasattr(idx, "names") and callable(idx.names):
-        return set(idx.names())            # v3+
+        return set(idx.names())
     if isinstance(idx, list):
-        return set(idx)                    # list of names
+        return set(idx)
     try:
-        return {i["name"] for i in idx.get("indexes", [])}  # dict payload
+        return {item["name"] for item in idx.get("indexes", [])}
     except Exception:
         return set()
 
-def _build_index_and_engine():
+
+def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
     """(Re)build vector index from ./sources and return (index, strict_query_engine)."""
     try:
+        # Lazy imports: bring in heavy or optional dependencies only when building
+        # the index so the webserver startup remains fast.
+        try:
+            from llama_index.embeddings.huggingface import (
+                HuggingFaceEmbedding,
+            )
+            from llama_index.llms.openai import OpenAI as LlamaOpenAI
+            from llama_index.vector_stores.pinecone import PineconeVectorStore
+        except ImportError as exc:  # pragma: no cover - import guard
+            raise ImportError(
+                "Missing llama-index extras for embedding/vector-store. Install 'llama-index-embeddings-huggingface' and 'llama-index-vector-stores-pinecone'"
+            ) from exc
+
+        # Configure LLM and embedding model for index build
+        Settings.llm = LlamaOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
+        Settings.embed_model = HuggingFaceEmbedding(
+            model_name="sentence-transformers/all-MiniLM-L6-v2"
+        )
+
         if not PINECONE_API_KEY:
             raise RuntimeError("Missing PINECONE_API_KEY")
         if not PINECONE_ENVIRONMENT:
-            raise RuntimeError("Missing PINECONE_ENVIRONMENT (region like 'us-east-1').")
+            raise RuntimeError(
+                "Missing PINECONE_ENVIRONMENT (region like 'us-east-1')."
+            )
 
         pc = Pinecone(api_key=PINECONE_API_KEY)
         index_name = "oraculai-index"
 
-        existing = _existing_index_names(pc)
-        if index_name not in existing:
+        if index_name not in _existing_index_names(pc):
             print(f"[Pinecone] Creating new index: {index_name}")
             pc.create_index(
                 name=index_name,
-                dimension=384,  # all-MiniLM-L6-v2 embeddings dim
+                dimension=384,
                 metric="dotproduct",
                 spec=ServerlessSpec(cloud="aws", region=PINECONE_ENVIRONMENT),
             )
@@ -104,7 +142,6 @@ def _build_index_and_engine():
 
         pinecone_index = pc.Index(index_name)
 
-        # Load docs
         if not os.path.isdir("./sources"):
             print("[Indexing] ./sources folder not found. Create it and add content.")
             documents = []
@@ -115,100 +152,99 @@ def _build_index_and_engine():
         vector_store = PineconeVectorStore(pinecone_index=pinecone_index)
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
-        # Build/refresh index (idempotent; adds/updates embeddings)
-        new_index = VectorStoreIndex.from_documents(documents, storage_context=storage_context)
+        built_index = VectorStoreIndex.from_documents(
+            documents, storage_context=storage_context
+        )
         print(f"[Indexing] Index '{index_name}' ready.")
 
-        # Strict engine for the /query route
-        strict_engine = new_index.as_query_engine(
-            similarity_top_k=5,
+        strict_engine = built_index.as_query_engine(
+            similarity_top_k=4,
             response_mode="compact",
             text_qa_template=STRICT_QA_PROMPT,
         )
-        return new_index, strict_engine
-
-    except Exception as e:
-        print(f"[ERROR] Pinecone setup/index build failed: {e}")
+        return built_index, strict_engine
+    except Exception as exc:  # pragma: no cover - defensive logging
+        print(f"[ERROR] Pinecone setup/index build failed: {exc}")
         return None, None
 
-# Build once at startup
-index, query_engine = _build_index_and_engine()
 
-# --- Utilities ---
+# NOTE: defer building the Pinecone/llama-index vector index until an explicit
+# refresh is requested. This prevents long import-time delays when heavy
+# dependencies (HF models, pinecone) are missing or slow to initialize.
+
+# --- DEV fallback: provide a simple query engine when real index is unavailable
+class _DevQueryEngine:
+    def query(self, q: str):
+        class R:
+            def __str__(self):
+                return "(DEV) I can't access the vector index right now. This is a placeholder response."
+
+            source_nodes = []
+
+        return R()
+
+if query_engine is None:
+    print("[DEV] Query engine unavailable; using dev fallback engine for initial testing.")
+    query_engine = _DevQueryEngine()
+
+
 def _clean_quote(text: str) -> str:
     if not text:
         return ""
-    q = str(text).strip()
-    q = re.sub(r"\s+", " ", q)
-    q = q.strip('"\u201c\u201d\u2018\u2019')
-    if len(q) > 240:
-        cut = q[:240]
-        last_period = cut.rfind(".")
-        q = cut[: last_period + 1] if last_period > 80 else cut + "…"
-    return q
-
-def _generate_image_url(prompt: str) -> str:
-    """Force legacy DALL·E-3 path to avoid gpt-image-1 403 in unverified orgs."""
-    if not OPENAI_API_KEY:
-        print("[Image] OPENAI_API_KEY missing; cannot generate")
-        return ""
-    try:
-        import openai as legacy_openai
-        legacy_openai.api_key = OPENAI_API_KEY
-        resp = legacy_openai.images.generate(
-            model="dall-e-3",
-            prompt=prompt,
-            n=1,
-            size="1024x1024",
+    quote = str(text).strip()
+    quote = re.sub(r"\s+", " ", quote)
+    quote = quote.strip('"\u201c\u201d\u2018\u2019')
+    if len(quote) > 240:
+        truncated = quote[:240]
+        last_period = truncated.rfind(".")
+        quote = (
+            truncated[: last_period + 1]
+            if last_period > 80
+            else truncated + "…"
         )
-        url = resp.data[0].url if getattr(resp, "data", None) else ""
-        if url:
-            print("[Image] Generated via legacy SDK (dall-e-3).")
-        return url
-    except Exception as e:
-        print(f"[Image] Legacy SDK path failed: {e}")
-        return ""
+    return quote
 
-# --- Oracle QA (STRICT sources only, with citations) ---
-def get_oracle_response(user_query: str):
-    """
-    Returns (answer_text, sources) where sources is a list of dicts:
-    [{"file": <filename>, "score": <float>, "snippet": <text>}, ...]
-    """
+
+def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
+    """Return (answer_text, sources payload)."""
     global query_engine
     if query_engine is None:
         return (
             "Sorry, the oracle's memory is offline. "
             "Please check your API keys and the ingestion step."
         ), []
-
     try:
         result = query_engine.query(user_query)
         answer = str(result).strip()
 
-        # Gather citations/snippets
-        sources = []
-        for sn in getattr(result, "source_nodes", [])[:5]:
-            meta = getattr(sn, "metadata", {}) or {}
-            file_name = meta.get("file_name") or meta.get("source") or meta.get("filename") or "Unknown source"
-            snippet = sn.node.get_content() if hasattr(sn, "node") else ""
-            sources.append({
-                "file": file_name,
-                "score": getattr(sn, "score", None),
-                "snippet": snippet[:300].replace("\n", " ") + ("…" if len(snippet) > 300 else "")
-            })
-
+        sources: List[Dict[str, Any]] = []
+        for source_node in getattr(result, "source_nodes", [])[:5]:
+            metadata = getattr(source_node, "metadata", {}) or {}
+            file_name = (
+                metadata.get("file_name")
+                or metadata.get("source")
+                or metadata.get("filename")
+                or "Unknown source"
+            )
+            snippet = (
+                source_node.node.get_content() if hasattr(source_node, "node") else ""
+            )
+            sources.append(
+                {
+                    "file": file_name,
+                    "score": getattr(source_node, "score", None),
+                    "snippet": snippet[:300].replace("\n", " ")
+                    + ("…" if len(snippet) > 300 else ""),
+                }
+            )
         return answer, sources
-    except Exception as e:
-        print(f"[Query] Error: {e}")
+    except Exception as exc:  # pragma: no cover - defensive logging
+        print(f"[Query] Error: {exc}")
         return "I don’t have that in my sources yet.", []
 
-# --- Daily content helpers ---
+
 def _interpretive_quote_from_sources() -> str:
-    """
-    Paraphrased, sources-only daily quote (one sentence).
-    Uses its own interpretive engine so /query stays strict.
-    """
+    """Build interpretive quote via separate query engine so strict QA stays safe."""
     global index
     if not index:
         return ""
@@ -222,85 +258,89 @@ def _interpretive_quote_from_sources() -> str:
             "Create one reflective, aphoristic sentence grounded in the context."
         )
         quote = _clean_quote(str(result).strip())
-        # filter strict fallback if model emitted it
-        return quote if quote and quote != "I don’t have that in my sources yet." else ""
-    except Exception as e:
-        print(f"[Quote] Interpretive path failed: {e}")
+        if quote and quote != "I don’t have that in my sources yet.":
+            return quote
         return ""
+    except Exception as exc:  # pragma: no cover - defensive logging
+        print(f"[Quote] Interpretive path failed: {exc}")
+        return ""
+
 
 def _quote_from_file(quotes_file: str = "quotes.txt") -> str:
     try:
-        with open(quotes_file, "r") as f:
-            choices = [q.strip() for q in f.readlines() if q.strip()]
+        with open(quotes_file, "r", encoding="utf-8") as file:
+            choices = [line.strip() for line in file if line.strip()]
         return _clean_quote(random.choice(choices)) if choices else ""
-    except Exception as e:
-        print(f"[Quote] Error reading quotes.txt: {e}")
+    except Exception as exc:  # pragma: no cover - defensive logging
+        print(f"[Quote] Error reading {quotes_file}: {exc}")
         return ""
 
-def get_daily_content(force_refresh: bool = False):
-    """
-    Daily content pipeline:
-      1) Interpretive, sources-grounded quote (paraphrase)
-      2) Fallback: quotes.txt
-      3) Final fallback: fixed string
-      + image generation (DALL·E 3)
-      + JSON cache (per day)
-      + ?nocache=1 bypass
-    """
-    today = str(date.today())
-    DAILY_CONTENT_FILE = "daily_content.json"
 
-    # URL param override: /?nocache=1
+def get_daily_content(force_refresh: bool = False) -> Tuple[str, str]:
+    """Load or regenerate daily quote with caching. Image generation is disabled."""
+    today = str(date.today())
+    cache_path = "daily_content.json"
+
     if request.args.get("nocache") in ("1", "true", "yes"):
         force_refresh = True
 
-    def _cache_is_usable(payload: dict) -> bool:
+    def _cache_is_usable(payload: Dict[str, Any]) -> bool:
         if not payload or payload.get("date") != today:
             return False
-        q = (payload.get("quote") or "").strip()
-        img = (payload.get("image_url") or "").strip()
-        if q == "A random quote from the void." or not img:
-            return False
-        return True
+        quote = (payload.get("quote") or "").strip()
+        return bool(quote and quote != "A random quote from the void.")
 
-    if not force_refresh and os.path.exists(DAILY_CONTENT_FILE):
+    if not force_refresh and os.path.exists(cache_path):
         try:
-            with open(DAILY_CONTENT_FILE, "r") as f:
-                data = json.load(f)
-            if _cache_is_usable(data):
+            with open(cache_path, "r", encoding="utf-8") as cache_file:
+                payload = json.load(cache_file)
+            if _cache_is_usable(payload):
                 print("Using cached content for today.")
-                return data.get("quote", ""), data.get("image_url", "")
-            else:
-                print("[Daily] Cache exists but is low-quality or stale; regenerating.")
+                return payload.get("quote", ""), ""
+            print("[Daily] Cache exists but is low-quality or stale; regenerating.")
         except Exception:
             print("[Daily] Cache read failed; regenerating.")
 
     print("[Daily] Generating new content (interpretive sources → file → fallback).")
 
-    quote = _interpretive_quote_from_sources() or _quote_from_file() or "A random quote from the void."
-    image_prompt = f"A high-quality spiritual image inspired by this quote: '{quote}'"
-    image_url = _generate_image_url(image_prompt)
+    quote = (
+        _interpretive_quote_from_sources()
+        or _quote_from_file("sources/quotes.txt")
+        or _quote_from_file("quotes.txt")
+        or "A random quote from the void."
+    )
 
-    new_content = {"date": today, "quote": quote, "image_url": image_url}
+    payload = {"date": today, "quote": quote}
     try:
-        with open(DAILY_CONTENT_FILE, "w") as f:
-            json.dump(new_content, f)
+        with open(cache_path, "w", encoding="utf-8") as cache_file:
+            json.dump(payload, cache_file)
         print("[Daily] Cached content for today.")
-    except Exception as e:
-        print(f"[Daily] Error caching daily content: {e}")
+    except Exception as exc:  # pragma: no cover - defensive logging
+        print(f"[Daily] Error caching daily content: {exc}")
 
-    return quote, image_url
+    return quote, ""
 
-# --- Routes ---
+
 @app.route("/")
 def home():
     daily_quote, daily_image_url = get_daily_content(force_refresh=False)
-    return render_template("index.html", quote=daily_quote, image_url=daily_image_url)
+    return render_template(
+        "index.html", quote=daily_quote, image_url=daily_image_url, env=os.environ
+    )
+
 
 @app.route("/regen")
 def regen():
     daily_quote, daily_image_url = get_daily_content(force_refresh=True)
-    return render_template("index.html", quote=daily_quote, image_url=daily_image_url)
+    return render_template(
+        "index.html", quote=daily_quote, image_url=daily_image_url, env=os.environ
+    )
+
+
+@app.route("/ask")
+def ask():
+    return render_template("ask.html")
+
 
 @app.route("/refresh")
 def refresh_index():
@@ -311,14 +351,34 @@ def refresh_index():
         return "Index refresh failed. Check server logs.", 500
     return "Index refreshed with new sources."
 
+
 @app.route("/query", methods=["POST"])
 def query_oracle():
     user_query = request.form.get("user_query", "").strip()
     if not user_query:
-        return render_template("response.html", query=user_query, response="Please enter a question.", sources=[])
+        return render_template(
+            "response.html",
+            query=user_query,
+            response="Please enter a question.",
+            sources=[],
+        )
     answer, sources = get_oracle_response(user_query)
-    return render_template("response.html", query=user_query, response=answer, sources=sources)
+    return render_template(
+        "response.html", query=user_query, response=answer, sources=sources
+    )
 
-# --- Main ---
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+# create .venv if missing or to start fresh
+# python3 -m venv .venv
+
+# activate and install
+# source .venv/bin/activate
+# python -m pip install --upgrade pip
+# pip install -r requirements.txt
+
+# activate .venv first
+# To refresh requirements, run this in a shell (not in Python):
+# pip freeze | sed '/^-e /d' > requirements.txt

@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "/Users/danielbelquer/Documents/GitHub/ORACULAI/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "./.venv/lib/python3.13/site-packages"
+  ],
+  "problems.autoReveal": false
+}
+mkdir -p ./archive
+ls -la ./archive

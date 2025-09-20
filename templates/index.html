@@ -3,27 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>OraculAI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center}
+    .orb{position:relative;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#e6f2ff,#a9c9ff 60%,#7aa8ff);box-shadow:0 20px 60px rgba(64,120,255,0.25),inset 0 0 40px rgba(255,255,255,0.45);animation:float 14s ease-in-out infinite alternate;margin-bottom:1.25rem}
+    .orb .ring{position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,255,255,0.55);top:50%;left:50%;transform:translate(-50%,-50%);animation:spin 36s linear infinite}
+    .orb .dot{position:absolute;top:0;left:50%;width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 0 10px rgba(255,255,255,0.7),0 0 24px rgba(124,168,255,0.8);transform:translate(-50%,-50%)}
+    @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes float{to{transform:translateY(12px)}}
+    h2{font-weight:600;margin:0 0 1.25rem;font-size:1.25rem;max-width:36rem}
+    .ask-btn{display:inline-block;padding:.75rem 1.25rem;background:#3758ff;color:#fff;border-radius:10px;text-decoration:none;font-weight:600}
+  </style>
 </head>
 <body>
-  <h1>Welcome to OraculAI</h1>
+  <div class="wrap">
+    {% if not (env.PINECONE_API_KEY and env.PINECONE_ENVIRONMENT) %}
+    <div style="background:#fff4cc;border:1px solid #ffecb3;padding:10px 14px;border-radius:8px;margin-bottom:1rem;color:#6a4b00;max-width:40rem">
+      <strong>Notice:</strong> Vector index keys are not configured. The app will run in DEV mode until Pinecone keys are set. To enable full search, set <code>PINECONE_API_KEY</code> and <code>PINECONE_ENVIRONMENT</code> and call <code>/refresh</code> or use the management CLI.
+    </div>
+    {% endif %}
+    <div class="orb">
+      <div class="ring"><div class="dot"></div></div>
+    </div>
 
-  <h2>{{ quote }}</h2>
+    <h2>{{ quote }}</h2>
 
-  {% if image_url %}
-    <img src="{{ image_url }}" alt="AI generated image" width="400">
-  {% else %}
-    <p>No image generated.</p>
-  {% endif %}
-
-  <p>
-    <a href="/regen">New Oracle Message</a> ·
-    <a href="/refresh">Refresh Sources</a> ·
-    <a href="/?nocache=1">Bypass Cache</a>
-  </p>
-
-  <form action="/query" method="post">
-    <input type="text" name="user_query" placeholder="Ask the Oracle">
-    <button type="submit">Ask</button>
-  </form>
+    <a class="ask-btn" href="/ask">Ask OraculAI</a>
+  </div>
 </body>
 </html>
