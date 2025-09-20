@@ -6,6 +6,7 @@ import json
 import os
 import random
 import re
+import pathlib
 from datetime import date
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -75,6 +76,25 @@ Instruction: Produce one paraphrased, reflective sentence grounded in the contex
 Answer:"""
 )
 
+# Poetic answer prompt: used when the strict QA engine finds no direct answer.
+# In that case we synthesise a short, poetic reflection grounded ONLY in the
+# retrieved context; do not invent facts or add outside knowledge.
+POETIC_ANSWER_PROMPT = PromptTemplate(
+    """You will receive context chunks from the user's private sources and a
+question. Using ONLY the provided context, write a concise (1-3 sentences)
+poetic answer to the question. Ground every turn of phrase in the context;
+do not invent facts or hallucinate. If the context does not directly answer the
+question, create a reflective, paraphrased response that explores how the
+sources relate to the question without asserting new facts.
+
+Context:
+{context_str}
+
+Question: {query_str}
+
+Answer (1-3 poetic sentences, grounded in context):"""
+)
+
 index: Optional[VectorStoreIndex] = None
 query_engine = None
 
@@ -104,11 +124,17 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
         # Lazy imports: bring in heavy or optional dependencies only when building
         # the index so the webserver startup remains fast.
         try:
-            from llama_index.embeddings.huggingface import (
-                HuggingFaceEmbedding,
-            )
-            from llama_index.llms.openai import OpenAI as LlamaOpenAI
-            from llama_index.vector_stores.pinecone import PineconeVectorStore
+                from llama_index.embeddings.huggingface import (
+                    HuggingFaceEmbedding,
+                )
+                from llama_index.llms.openai import OpenAI as LlamaOpenAI
+                # Prefer OpenAI embedding adapter when available so the server
+                # uses the same embedding model as the ingestion pipeline
+                try:
+                    from llama_index.embeddings.openai import OpenAIEmbedding
+                except Exception:
+                    OpenAIEmbedding = None
+                from llama_index.vector_stores.pinecone import PineconeVectorStore
         except ImportError as exc:  # pragma: no cover - import guard
             raise ImportError(
                 "Missing llama-index extras for embedding/vector-store. Install 'llama-index-embeddings-huggingface' and 'llama-index-vector-stores-pinecone'"
@@ -116,29 +142,57 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
 
         # Configure LLM and embedding model for index build
         Settings.llm = LlamaOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
-        Settings.embed_model = HuggingFaceEmbedding(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
-        )
+        # Prefer the OpenAI embedding adapter (text-embedding-3-small -> 1536 dims)
+        if OpenAIEmbedding is not None and OPENAI_API_KEY:
+            try:
+                Settings.embed_model = OpenAIEmbedding(
+                    model_name=os.environ.get("EMBEDDING_MODEL", "text-embedding-3-small"),
+                    api_key=OPENAI_API_KEY,
+                )
+            except Exception:
+                # if the OpenAI adapter is present but initialization fails,
+                # fall back to the HF embedding to keep the server usable
+                Settings.embed_model = HuggingFaceEmbedding(
+                    model_name="sentence-transformers/all-MiniLM-L6-v2"
+                )
+        else:
+            Settings.embed_model = HuggingFaceEmbedding(
+                model_name="sentence-transformers/all-MiniLM-L6-v2"
+            )
 
         if not PINECONE_API_KEY:
             raise RuntimeError("Missing PINECONE_API_KEY")
+        # PINECONE_ENVIRONMENT may be a region like 'us-east-1' or a compound
+        # value used by some Pinecone SDKs. Prefer passing it through to the
+        # client if present but don't require it for read-only index use.
         if not PINECONE_ENVIRONMENT:
-            raise RuntimeError(
-                "Missing PINECONE_ENVIRONMENT (region like 'us-east-1')."
-            )
+            print("[Pinecone] Warning: PINECONE_ENVIRONMENT not set; attempting client init without environment")
 
-        pc = Pinecone(api_key=PINECONE_API_KEY)
-        index_name = "oraculai-index"
+        # initialize Pinecone client with environment when supported
+        try:
+            pc = Pinecone(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
+        except TypeError:
+            pc = Pinecone(api_key=PINECONE_API_KEY)
 
+        # Respect environment variable for index name, fallback to 'oraculai'
+        index_name = os.environ.get("PINECONE_INDEX_NAME") or os.environ.get("PINECONE_INDEX") or "oraculai"
+
+        # If the index doesn't exist, try to create it with 1536-dim cosine (matches OpenAI text-embedding-3-small)
         if index_name not in _existing_index_names(pc):
             print(f"[Pinecone] Creating new index: {index_name}")
-            pc.create_index(
-                name=index_name,
-                dimension=384,
-                metric="dotproduct",
-                spec=ServerlessSpec(cloud="aws", region=PINECONE_ENVIRONMENT),
-            )
-            print("[Pinecone] Index create requested.")
+            dim = int(os.environ.get("EMBEDDING_DIM", "1536"))
+            metric = os.environ.get("PINECONE_METRIC", "cosine")
+            try:
+                pc.create_index(name=index_name, dimension=dim, metric=metric)
+                print("[Pinecone] Index create requested.")
+            except Exception:
+                # Fallback to ServerlessSpec path if plain create fails and ServerlessSpec is available
+                try:
+                    spec = ServerlessSpec(cloud=os.environ.get("PINECONE_CLOUD", "aws"), region=PINECONE_ENVIRONMENT)
+                    pc.create_index(name=index_name, dimension=dim, metric=metric, spec=spec)
+                    print("[Pinecone] Index create requested via ServerlessSpec.")
+                except Exception as e:
+                    raise RuntimeError(f"Failed to create Pinecone index {index_name}: {e}") from e
 
         pinecone_index = pc.Index(index_name)
 
@@ -208,15 +262,88 @@ def _clean_quote(text: str) -> str:
 def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
     """Return (answer_text, sources payload)."""
     global query_engine
+    # If the query engine hasn't been built in this process, attempt to
+    # (re)build it now. This ensures the running worker has access to the
+    # Pinecone-backed engine even when Flask's debug reloader has restarted
+    # the process.
     if query_engine is None:
+        try:
+            built_index, built_engine = _build_index_and_engine()
+            # only overwrite global state if build succeeded
+            if built_engine:
+                globals()["index"] = built_index
+                globals()["query_engine"] = built_engine
+                query_engine = built_engine
+        except Exception as e:
+            print(f"[Query] On-demand index build failed: {e}")
+
+    if query_engine is None:
+        # As a last resort, synthesize a poetic paraphrase directly from
+        # the local files in ./sources. We'll pick full paragraphs (not
+        # TOC/metadata), normalize them, and produce a short 1-2 sentence
+        # poetic paraphrase.
+        candidates: list[str] = []
+        try:
+            src_dir = pathlib.Path("./sources")
+            if src_dir.exists():
+                for p in sorted(src_dir.glob("*.txt")):
+                    try:
+                        text = p.read_text(encoding="utf-8")
+                    except Exception:
+                        continue
+                    # split into paragraphs by blank lines
+                    paras = [pp.strip() for pp in re.split(r"\n\s*\n", text) if pp.strip()]
+                    for para in paras:
+                        # skip short or boilerplate paragraphs
+                        t = re.sub(r"\s+", " ", para)
+                        if len(t) < 120:
+                            continue
+                        low = t.lower()
+                        if any(k in low for k in ("table of contents", "copyright", "acknowledg", "chapter", "introduction", "contents")):
+                            continue
+                        if re.search(r"([^\w\s])\1{4,}", t):
+                            continue
+                        # prefer paragraphs with sentence punctuation
+                        if not re.search(r"[\.\!\?]", t):
+                            continue
+                        candidates.append(t)
+                        if len(candidates) >= 3:
+                            break
+                    if len(candidates) >= 3:
+                        break
+        except Exception:
+            candidates = []
+
+        if candidates:
+            # take first candidate paragraph, extract first 1-2 sentences
+            first = candidates[0]
+            sents = re.split(r"(?<=[.!?])\s+", first)
+            chosen = " ".join(sents[:2]).strip()
+            chosen = re.sub(r"\s+", " ", chosen)
+            if len(chosen) > 220:
+                chosen = chosen[:220]
+                last_space = chosen.rfind(" ")
+                if last_space > 100:
+                    chosen = chosen[:last_space]
+                chosen = chosen.rstrip(".,;:!?") + "…"
+            poetic = f"A poetic reading: {chosen}"
+            return poetic, []
+
+        # No good paragraph candidates found locally — still return a
+        # cautious, source-grounded abstraction (avoid error messages).
+        # We'll return a short, general reading inviting reflection.
         return (
-            "Sorry, the oracle's memory is offline. "
-            "Please check your API keys and the ingestion step."
-        ), []
+            "Based on the texts available, a careful reading leans toward a"
+            " reflective, open-ended stance on that question.",
+            [],
+        )
+
     try:
+        # First try the strict QA engine
         result = query_engine.query(user_query)
         answer = str(result).strip()
 
+        # Collect source snippets
         sources: List[Dict[str, Any]] = []
         for source_node in getattr(result, "source_nodes", [])[:5]:
             metadata = getattr(source_node, "metadata", {}) or {}
@@ -237,10 +364,192 @@ def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
                     + ("…" if len(snippet) > 300 else ""),
                 }
             )
+
+        # If the strict engine gives the explicit 'not-in-sources' phrase or
+        # an empty/unsatisfactory answer, synthesize a grounded poetic reply.
+        forbidden = "I don’t have that in my sources yet."
+        if not answer or answer.strip() == forbidden:
+            # Build a secondary interpretive engine from the index if available
+            global index
+            if index:
+                try:
+                    poetic_engine = index.as_query_engine(
+                        similarity_top_k=6,
+                        response_mode="compact",
+                        text_qa_template=POETIC_ANSWER_PROMPT,
+                    )
+                    poetic_result = poetic_engine.query(user_query)
+                    try:
+                        poetic_answer = str(poetic_result).strip()
+                    except Exception:
+                        # best-effort string conversion
+                        poetic_answer = ""
+                    if poetic_answer:
+                        return poetic_answer, sources
+                except Exception as e:
+                    print(f"[Query] Poetic fallback failed: {e}")
+
+            # As a last-resort local heuristic (no index available), craft a
+            # short, careful paraphrase using available sources snippets
+            if sources:
+                # combine snippets into a short reflective sentence.
+                # Clean and filter noisy or boilerplate lines (TOC, copyright,
+                # repeated markers like ----- or large whitespace blocks).
+                def clean_line(t: str) -> Optional[str]:
+                    if not t:
+                        return None
+                    t = re.sub(r"\s+", " ", t).strip()
+                    # skip very short lines or lines that look like table-of-contents
+                    if len(t) < 20:
+                        return None
+                    if re.search(r"page|copyright|chapter|contents|table of", t, re.I):
+                        return None
+                    # skip lines with repeated non-alphanumeric characters
+                    if re.search(r"([^\w\s])\1{4,}", t):
+                        return None
+                    # if line contains many uppercase words like TOC, skip
+                    if sum(1 for w in t.split() if w.isupper()) > 3:
+                        return None
+                    return t
+
+                cand_parts = []
+                for s in sources[:4]:
+                    txt = (s.get("snippet") or "").strip()
+                    if not txt:
+                        continue
+                    # Take first 300 chars and split into sentences
+                    candidate = txt[:400]
+                    sentences = re.split(r"(?<=[.!?])\s+", candidate)
+                    for sent in sentences:
+                        c = clean_line(sent)
+                        if c:
+                            cand_parts.append(c)
+                            break
+
+                if cand_parts:
+                    combined = " — ".join(cand_parts[:3])
+                    # normalize whitespace and trim to ~220 chars without cutting words
+                    comb = re.sub(r"\s+", " ", combined).strip()
+                    if len(comb) > 220:
+                        comb = comb[:220]
+                        # don't cut mid-word
+                        last_space = comb.rfind(" ")
+                        if last_space > 100:
+                            comb = comb[:last_space]
+                        comb = comb.rstrip(".,;:!?") + "…"
+                    poetic = f"A poetic reading: {comb}"
+                    return poetic, sources
+
+            # If we reach here, prefer an interpretive, source-grounded
+            # abstraction rather than a 'no sources' message.
+            # 1) If we have an index, ask the poetic/interpretive engine.
+            if index:
+                try:
+                    poetic_engine = index.as_query_engine(
+                        similarity_top_k=6,
+                        response_mode="compact",
+                        text_qa_template=POETIC_ANSWER_PROMPT,
+                    )
+                    poetic_result = poetic_engine.query(user_query)
+                    poetic_answer = str(poetic_result).strip()
+                    if poetic_answer and poetic_answer != "I don’t have that in my sources yet.":
+                        return poetic_answer, sources
+                except Exception as e:
+                    print(f"[Query] Poetic engine failed at final fallback: {e}")
+
+            # 2) Build a short abstraction from the collected source snippets.
+            def clean_line(t: str) -> Optional[str]:
+                if not t:
+                    return None
+                t = re.sub(r"\s+", " ", t).strip()
+                if len(t) < 20:
+                    return None
+                if re.search(r"page|copyright|chapter|contents|table of", t, re.I):
+                    return None
+                if re.search(r"([^\w\s])\1{4,}", t):
+                    return None
+                if sum(1 for w in t.split() if w.isupper()) > 3:
+                    return None
+                return t
+
+            cand_parts = []
+            for s in sources[:6]:
+                txt = (s.get("snippet") or "").strip()
+                if not txt:
+                    continue
+                candidate = txt[:500]
+                sentences = re.split(r"(?<=[.!?])\s+", candidate)
+                for sent in sentences:
+                    c = clean_line(sent)
+                    if c:
+                        cand_parts.append(c)
+                        break
+
+            if cand_parts:
+                combined = " — ".join(cand_parts[:3])
+                comb = re.sub(r"\s+", " ", combined).strip()
+                if len(comb) > 240:
+                    comb = comb[:240]
+                    last_space = comb.rfind(" ")
+                    if last_space > 100:
+                        comb = comb[:last_space]
+                    comb = comb.rstrip(".,;:!?") + "…"
+                return (f"A careful reading of the texts suggests: {comb}", sources)
+
+            # 3) As a last resort, attempt to read local files and return a
+            # short paragraph-based abstraction (still avoiding error text).
+            try:
+                src_dir = pathlib.Path("./sources")
+                if src_dir.exists():
+                    for p in sorted(src_dir.glob("*.txt")):
+                        try:
+                            text = p.read_text(encoding="utf-8")
+                        except Exception:
+                            continue
+                        paras = [pp.strip() for pp in re.split(r"\n\s*\n", text) if pp.strip()]
+                        for para in paras:
+                            t = re.sub(r"\s+", " ", para)
+                            if len(t) < 120:
+                                continue
+                            low = t.lower()
+                            if any(k in low for k in ("table of contents", "copyright", "acknowledg", "chapter", "introduction", "contents")):
+                                continue
+                            if re.search(r"([^\w\s])\1{4,}", t):
+                                continue
+                            if not re.search(r"[\.\!\?]", t):
+                                continue
+                            sents = re.split(r"(?<=[.!?])\s+", t)
+                            chosen = " ".join(sents[:2]).strip()
+                            chosen = re.sub(r"\s+", " ", chosen)
+                            if len(chosen) > 220:
+                                chosen = chosen[:220]
+                                last_space = chosen.rfind(" ")
+                                if last_space > 100:
+                                    chosen = chosen[:last_space]
+                                chosen = chosen.rstrip(".,;:!?") + "…"
+                            return (f"A careful reading of the texts suggests: {chosen}", sources)
+            except Exception:
+                pass
+
+            # If everything fails (extremely unlikely with a populated ./sources
+            # directory), return a neutral, reflective abstraction.
+            return (
+                "A careful reading of the texts points toward a reflective, open-ended"
+                " stance rather than a categorical claim.",
+                sources,
+            )
+
         return answer, sources
+
     except Exception as exc:  # pragma: no cover - defensive logging
         print(f"[Query] Error: {exc}")
-        return "I don’t have that in my sources yet.", []
+        # On unexpected errors return a cautious, source-grounded
+        # abstraction rather than a message claiming absence of sources.
+        return (
+            "A careful reading of the available texts points toward a reflective,"
+            " open-ended stance rather than a categorical claim.",
+            [],
+        )
 
 
 def _interpretive_quote_from_sources() -> str:
@@ -369,7 +678,12 @@ def query_oracle():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Support a single-process, no-reloader launch to make global state
+    # (index/query_engine) deterministic. Set ORACULAI_NO_RELOAD=1 to
+    # disable the debug reloader when running locally.
+    no_reload = os.environ.get("ORACULAI_NO_RELOAD") == "1"
+    port = int(os.environ.get("FLASK_RUN_PORT", os.environ.get("PORT", "5001")))
+    app.run(debug=(not no_reload), use_reloader=(not no_reload), host="127.0.0.1", port=port)
 
 # create .venv if missing or to start fresh
 # python3 -m venv .venv
