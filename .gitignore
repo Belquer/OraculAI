@@ -1,7 +1,8 @@
 __pycache__/
 *.pyc
-venv/
 .DS_Store
+daily_content.js
+__pycache__/
 daily_content.json
 .env
 backups/
