@@ -1,53 +1,38 @@
-# OraculAI
-
+OraculAI
 Spiritual Guidance, Unveiled by AI
+Welcome to OraculAI, a browser-based application designed to bring ancient wisdom into the digital age. This platform leverages powerful AI models to act as a personal oracle, providing spiritual guidance and insights from some of the most profound texts in human history.
 
-Welcome to OraculAI, a browser-based application designed to bring ancient wisdom into the digital age.  
-This platform leverages powerful AI models to act as a personal oracle, providing spiritual guidance and insights from some of the most profound texts in human history.
+What It Does
+OraculAI is a RAG (Retrieval-Augmented Generation) system that operates on a closed source of spiritual documents. It offers users a unique and deeply personal way to interact with timeless wisdom.
 
----
+Daily Quote: Every day, the homepage features a new, randomly selected quote from one of our core texts, accompanied by a unique, AI-generated image inspired by the quote itself.
 
-## What It Does
+Direct Queries: Users can submit specific questions and receive answers crafted by the AI, drawing exclusively from the provided source material.
 
-OraculAI is a RAG (Retrieval-Augmented Generation) system that operates on a closed source of spiritual documents.  
-It offers users a unique and deeply personal way to interact with timeless wisdom.
+Subscription Access: While the daily quote is free, unlimited direct queries are available through a monthly subscription, providing continuous access to your personal oracle.
 
-- **Daily Quote**: Each visit shows an interpretive reflection grounded in the core texts.  
-- **Direct Queries**: Ask specific questions and receive sources-only answers.  
-- **Subscription (future)**: Daily quote free; unlimited queries via subscription.
+The Sources
+Our initial knowledge base includes three foundational spiritual documents, with plans to expand as the platform grows:
 
----
+The Emerald Tablet: A cryptic text central to hermetic philosophy.
 
-## The Sources
+The Tibetan Book of the Dead: A guide for navigating the intermediate state between death and rebirth.
 
-Initial knowledge base:
-- **The Emerald Tablet** — cryptic hermetic philosophy.
-- **The Tibetan Book of the Dead** — guide to the intermediate state.
-- **The I Ching** — ancient Chinese divination text.
+The I Ching: An ancient Chinese divination text and one of the oldest books in recorded history.
 
----
+Tech Stack
+This application is built with a focus on simplicity, security, and scalability.
 
-## Tech Stack
+Backend: Python, Flask
 
-- **Backend**: Python (Flask)
-- **AI Engine**: LlamaIndex + OpenAI
-- **Embeddings**: HuggingFace (MiniLM, 384-dim)
-- **Database**: Pinecone
-- **UI**: Orb-inspired HTML/CSS
-- **Payments (planned)**: Stripe
+AI Engine: Notebook LM (or similar models like Llama-Index for closed-source RAG)
 
----
+Image Generation: DALL-E 3 (or a similar service)
 
-## Getting Started
+Database: Pinecone
 
-### Prerequisites
-- Python 3.10+
-- Pinecone account
-- OpenAI API key
+Payments: Stripe
 
-### Install
-```bash
-git clone https://github.com/Belquer/OraculAI.git
-cd OraculAI
-python3 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
+Contribution: We welcome contributions from developers, researchers, and anyone passionate about this project.
+
+Contact: For support, questions, or collaboration inquiries, please contact us at [your email or a contact page link].
