@@ -1,0 +1,3 @@
+echo "The mind is like water: stillness reveals clarity." >> sources/quotes.txt
+flask --app app.py run --debug
+# then visit /refresh and reload /

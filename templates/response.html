@@ -1,30 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>OraculAI - Response</title>
+  <meta charset="UTF-8" />
+  <title>Oracle Response</title>
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.5; }
-    .src { padding: .75rem; border: 1px solid #ddd; border-radius: 8px; margin: .5rem 0; background: #fafafa; }
-    .src small { color: #666; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .response {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Oracle Response</h1>
+  <h1>Question:</h1>
+  <div class="response">{{ query }}</div>
 
-  <p><strong>Your question:</strong> {{ query }}</p>
-  <p><strong>Oracle says:</strong> {{ response }}</p>
+  <h1>Oracle's Answer:</h1>
+  <div class="response">{{ response }}</div>
 
-  {% if sources and response != "I don’t have that in my sources yet." %}
-    <h3>Sources</h3>
-    {% for s in sources %}
-      <div class="src">
-        <div><strong>{{ s.file }}</strong>{% if s.score %} — score: {{ "%.3f"|format(s.score) }}{% endif %}</div>
-        <small>{{ s.snippet }}</small>
-      </div>
-    {% endfor %}
-  {% endif %}
-
-  <p><a href="/">Back to home</a></p>
+  <a href="{{ url_for('index') }}">Back to OraculAI</a>
 </body>
 </html>
