@@ -4,3 +4,6 @@ venv/
 .DS_Store
 daily_content.json
 .env
+backups/
+*.zip
+app.py.bak
