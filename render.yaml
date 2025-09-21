@@ -1,0 +1,14 @@
+# Render service manifest for OraculAI
+# See https://render.com/docs/deploy-your-service
+services:
+  - type: web
+    name: OraculAI
+    env: docker
+    plan: free
+    branch: main
+    buildCommand: ''
+    startCommand: 'gunicorn --bind 0.0.0.0:$PORT app:app'
+    autoDeploy: true
+    envVars:
+      - key: ORACULAI_NO_RELOAD
+        value: '1'
