@@ -22,7 +22,6 @@ archive/
 *.log
 flask.log
 gunicorn.log
-manifest.json
 
 # Editor and OS files
 .vscode/
