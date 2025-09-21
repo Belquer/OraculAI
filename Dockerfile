@@ -22,4 +22,5 @@ COPY . /app
 EXPOSE 5001
 
 # Prefer gunicorn if available, otherwise fall back to flask run for convenience
-CMD ["sh", "-c", "gunicorn -b 0.0.0.0:5001 app:app --timeout 120 --workers 1 || python -m flask run --host=0.0.0.0 --port=5001"]
+# Use Render's $PORT if provided, otherwise default to 5001 for local/dev runs.
+CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-5001} app:app --timeout 120 --workers 1 || python -m flask run --host=0.0.0.0 --port=${PORT:-5001}"]
