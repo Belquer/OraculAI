@@ -1,0 +1,35 @@
+.git
+.github
+.gitignore
+.env
+.venv
+venv
+env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Large data and sources
+sources/
+sources_chunks/
+archive/
+*.pdf
+*.zip
+*.tar.gz
+
+# Logs and runtime artifacts
+*.log
+flask.log
+gunicorn.log
+manifest.json
+
+# Editor and OS files
+.vscode/
+*.swp
+*.DS_Store
+
+# Node/npm
+node_modules/
+dist/
+build/

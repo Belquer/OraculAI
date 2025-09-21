@@ -17,7 +17,16 @@ COPY requirements.txt ./
 RUN python -m pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # Copy source
-COPY . /app
+## Copy only necessary files to reduce build context
+# Copy Python package requirements first to leverage Docker cache
+COPY requirements.txt /app/
+
+# Copy application files and templates only
+COPY app.py /app/
+COPY manage.py /app/
+COPY templates/ /app/templates/
+COPY scripts/ /app/scripts/
+COPY manifest.json /app/  
 
 EXPOSE 5001
 
