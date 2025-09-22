@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OraculAI - Response</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center}
+    .card{max-width:800px;width:100%;padding:1.25rem;border-radius:12px;border:1px solid #eee;background:#fff}
+    h1{margin:0 0 1rem}
+    p{margin:.5rem 0}
+    .back{display:inline-block;margin-top:1rem;color:#3758ff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+  <h1>Oracle Response</h1>
+  <p style="font-weight:600;margin-top:.5rem">{{ query }}</p>
+  <hr>
+  <p style="margin-top:1rem">{{ response }}</p>
+
+      <a class="back" href="/">← Back</a>
+    </div>
+  </div>
+</body>
+</html>
