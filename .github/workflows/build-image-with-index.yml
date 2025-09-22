@@ -44,7 +44,15 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "Running manage.py build in CI to produce index artifacts"
-          python manage.py build
+          # capture stdout/stderr to a file so we can upload it even if the step fails
+          python manage.py build 2>&1 | tee /tmp/manage_build.log
+
+      - name: Upload manage build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: manage_build_log
+          path: /tmp/manage_build.log
 
       - name: Log in to GHCR
         uses: docker/login-action@v2
