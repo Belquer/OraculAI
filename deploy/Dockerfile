@@ -22,13 +22,17 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Build the index. Secrets are passed securely via buildkit secrets.
+# This script checks for the existence of each secret before exporting it
+# to prevent the build from failing if a secret is not provided.
 RUN --mount=type=secret,id=PINECONE_API_KEY \
     --mount=type=secret,id=PINECONE_ENVIRONMENT \
     --mount=type=secret,id=OPENAI_API_KEY \
-    export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY) && \
-    export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT) && \
-    export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY) && \
-    python manage.py build
+    /bin/sh -c ' \
+        if [ -f /run/secrets/PINECONE_API_KEY ]; then export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY); fi; \
+        if [ -f /run/secrets/PINECONE_ENVIRONMENT ]; then export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT); fi; \
+        if [ -f /run/secrets/OPENAI_API_KEY ]; then export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY); fi; \
+        python manage.py build \
+    '
 
 # Stage 2: Final image
 # This stage takes the built app and index from the builder stage
