@@ -21,8 +21,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies and Build Index
-        # Make sure repository secrets PINECONE_API_KEY, PINECONE_ENVIRONMENT, OPENAI_API_KEY
-        # are set in Settings -> Secrets. They will be available as env vars at runtime.
+        env:
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_ENVIRONMENT: ${{ secrets.PINECONE_ENVIRONMENT }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "--- Installing Dependencies ---"
           python -m pip install --upgrade pip
@@ -31,9 +33,9 @@ jobs:
 
           echo "--- Building Index ---"
           # Debug print (do not reveal secrets in logs)
-          echo "PINECONE_API_KEY set: ${PINECONE_API_KEY:+yes}${PINECONE_API_KEY:-no}"
-          echo "PINECONE_ENVIRONMENT set: ${PINECONE_ENVIRONMENT:+yes}${PINECONE_ENVIRONMENT:-no}"
-          echo "OPENAI_API_KEY set: ${OPENAI_API_KEY:+yes}${OPENAI_API_KEY:-no}"
+          echo "PINECONE_API_KEY set: ${PINECONE_API_KEY:+yes}"
+          echo "PINECONE_ENVIRONMENT set: ${PINECONE_ENVIRONMENT:+yes}"
+          echo "OPENAI_API_KEY set: ${OPENAI_API_KEY:+yes}"
           # capture stdout/stderr to a file so we can upload it even if the step fails
           python manage.py build 2>&1 | tee /tmp/manage_build.log
 

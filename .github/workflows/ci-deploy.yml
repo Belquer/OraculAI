@@ -71,24 +71,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Render deploy
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         run: |
-          if [ -z "${{ secrets.RENDER_API_KEY }}" ] || [ -z "${{ secrets.RENDER_SERVICE_ID }}" ]; then
+          if [ -z "$RENDER_API_KEY" ] || [ -z "$RENDER_SERVICE_ID" ]; then
             echo "Render secrets not found. Skipping deploy."
             exit 0
           fi
           set -euo pipefail
-          echo "Triggering Render deploy for service ${{ secrets.RENDER_SERVICE_ID }}"
+          echo "Triggering Render deploy for service $RENDER_SERVICE_ID"
           # Request a new deploy
-          resp=$(curl -s -X POST 
-            -H "Accept: application/json" 
-            -H "Content-Type: application/json" 
-            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" 
-            -d '{"serviceId":"${{ secrets.RENDER_SERVICE_ID }}"}' 
+          resp=$(curl -s -X POST \
+            -H "Accept: application/json" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $RENDER_API_KEY" \
+            -d "{\"serviceId\":\"$RENDER_SERVICE_ID\"}" \
             https://api.render.com/deploys)
           echo "Render deploy response: $resp"
           # Try to fetch service details (domain) for convenience
-          svc=$(curl -s -X GET 
-            -H "Accept: application/json" 
-            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" 
-            https://api.render.com/services/${{ secrets.RENDER_SERVICE_ID }} || true)
+          svc=$(curl -s -X GET \
+            -H "Accept: application/json" \
+            -H "Authorization: Bearer $RENDER_API_KEY" \
+            https://api.render.com/services/$RENDER_SERVICE_ID || true)
           echo "Render service info: $svc"
