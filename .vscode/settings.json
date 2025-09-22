@@ -3,7 +3,8 @@
   "python.analysis.extraPaths": [
     "./.venv/lib/python3.13/site-packages"
   ],
-  "problems.autoReveal": false
+  "problems.autoReveal": false,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*"
+  }
 }
-mkdir -p ./archive
-ls -la ./archive

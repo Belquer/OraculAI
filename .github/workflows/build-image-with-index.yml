@@ -20,30 +20,20 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install build dependencies
+      - name: Install Dependencies and Build Index
+        # Make sure repository secrets PINECONE_API_KEY, PINECONE_ENVIRONMENT, OPENAI_API_KEY
+        # are set in Settings -> Secrets. They will be available as env vars at runtime.
         run: |
+          echo "--- Installing Dependencies ---"
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          echo "--- Dependencies Installed ---"
 
-      - name: Debug repo context
-        run: |
-          echo "--- DEBUG: repo root ---"
-          pwd
-          echo "--- ls -la ---"
-          ls -la
-          echo "--- show manage.py (first 120 lines) ---"
-          if [ -f manage.py ]; then sed -n '1,120p' manage.py || true; else echo "(manage.py not found at repo root)"; fi
-          echo "--- python info ---"
-          python --version || true
-          which python || true
-
-      - name: Build index (CI)
-        env:
-          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
-          PINECONE_ENVIRONMENT: ${{ secrets.PINECONE_ENVIRONMENT }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          echo "Running manage.py build in CI to produce index artifacts"
+          echo "--- Building Index ---"
+          # Debug print (do not reveal secrets in logs)
+          echo "PINECONE_API_KEY set: ${PINECONE_API_KEY:+yes}${PINECONE_API_KEY:-no}"
+          echo "PINECONE_ENVIRONMENT set: ${PINECONE_ENVIRONMENT:+yes}${PINECONE_ENVIRONMENT:-no}"
+          echo "OPENAI_API_KEY set: ${OPENAI_API_KEY:+yes}${OPENAI_API_KEY:-no}"
           # capture stdout/stderr to a file so we can upload it even if the step fails
           python manage.py build 2>&1 | tee /tmp/manage_build.log
 
@@ -54,12 +44,23 @@ jobs:
           name: manage_build_log
           path: /tmp/manage_build.log
 
-      - name: Log in to GHCR
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_PAT }}
+      - name: Print manage build log
+        if: always()
+        run: |
+          echo "--- BEGIN manage_build.log ---"
+          if [ -f /tmp/manage_build.log ]; then sed -n '1,400p' /tmp/manage_build.log || true; else echo "(no manage_build.log found)"; fi
+          echo "--- END manage_build.log ---"
+
+      - name: Log in to GHCR (use GHCR_PAT if provided, otherwise GITHUB_TOKEN)
+        run: |
+          set -euo pipefail
+          if [ -n "${GHCR_PAT:-}" ]; then
+            echo "Using GHCR_PAT secret to log in to ghcr.io"
+            echo "$GHCR_PAT" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          else
+            echo "GHCR_PAT not provided; falling back to GITHUB_TOKEN"
+            echo "$GITHUB_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          fi
 
       - name: Build and push image
         uses: docker/build-push-action@v4
@@ -68,7 +69,3 @@ jobs:
           file: ./deploy/Dockerfile
           push: true
           tags: ghcr.io/belquer/oraculai:latest
-          build-args: |
-            PINECONE_API_KEY=${{ secrets.PINECONE_API_KEY }}
-            PINECONE_ENVIRONMENT=${{ secrets.PINECONE_ENVIRONMENT }}
-            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}

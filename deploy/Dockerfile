@@ -16,14 +16,9 @@ RUN python -m pip install --upgrade pip && pip install --no-cache-dir -r /app/re
 # Copy full repo into builder and run index build (CI will provide secrets)
 COPY . /app/
 
-ARG PINECONE_API_KEY
-ARG PINECONE_ENVIRONMENT
-ARG OPENAI_API_KEY
-ENV PINECONE_API_KEY=${PINECONE_API_KEY}
-ENV PINECONE_ENVIRONMENT=${PINECONE_ENVIRONMENT}
-ENV OPENAI_API_KEY=${OPENAI_API_KEY}
-
-RUN python manage.py build || true
+# Note: index build is performed in CI (runner) so we avoid passing secrets
+# into docker build and prevent sensitive data from being stored in image
+# layers. The CI job should run `python manage.py build` before building.
 
 # Final image
 FROM python:3.11-slim

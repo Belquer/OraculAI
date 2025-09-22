@@ -69,15 +69,17 @@ jobs:
     name: Deploy to Render
     needs: build
     runs-on: ubuntu-latest
-    # Only run if Render secrets are provided in repository settings
-    if: ${{ secrets.RENDER_API_KEY && secrets.RENDER_SERVICE_ID }}
+    # The deploy step will check for required secrets at runtime and skip if missing
     steps:
-      - name: Trigger Render deploy
-        env:
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
-          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+      - name: Trigger Render deploy (if secrets present)
+        # Note: set repository secrets RENDER_API_KEY and RENDER_SERVICE_ID in GitHub
+        # Settings -> Secrets to have these values available at runtime as env vars.
         run: |
           set -euo pipefail
+          if [ -z "${RENDER_API_KEY:-}" ] || [ -z "${RENDER_SERVICE_ID:-}" ]; then
+            echo "Render secrets not set; skipping deploy"
+            exit 0
+          fi
           echo "Triggering Render deploy for service $RENDER_SERVICE_ID"
           # Request a new deploy
           resp=$(curl -s -X POST \
