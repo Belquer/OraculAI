@@ -32,13 +32,16 @@ def run_build():
 
 def main(argv: list[str] | None = None) -> int:
     argv = list(argv or sys.argv[1:])
+    print(f"manage.py received arguments: {sys.argv}")
     if not argv:
-        print("Usage: manage.py build")
+        print("Usage: python manage.py build")
         return 1
-    cmd = argv[0]
+
+    cmd = argv[0].strip().lower()
     if cmd == "build" or cmd == "refresh":
         return run_build()
-    print("Unknown command", cmd)
+
+    print(f"Unknown command: '{cmd}'")
     return 2
 
 
