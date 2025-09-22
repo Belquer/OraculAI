@@ -661,6 +661,40 @@ def refresh_index():
     return "Index refreshed with new sources."
 
 
+@app.route("/health")
+def health_check():
+    """Return a JSON object with the status of the application."""
+    global index, query_engine
+    # If the engine is missing, try to build it on-demand for the health check
+    if query_engine is None or index is None:
+        try:
+            built_index, built_engine = _build_index_and_engine()
+            if built_engine:
+                globals()["index"] = built_index
+                globals()["query_engine"] = built_engine
+        except Exception as e:
+            print(f"[Health] On-demand index build failed: {e}")
+
+    index_is_present = index is not None
+    index_name = os.environ.get("PINECONE_INDEX_NAME") or os.environ.get("PINECONE_INDEX") or "oraculai"
+    
+    embed_model_name = "unknown"
+    if hasattr(Settings, "embed_model") and hasattr(Settings.embed_model, "model_name"):
+        embed_model_name = Settings.embed_model.model_name
+
+    llm_model_name = "unknown"
+    if hasattr(Settings, "llm") and hasattr(Settings.llm, "model"):
+        llm_model_name = Settings.llm.model
+
+    return {
+        "status": "ok",
+        "index_present": index_is_present,
+        "index_name": index_name,
+        "embedding_model": embed_model_name,
+        "llm_model": llm_model_name,
+    }
+
+
 @app.route("/query", methods=["POST"])
 def query_oracle():
     user_query = request.form.get("user_query", "").strip()
