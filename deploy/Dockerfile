@@ -2,37 +2,26 @@
 # This stage installs all dependencies and builds the vector index.
 FROM python:3.11-slim AS builder
 
-# Set environment variables
-ENV PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=off \
-    PIP_DISABLE_PIP_VERSION_CHECK=on
-
 WORKDIR /app
 
-# Install system dependencies required for building some python packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Copy only the necessary files for dependency installation and build script
+COPY requirements.txt manage.py app.py ./
 
-# Copy requirements and install python dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Install dependencies
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application source code
+# Copy the rest of the application source code (e.g., ./sources)
 COPY . .
 
-# Build the index. Secrets are passed securely via buildkit secrets.
-# This script checks for the existence of each secret before exporting it
-# to prevent the build from failing if a secret is not provided.
+# Run the build process with secrets
 RUN --mount=type=secret,id=PINECONE_API_KEY \
     --mount=type=secret,id=PINECONE_ENVIRONMENT \
     --mount=type=secret,id=OPENAI_API_KEY \
-    /bin/sh -c ' \
-        if [ -f /run/secrets/PINECONE_API_KEY ]; then export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY); fi; \
-        if [ -f /run/secrets/PINECONE_ENVIRONMENT ]; then export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT); fi; \
-        if [ -f /run/secrets/OPENAI_API_KEY ]; then export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY); fi; \
-        python manage.py build \
-    '
+    /bin/sh -c 'export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY) && \
+                export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT) && \
+                export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY) && \
+                python manage.py build'
 
 # Stage 2: Final image
 # This stage takes the built app and index from the builder stage
