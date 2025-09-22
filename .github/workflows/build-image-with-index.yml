@@ -53,6 +53,12 @@ jobs:
           if [ -f /tmp/manage_build.log ]; then sed -n '1,400p' /tmp/manage_build.log || true; else echo "(no manage_build.log found)"; fi
           echo "--- END manage_build.log ---"
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Log in to GHCR
         uses: docker/login-action@v3
         with:
@@ -65,5 +71,6 @@ jobs:
         with:
           context: .
           file: ./deploy/Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/belquer/oraculai:latest
