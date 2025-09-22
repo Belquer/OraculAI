@@ -15,15 +15,10 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . .
 
 # Run the build process with secrets
-RUN --mount=type=secret,id=PINECONE_API_KEY \
-    --mount=type=secret,id=PINECONE_ENVIRONMENT \
-    --mount=type=secret,id=OPENAI_API_KEY \
-    /bin/sh -c 'export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY) && \
-                export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT) && \
-                export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY) && \
-                python manage.py build'
-
-# Stage 2: Final image
+RUN --mount=type=secret,id=PINECONE_API_KEY 
+    --mount=type=secret,id=PINECONE_ENVIRONMENT 
+    --mount=type=secret,id=OPENAI_API_KEY 
+    /bin/sh -c 'export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY) && export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT) && export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY) && python manage.py build'# Stage 2: Final image
 # This stage takes the built app and index from the builder stage
 # and puts it into a clean, smaller image.
 FROM python:3.11-slim
