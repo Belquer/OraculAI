@@ -76,7 +76,7 @@ jobs:
           RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         run: |
           if [ -z "$RENDER_API_KEY" ] || [ -z "$RENDER_SERVICE_ID" ]; then
-            echo "Render secrets not found. Skipping deploy."
+            echo "Render API Key or Service ID not set. Skipping deployment."
             exit 0
           fi
           set -euo pipefail
@@ -86,7 +86,7 @@ jobs:
             -H "Accept: application/json" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $RENDER_API_KEY" \
-            -d "{\"serviceId\":\"$RENDER_SERVICE_ID\"}" \
+            -d '{"serviceId":"'$RENDER_SERVICE_ID'"}' \
             https://api.render.com/deploys)
           echo "Render deploy response: $resp"
           # Try to fetch service details (domain) for convenience

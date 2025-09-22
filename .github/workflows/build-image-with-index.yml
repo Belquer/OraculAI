@@ -53,16 +53,12 @@ jobs:
           if [ -f /tmp/manage_build.log ]; then sed -n '1,400p' /tmp/manage_build.log || true; else echo "(no manage_build.log found)"; fi
           echo "--- END manage_build.log ---"
 
-      - name: Log in to GHCR (use GHCR_PAT if provided, otherwise GITHUB_TOKEN)
-        run: |
-          set -euo pipefail
-          if [ -n "${GHCR_PAT:-}" ]; then
-            echo "Using GHCR_PAT secret to log in to ghcr.io"
-            echo "$GHCR_PAT" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
-          else
-            echo "GHCR_PAT not provided; falling back to GITHUB_TOKEN"
-            echo "$GITHUB_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
-          fi
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_PAT }}
 
       - name: Build and push image
         uses: docker/build-push-action@v4
