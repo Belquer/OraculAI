@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1.6
+# syntax = docker/dockerfile:1.7
 
 # Stage 1: Builder
 # This stage installs all dependencies and builds the vector index.
@@ -18,12 +18,9 @@ COPY . .
 
 # Run the build process with secrets
 RUN --mount=type=secret,id=PINECONE_API_KEY \
-    --mount=type=secret,id=PINECONE_ENVIRONMENT \
-    --mount=type=secret,id=OPENAI_API_KEY \
-    sh -lc 'export PINECONE_API_KEY=$(cat /run/secrets/PINECONE_API_KEY) \
-            && export PINECONE_ENVIRONMENT=$(cat /run/secrets/PINECONE_ENVIRONMENT) \
-            && export OPENAI_API_KEY=$(cat /run/secrets/OPENAI_API_KEY) \
-            && python manage.py build'
+        --mount=type=secret,id=PINECONE_ENVIRONMENT \
+        --mount=type=secret,id=OPENAI_API_KEY \
+        sh -lc 'set -e; ls -l /run/secrets || true; for f in PINECONE_API_KEY PINECONE_ENVIRONMENT OPENAI_API_KEY; do [ -s "/run/secrets/$f" ] || { echo "Missing $f" >&2; exit 1; }; done; export PINECONE_API_KEY="$(cat /run/secrets/PINECONE_API_KEY)"; export PINECONE_ENVIRONMENT="$(cat /run/secrets/PINECONE_ENVIRONMENT)"; export OPENAI_API_KEY="$(cat /run/secrets/OPENAI_API_KEY)"; python manage.py build'
 
 # Stage 2: Final image
 # This stage takes the built app and index from the builder stage
