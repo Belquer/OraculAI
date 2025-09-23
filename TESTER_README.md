@@ -32,11 +32,13 @@ docker run -it --rm -p 5001:5001 \
   oraculai:staging
 ```
 
-3) Deploy to Render / Fly / Cloud Run
+3) Deploy to Render / Fly / Cloud Run (using the GHCR image)
 
-- Create a new service and point it at this repository and the `staging` branch.
-- Set environment variables (OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_INDEX, ORACULAI_NO_RELOAD=1).
-- Configure the service to expose port 5001 and health checks.
+- Run the `publish-ghcr` workflow (or push to `main`) so `ghcr.io/<owner>/oraculai:latest` is available.
+- In your platform, create a service that pulls that image (Render: *New Web Service → Docker → Deploy an existing image*).
+- Provide a registry credential for GHCR (GitHub PAT with `read:packages`).
+- Set environment variables (`OPENAI_API_KEY`, `PINECONE_API_KEY`, `PINECONE_ENVIRONMENT`, `PINECONE_INDEX_NAME=oraculai`, `ORACULAI_NO_RELOAD=1`).
+- Expose port 5001 and, after the first deploy, hit `/refresh` if `/health` reports the index is missing.
 
 4) Testing checklist for testers
 
@@ -47,4 +49,3 @@ docker run -it --rm -p 5001:5001 \
 5) Feedback link
 
 Please open issues on the repository or use the release discussion link on the release page.
-

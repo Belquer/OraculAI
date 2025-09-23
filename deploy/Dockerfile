@@ -17,10 +17,20 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . .
 
 # Run the build process with secrets
-RUN --mount=type=secret,id=PINECONE_API_KEY \
-        --mount=type=secret,id=PINECONE_ENVIRONMENT \
-        --mount=type=secret,id=OPENAI_API_KEY \
-        sh -lc 'set -e; ls -l /run/secrets || true; for f in PINECONE_API_KEY PINECONE_ENVIRONMENT OPENAI_API_KEY; do [ -s "/run/secrets/$f" ] || { echo "Missing $f" >&2; exit 1; }; done; export PINECONE_API_KEY="$(cat /run/secrets/PINECONE_API_KEY)"; export PINECONE_ENVIRONMENT="$(cat /run/secrets/PINECONE_ENVIRONMENT)"; export OPENAI_API_KEY="$(cat /run/secrets/OPENAI_API_KEY)"; python manage.py build'
+RUN --mount=type=secret,id=PINECONE_API_KEY,required=false \
+        --mount=type=secret,id=PINECONE_ENVIRONMENT,required=false \
+        --mount=type=secret,id=OPENAI_API_KEY,required=false \
+        bash -lc "set -e; \
+          if [ -s /run/secrets/PINECONE_API_KEY ] && \
+             [ -s /run/secrets/PINECONE_ENVIRONMENT ] && \
+             [ -s /run/secrets/OPENAI_API_KEY ]; then \
+            export PINECONE_API_KEY=\"$(cat /run/secrets/PINECONE_API_KEY)\"; \
+            export PINECONE_ENVIRONMENT=\"$(cat /run/secrets/PINECONE_ENVIRONMENT)\"; \
+            export OPENAI_API_KEY=\"$(cat /run/secrets/OPENAI_API_KEY)\"; \
+            python manage.py build; \
+          else \
+            echo '[Index] Pinecone/OpenAI secrets missing; skipping baked index.'; \
+          fi"
 
 # Stage 2: Final image
 # This stage takes the built app and index from the builder stage

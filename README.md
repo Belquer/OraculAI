@@ -63,30 +63,23 @@ Use `make build-index` or `./.venv/bin/python manage.py build` to run the offlin
 
 ## Share with testers (no tech skills required)
 
-If you want a simple public URL you can share with non-technical testers, the easiest path is to deploy a staging server on Render (or a similar PaaS) and enable auto-deploy from this repository's `staging` or `main` branch.
+If you want a simple public URL you can share with non-technical testers, the easiest path is to run the prebuilt container image on Render (or any PaaS that can pull from container registries). Render no longer builds this repo directly because the Docker build stage needs Pinecone/OpenAI secrets; instead GitHub Actions publishes an image to GHCR and Render pulls it.
 
-Quick steps (Render):
+Render quick start (pulling the prebuilt GHCR image):
 
-1. Create an account at https://render.com and create a new Web Service.
-2. Connect your GitHub repository and choose the `main` branch (or `staging` if you prefer).
-3. Set the following environment variables in Render's dashboard for the service:
-	- `OPENAI_API_KEY` (if you want OpenAI embeddings/completions)
-	- `PINECONE_API_KEY` and `PINECONE_ENVIRONMENT` (if using Pinecone)
-	- `EMBEDDING_PROVIDER` and `EMBEDDING_MODEL` (optional)
-	- `ORACULAI_NO_RELOAD=1` (recommended for predictable single-process behavior)
-4. Render will build the Docker image and provide a public URL (e.g. `https://oraculai-yourname.onrender.com`). Share that URL with testers.
+1. Ensure the GitHub Action `publish-ghcr` has run on `main`. It produces `ghcr.io/<owner>/oraculai:latest` using `deploy/Dockerfile`.
+2. In Render, create a *Web Service* → *Docker* → *Deploy an existing image*.
+3. Add a registry credential for GitHub Container Registry (`ghcr.io`) using a GitHub PAT with `read:packages` scope.
+4. Set the image to `ghcr.io/<owner>/oraculai:latest` (for this repo: `ghcr.io/belquer/oraculai:latest`).
+5. Add the required environment variables:
+	- `OPENAI_API_KEY`
+	- `PINECONE_API_KEY`
+	- `PINECONE_ENVIRONMENT` (e.g. `us-east-1`)
+	- `PINECONE_INDEX_NAME` (defaults to `oraculai`)
+	- `ORACULAI_NO_RELOAD=1`
+6. Deploy. Once the container is up, visit `/health`; if `index_present` is false hit `/refresh` once to warm the Pinecone-backed index.
 
-One-click (optional): if you add `RENDER_SERVICE_ID` and `RENDER_API_KEY` as repository secrets, the existing GitHub Actions workflow `/.github/workflows/ci-deploy.yml` can trigger a Render deploy automatically when pushed to `main` or `staging`.
-
-How to get `RENDER_API_KEY` and `RENDER_SERVICE_ID`:
-
-1. In Render, go to Account → API Keys → Create an API Key. Copy the key.
-2. In the Render dashboard, open your newly created service and look at the URL; the Service ID is available in the service's Settings → General → Service ID, or you can fetch it via the Render API (`GET https://api.render.com/services`) and find the matching repo name.
-3. In your GitHub repository, go to Settings → Secrets → Actions and add two secrets:
-	- `RENDER_API_KEY` (the API key from step 1)
-	- `RENDER_SERVICE_ID` (the service id from step 2)
-
-Once those secrets are set, pushing to `main` or running the workflow manually will build the image and trigger a Render deploy automatically. The workflow prints the Render response in the Actions logs so you'll see the deploy id and service info.
+Tip: the provided `render.yaml` mirrors these settings and is a convenient reference, but Render currently requires you to create the registry credential via the dashboard.
 
 Testing checklist for non-technical testers:
 
@@ -96,25 +89,13 @@ Testing checklist for non-technical testers:
 - Expect a sourced, concise answer. If the system is still warming up you may see a short reflective response.
 - If a question fails, copy the URL and report it to the project maintainer.
 
-If you'd like, I can wire up a Render-specific `render.yaml` and add a Deploy button to this `README.md` so testers can be given a one-click deploy for private instances.
+### GHCR image automation
 
-### One-click (Deploy to Render)
+- `/.github/workflows/publish-ghcr.yml` builds `ghcr.io/<owner>/oraculai:latest` whenever you push to `main`.
+- `/.github/workflows/build-image-with-index.yml` (optional) builds the same image with Pinecone/OpenAI secrets injected at build-time so the index is baked inside the container. Run it manually if you need a “warm” image before deploying.
 
-You can add a one-click Deploy to Render button so a tester (or you) can create a private instance quickly. Click the button below or paste the YAML into Render when creating a new service.
+Both workflows accept repository secrets named `OPENAI_API_KEY`, `PINECONE_API_KEY`, and `PINECONE_ENVIRONMENT`. If any are missing the Docker build skips `manage.py build`, so the image will rely on the running service to warm the index via `/refresh`.
 
-[![Deploy To Render](https://drive.render.com/buttons/deploy-button-blue.svg)](https://dashboard.render.com/deploy?repo=https://github.com/Belquer/OraculAI)
+Render currently only supports `linux/amd64`, so when building locally use `docker buildx build --platform linux/amd64 ...` (or rely on the workflows above, which already publish that platform).
 
-## Faster deploys: have Render pull a prebuilt image from GHCR
-
-If Render builds are slow, you can configure GitHub Actions to build and push a Docker image to GitHub Container Registry (GHCR), and then change your Render service to pull that image. This reduces deploy times because Render only needs to pull the image instead of building it.
-
-Steps:
-
-1. The included workflow `/.github/workflows/ci-deploy.yml` now contains a `build-and-publish-image` job that pushes `ghcr.io/<owner>/oraculai:latest` on pushes to `main`.
-2. In Render, edit your service and switch the deployment method to "Pull from Private Registry" (or equivalent).
-	- Registry: ghcr.io
-	- Image: `ghcr.io/Belquer/oraculai:latest`
-	- Credential: create a Registry Credential in Render (use a GitHub Personal Access Token with `read:packages` scope).
-3. Save and deploy — Render will pull the prebuilt image. Subsequent redeploys will be significantly faster.
-
-Note: Make sure repository Actions permissions allow the workflow to publish to GHCR (Package: write). If you see permission errors, enable it in the repository settings or provide a PAT in repository secrets.
+Make sure repository Actions permissions allow publishing to GHCR (Packages → Write). If you hit permission errors, either enable them in repository settings or provide a PAT through repository secrets.

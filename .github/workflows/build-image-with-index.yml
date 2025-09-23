@@ -47,3 +47,48 @@ jobs:
             "PINECONE_API_KEY=${{ secrets.PINECONE_API_KEY }}"
             "PINECONE_ENVIRONMENT=${{ secrets.PINECONE_ENVIRONMENT }}"
             "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}"
+
+  smoke-test:
+    name: Smoke test image /health
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    permissions:
+      packages: read
+    steps:
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull published image
+        run: docker pull ghcr.io/belquer/oraculai:latest
+
+      - name: Run container and poll /health
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_ENVIRONMENT: ${{ secrets.PINECONE_ENVIRONMENT }}
+        run: |
+          set -euo pipefail
+          CID=$(docker run -d -p 8080:5001 \
+            -e OPENAI_API_KEY \
+            -e PINECONE_API_KEY \
+            -e PINECONE_ENVIRONMENT \
+            ghcr.io/belquer/oraculai:latest)
+          trap 'docker rm -f "$CID" >/dev/null 2>&1 || true' EXIT
+          echo "Container $CID"
+          for i in $(seq 1 60); do
+            sleep 2
+            if curl -fsS http://127.0.0.1:8080/health | tee /tmp/health.json; then
+              echo "Health OK"; break
+            fi
+          done
+          if ! [ -s /tmp/health.json ]; then
+            echo "Health check failed; showing logs" >&2
+            docker logs "$CID" || true
+            exit 1
+          fi
+          echo "--- Health response ---"
+          cat /tmp/health.json

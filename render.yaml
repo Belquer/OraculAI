@@ -4,6 +4,8 @@ services:
   - type: web
     name: OraculAI
     env: docker
+    dockerContext: .
+    dockerfilePath: deploy/Dockerfile
     plan: free
     branch: main
     buildCommand: ''
@@ -12,3 +14,11 @@ services:
     envVars:
       - key: ORACULAI_NO_RELOAD
         value: '1'
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_ENVIRONMENT
+        sync: false
+      - key: PINECONE_INDEX_NAME
+        value: oraculai
