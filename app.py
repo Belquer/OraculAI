@@ -196,20 +196,35 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
 
         pinecone_index = pc.Index(index_name)
 
-        if not os.path.isdir("./sources"):
-            print("[Indexing] ./sources folder not found. Create it and add content.")
-            documents = []
-        else:
-            documents = SimpleDirectoryReader(input_dir="./sources").load_data()
-            print(f"[Indexing] Loaded {len(documents)} documents from ./sources")
-
         vector_store = PineconeVectorStore(pinecone_index=pinecone_index)
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
-        built_index = VectorStoreIndex.from_documents(
-            documents, storage_context=storage_context
-        )
-        print(f"[Indexing] Index '{index_name}' ready.")
+        skip_build = os.environ.get("ORACULAI_SKIP_BUILD") == "1"
+        if skip_build:
+            print(
+                "[Indexing] ORACULAI_SKIP_BUILD=1 — loading existing Pinecone index without re-ingestion."
+            )
+            try:
+                built_index = VectorStoreIndex.from_vector_store(
+                    vector_store=vector_store, storage_context=storage_context
+                )
+                print(f"[Indexing] Attached to existing index '{index_name}'.")
+            except Exception as exc:
+                raise RuntimeError(
+                    "Failed to attach to existing Pinecone index."
+                ) from exc
+        else:
+            if not os.path.isdir("./sources"):
+                print("[Indexing] ./sources folder not found. Create it and add content.")
+                documents = []
+            else:
+                documents = SimpleDirectoryReader(input_dir="./sources").load_data()
+                print(f"[Indexing] Loaded {len(documents)} documents from ./sources")
+
+            built_index = VectorStoreIndex.from_documents(
+                documents, storage_context=storage_context
+            )
+            print(f"[Indexing] Index '{index_name}' ready.")
 
         strict_engine = built_index.as_query_engine(
             similarity_top_k=4,

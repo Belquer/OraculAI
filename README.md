@@ -76,6 +76,7 @@ Render quick start (pulling the prebuilt GHCR image):
 	- `PINECONE_API_KEY`
 	- `PINECONE_ENVIRONMENT` (e.g. `us-east-1`)
 	- `PINECONE_INDEX_NAME` (defaults to `oraculai`)
+	- `ORACULAI_SKIP_BUILD=1` (attach to the existing Pinecone index instead of re-ingesting sources)
 	- `ORACULAI_NO_RELOAD=1`
 6. Deploy. Once the container is up, visit `/health`; if `index_present` is false hit `/refresh` once to warm the Pinecone-backed index.
 

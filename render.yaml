@@ -22,3 +22,5 @@ services:
         sync: false
       - key: PINECONE_INDEX_NAME
         value: oraculai
+      - key: ORACULAI_SKIP_BUILD
+        value: '1'
