@@ -762,6 +762,23 @@ def _quote_from_file(quotes_file: str = "quotes.txt") -> str:
         return ""
 
 
+def _get_fallback_wisdom_quote() -> str:
+    """Return a meaningful spiritual/philosophical quote as fallback."""
+    fallback_quotes = [
+        "The oracle speaks through patterns in the collective unconscious.",
+        "Synchronicity reveals the hidden connections between all things.",
+        "Ancient wisdom flows through the digital realm of consciousness.",
+        "In seeking answers, we discover the questions that truly matter.",
+        "The universe converges to offer guidance to the awakened seeker.",
+        "Wisdom emerges when individual consciousness touches universal truth.",
+        "Every question opens a doorway to deeper understanding.",
+        "The oracle merely reflects what the soul already knows.",
+        "In stillness, the answers we seek become clear.",
+        "The intersection of technology and ancient wisdom creates new possibilities."
+    ]
+    return random.choice(fallback_quotes)
+
+
 def get_daily_content(force_refresh: bool = False) -> Tuple[str, str]:
     """Load or regenerate daily quote with caching. Image generation is disabled."""
     today = str(date.today())
@@ -774,7 +791,7 @@ def get_daily_content(force_refresh: bool = False) -> Tuple[str, str]:
         if not payload or payload.get("date") != today:
             return False
         quote = (payload.get("quote") or "").strip()
-        return bool(quote and quote != "A random quote from the void.")
+        return bool(quote and not quote.startswith("A random quote from"))
 
     if not force_refresh and os.path.exists(cache_path):
         try:
@@ -793,7 +810,7 @@ def get_daily_content(force_refresh: bool = False) -> Tuple[str, str]:
         _interpretive_quote_from_sources()
         or _quote_from_file("sources/quotes.txt")
         or _quote_from_file("quotes.txt")
-        or "A random quote from the void."
+        or _get_fallback_wisdom_quote()
     )
 
     payload = {"date": today, "quote": quote}
