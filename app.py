@@ -59,8 +59,65 @@ sys.stdout.flush()
 # Heavy ML / vector-store imports are performed lazily inside the index build
 # function to keep the webserver start fast. See _build_index_and_engine().
 
-print("[STARTUP] All imports completed - creating Flask app", flush=True)
-sys.stdout.flush()
+# Import heavy ML libraries at startup to avoid memory spikes during requests
+try:
+    print("[STARTUP] Pre-importing llama-index components to avoid request-time memory spikes", flush=True)
+    sys.stdout.flush()
+    
+    # Pre-import all the heavy dependencies
+    from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext, Settings
+    from llama_index.core.prompts import PromptTemplate
+    from llama_index.vector_stores.pinecone import PineconeVectorStore
+    
+    try:
+        from llama_index.embeddings.openai import OpenAIEmbedding
+        OPENAI_EMBEDDING_AVAILABLE = True
+        print("[STARTUP] OpenAI embedding adapter pre-imported successfully", flush=True)
+    except ImportError:
+        print("[STARTUP] OpenAI embedding adapter not available", flush=True)
+        OpenAIEmbedding = None
+        OPENAI_EMBEDDING_AVAILABLE = False
+        
+    try:
+        from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+        print("[STARTUP] HuggingFace embedding pre-imported successfully", flush=True)
+        HF_EMBEDDING_AVAILABLE = True
+    except ImportError:
+        print("[STARTUP] HuggingFace embedding not available", flush=True)
+        HuggingFaceEmbedding = None
+        HF_EMBEDDING_AVAILABLE = False
+        
+    try:
+        from llama_index.llms.openai import OpenAI
+        print("[STARTUP] OpenAI LLM pre-imported successfully", flush=True)
+        OPENAI_LLM_AVAILABLE = True
+    except ImportError:
+        print("[STARTUP] OpenAI LLM not available", flush=True)
+        OpenAI = None
+        OPENAI_LLM_AVAILABLE = False
+        
+    # Pre-import pinecone dependencies
+    try:
+        from pinecone import Pinecone, ServerlessSpec
+        print("[STARTUP] Pinecone client pre-imported successfully", flush=True)
+        PINECONE_AVAILABLE = True
+    except ImportError as e:
+        print(f"[STARTUP] Pinecone import failed: {e}", flush=True)
+        Pinecone = None
+        ServerlessSpec = None
+        PINECONE_AVAILABLE = False
+    
+    print("[STARTUP] All heavy imports completed at startup", flush=True)
+    sys.stdout.flush()
+    
+except Exception as e:
+    print(f"[STARTUP] Error pre-importing dependencies: {e}", flush=True)
+    sys.stdout.flush()
+    # Set fallback flags
+    OPENAI_EMBEDDING_AVAILABLE = False
+    HF_EMBEDDING_AVAILABLE = False 
+    OPENAI_LLM_AVAILABLE = False
+    PINECONE_AVAILABLE = False
 print("Loading OraculAI app (sources-only QA + interpretive daily quote)")
 
 app = Flask(__name__)
@@ -160,65 +217,28 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
     sys.stdout.flush()
     
     try:
-        print("[BUILD] About to perform lazy imports", flush=True)
+        print("[BUILD] Using pre-imported llama-index components", flush=True)
         sys.stdout.flush()
-        # Lazy imports: bring in heavy or optional dependencies only when building
-        # the index so the webserver startup remains fast.
-        try:
-                print("[BUILD] Importing llama-index components", flush=True)
-                sys.stdout.flush()
-                from llama_index.embeddings.huggingface import (
-                    HuggingFaceEmbedding,
-                )
-                from llama_index.llms.openai import OpenAI as LlamaOpenAI
-                # Prefer OpenAI embedding adapter when available so the server
-                # uses the same embedding model as the ingestion pipeline
-                try:
-                    from llama_index.embeddings.openai import OpenAIEmbedding
-                    print("[BUILD] OpenAI embedding adapter imported successfully", flush=True)
-                    sys.stdout.flush()
-                except Exception:
-                    print("[BUILD] OpenAI embedding adapter not available", flush=True)
-                    sys.stdout.flush()
-                    OpenAIEmbedding = None
-                from llama_index.vector_stores.pinecone import PineconeVectorStore
-                print("[BUILD] All llama-index imports completed", flush=True)
-                sys.stdout.flush()
-        except ImportError as exc:  # pragma: no cover - import guard
-            print(f"[BUILD] Import error: {exc}", flush=True)
-            sys.stdout.flush()
-            raise ImportError(
-                "Missing llama-index extras for embedding/vector-store. Install 'llama-index-embeddings-huggingface' and 'llama-index-vector-stores-pinecone'"
-            ) from exc
-
-        # (Re)import pinecone here to fail gracefully at build time rather than import time
-        global Pinecone, ServerlessSpec
-        if Pinecone is None:
-            print("[BUILD] Importing pinecone client", flush=True)
-            sys.stdout.flush()
-            try:
-                from pinecone import Pinecone as _Pinecone, ServerlessSpec as _ServerlessSpec  # type: ignore
-                Pinecone, ServerlessSpec = _Pinecone, _ServerlessSpec
-                print("[BUILD] Pinecone client imported successfully", flush=True)
-                sys.stdout.flush()
-            except Exception as e:
-                print(f"[BUILD] Pinecone import failed: {e}", flush=True)
-                sys.stdout.flush()
-                raise RuntimeError(
-                    "Missing optional dependency 'pinecone'. Install it via 'pip install pinecone'."
-                ) from e
+        
+        # Check if required pre-imported modules are available
+        if not PINECONE_AVAILABLE:
+            raise RuntimeError("Pinecone client not available - failed at startup")
+        if not OPENAI_LLM_AVAILABLE:
+            raise RuntimeError("OpenAI LLM not available - failed at startup")
+        if not (OPENAI_EMBEDDING_AVAILABLE or HF_EMBEDDING_AVAILABLE):
+            raise RuntimeError("No embedding models available - failed at startup")
 
         # Configure LLM and embedding model for index build
         print(f"[BUILD] Configuring LLM with OpenAI key: {OPENAI_API_KEY[:10] if OPENAI_API_KEY else 'None'}...", flush=True)
         sys.stdout.flush()
-        Settings.llm = LlamaOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
+        Settings.llm = OpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
         print("[BUILD] LLM configured successfully", flush=True)
         sys.stdout.flush()
         
         # Prefer the OpenAI embedding adapter (text-embedding-3-small -> 1536 dims)
-        print(f"[BUILD] Configuring embeddings. OpenAI available: {OpenAIEmbedding is not None}, API key present: {OPENAI_API_KEY is not None}", flush=True)
+        print(f"[BUILD] Configuring embeddings. OpenAI available: {OPENAI_EMBEDDING_AVAILABLE}, API key present: {OPENAI_API_KEY is not None}", flush=True)
         sys.stdout.flush()
-        if OpenAIEmbedding is not None and OPENAI_API_KEY:
+        if OPENAI_EMBEDDING_AVAILABLE and OPENAI_API_KEY:
             try:
                 print("[BUILD] Attempting to initialize OpenAI embeddings", flush=True)
                 sys.stdout.flush()
@@ -233,18 +253,18 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
                 sys.stdout.flush()
                 # if the OpenAI adapter is present but initialization fails,
                 # fall back to the HF embedding to keep the server usable
-                if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1":
+                if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1" and HF_EMBEDDING_AVAILABLE:
                     print("[BUILD] Falling back to HuggingFace model (ORACULAI_ALLOW_HF_EMBED=1)", flush=True)
                     sys.stdout.flush()
                     Settings.embed_model = HuggingFaceEmbedding(
                         model_name="sentence-transformers/all-MiniLM-L6-v2"
                     )
                 else:
-                    print("[BUILD] HF fallback disabled. No embedding model configured.", flush=True)
+                    print("[BUILD] HF fallback disabled or unavailable. No embedding model configured.", flush=True)
                     sys.stdout.flush()
                     Settings.embed_model = None # Explicitly disable embeddings
         else:
-            if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1":
+            if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1" and HF_EMBEDDING_AVAILABLE:
                 print("[Embed] Using HuggingFace model (ORACULAI_ALLOW_HF_EMBED=1)")
                 Settings.embed_model = HuggingFaceEmbedding(
                     model_name="sentence-transformers/all-MiniLM-L6-v2"
