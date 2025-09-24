@@ -2,13 +2,14 @@
 # See https://render.com/docs/deploy-your-service
 services:
   - type: web
-    name: oraculai-latest
+    name: oraculai-direct
     env: docker
+    repo: https://github.com/Belquer/OraculAI.git
     dockerContext: .
     dockerfilePath: deploy/Dockerfile
     plan: free
     branch: main
-    buildCommand: 'echo "FORCE REBUILD 2025-09-24T03:15:00Z"'
+    buildCommand: 'echo "DIRECT BUILD 2025-09-24T03:20:00Z - Building from GitHub repo"'
     startCommand: 'gunicorn --bind 0.0.0.0:$PORT deploy.app:app --workers 1 --timeout 120 --log-level debug --access-logfile - --error-logfile -'
     autoDeploy: true
     envVars:
