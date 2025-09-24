@@ -5,7 +5,6 @@ aiosqlite==0.21.0
 annotated-types==0.7.0
 anyio==4.10.0
 attrs==24.2.0
-banks==2.2.0
 beautifulsoup4==4.12.3
 blinker==1.9.0
 certifi==2024.8.30
@@ -43,7 +42,7 @@ llama-index-indices-managed-llama-cloud==0.9.4
 llama-index-instrumentation==0.4.1
 llama-index-llms-openai==0.5.6
 llama-index-readers-file==0.5.1
-llama-index-readers-llama-parse==0.6.0
+llama-index-readers-llama-parse==0.5.1
 llama-index-vector-stores-pinecone==0.7.1
 llama-index-workflows==2.2.2
 llama-parse==0.6.54
