@@ -854,12 +854,14 @@ def refresh_index():
     print("[REFRESH] Authentication passed, attempting index build", flush=True)
     sys.stdout.flush()
     
+    # Declare global variables at the top before any assignments
+    global index, query_engine, engine_backend
+    
     # Memory-safe mode for Render: bypass heavy operations
     render_mode = os.environ.get("RENDER") == "true" or os.environ.get("ORACULAI_RENDER_MODE") == "1"
     if render_mode:
         print("[REFRESH] Render mode detected - using lightweight bypass to avoid memory limits", flush=True)
         sys.stdout.flush()
-        global query_engine, engine_backend
         # Create a minimal stub that prevents DEV fallback without heavy operations
         query_engine = type('MinimalEngine', (), {
             'query': lambda self, q: type('Response', (), {
@@ -876,7 +878,6 @@ def refresh_index():
             "mode": "minimal"
         }, 200
     
-    global index, query_engine
     try:
         print("[REFRESH] Calling _build_index_and_engine()", flush=True)
         sys.stdout.flush()
