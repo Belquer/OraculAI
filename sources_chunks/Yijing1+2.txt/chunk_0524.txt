@@ -1,0 +1,165 @@
+"
+er2
+ 1756 06.2 and, while, but
+gang1
+ 3268 03.T the firm, strong, resolute; firmness
+de2
+ 6161 02.0 gain, secure, find, occupy, claim (s) 61.T
+zhong1
+ 1504 03.3 the center, middle, mean; balance "
+   P ku3
+ bitter
+jie2
+ limitations
+bu4
+ do not
+ke3
+ invite
+zhen1
+ commitment
+   * qi2
+ 0525 02.6 this, that; such a; one’s (own) 60.6x
+dao4
+ 6136 09.1 way, course, path; principle, truth "
+qiong2
+ 1247 02.6x (is) exhausted, over; (dead) ends, runs out "
+   P yue4
+ 5939 17.T pleasure, enjoyment, satisfaction, persuasion
+yi3
+ 2932 04.1 (along) with; uses; behind; through
+xing2
+ 2754 11.2 action, behavior, conduct, movement
+xian3
+ 2689 29.2 (at, in, through) risk, hazard, peril, crisis
+   * dang1
+ 6087 05.6x (a, an, the) appropriate, proper, fitting, due
+wei4
+ 7116 45.5 place, position, attitude, context, situation
+yi3
+ 2932 04.1 for; to use, utilize, apply, consider, have
+jie2
+ boundaries
+   * zhong1
+ 1504 03.3 in the center, middle; central, balanced  06.T
+zheng4
+ 0351 25.0 (and) correct, (up)right, principled, true "
+yi3
+ 2932 04.1 in order; thereby, thus; (a, the) way, means
+tong1
+ 6638 11.T 60.1x to follow, pass through; interact, penetrate
+381
+
+   P tian1
+ 6361 01.5 heaven, the sky, celestial
+di4
+ 6198 36.6 (and) (the) earth, land, ground, terrestrial
+jie2
+ (are) constrained
+er2
+ 1756 06.2 and (so, thus); with this
+si4
+ 5598 16.T F (the) four
+shi2
+ 5780 54.4 seasons
+cheng2
+ 0379 02.3 (are) complete(d), accomplished; take place
+   * jie2
+ boundaries
+yi3
+ 2932 04.1 serve, help; (are) (a, the) way, means
+zhi4
+ 0986 32.5x 60.X to define, govern, regulate, tailor, trim
+du4
+ 6504 53+6 60.X (the) measures, degrees, rules, laws, limits
+   * bu4
+ 5379 02.2 (but) without, with no; not with; avoiding
+shang1
+ 5666 08.3x F damage, distress, harm to; encroachment on
+cai2
+ 6662 11.X F property, resources, wealth, possessions, value
+   * bu4
+ 5379 02.2 (and) without, with no; not with; avoiding
+hai4
+ 2015 14.1 F harm, injury, grievance, damage, suffering to
+min2
+ 4508 03.1x (the) people, public, multitude; humanity
+60.X
+ Da Xiang
+   * ze2
+ 0277 10.X ^ (the) lake, pool, pond, marsh
+shang4
+ 5669 40.6 above, over, atop, on top of v
+you3
+ 7533 01.6 is, there is
+shui3
+ 5922 06.X water
+   * jie2
+ 0795 60.0 boundaries
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+zhi4
+ 0986 32.5x F defines, governs, regulates, tailors, trims
+shu3
+ 5865 66+11 HL (the) number, quantity, allotment (s) +
+du4
+ 6504 60.T F (and) measure, degree, rule, law, limit (s)
+   * yi4
+ 3006 149+13 61.x (and) discuss, deliberate, consider, weigh (s)
+de2
+ 6162 06.3 (the) virtue, merit (s); character, nature
+xing2
+ 2754 11.2 (and) (of) (an) action; (a) behavior; conduct
+60.1
+ Chu Jiu , 1st 9  (Zhi Gua 29: Kan, Exposure)
+   * bu4
+ 5379 02.2 not, without; does, will not; (to) avoid(ing)
+chu1
+ 1409 05.4 go(ing) out, past, beyond; leave, depart (ing)
+hu4
+ 2180 06.2 F (the) door, gate (way) (to, into); ^gate, door
+ting2
+ 6405 36.4 60.2 (the) chamber, court, courtyard (v)
+   * wu2
+ 7180 01.3 60.3 no; not; nothing; without; making no
+jiu4
+ 1192 01.3 60.3 blame; (is) wrong; (a) mistake, (an) error (s)
+382
+
+60.1x
+ Xiao Xiang  (Fan Yao 29.1: twice the exposure, into canyon’s inner chamber)
+   S bu4
+ not
+chu1
+ going past
+hu4
+ (the) door (to)
+ting2
+ (the) courtyard
+   * zhi1
+ 0932 19.5 64.1x know, understand, recognize (ing) (that)
+tong1
+ 6638 11.T F follow through, free course, interaction
+se4
+ 5446 50.3 F (is, to be) impair, block, hinder, impede (d)
+60.2
+ Jiu Er , 9 2nd  (Zhi Gua 03: Zhun, Rallying)
+   * bu4
+ 5379 02.2 not, without; does, will not; (to) avoid(ing)
+chu1
+ 1409 05.4 go(ing) out, past, beyond; leave, depart (ing)
+men2
+ 4418 13.1 F (the) door, gate (way) (from); ^ door, gate
+ting2
+ 6405 36.4 F (the) chamber, court, courtyard (v)
+   * xiong1
+ 2808 03.5 unfortunate, disappointing, untimely
+60.2x
+ Xiao Xiang  (Fan Yao 03.2: ready suitor to wait ten years for young lady)
+   S bu4
+ not
+chu1
+ goin

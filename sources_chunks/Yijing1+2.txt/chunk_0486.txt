@@ -1,0 +1,171 @@
+1.0 fulfillment, satisfaction, success, completion
+   * wang2
+ 7037 02.3 (the) sovereign, king, ruler 55.0
+jia3
+ 0599 37.5 55.0 comes, draws near to; approaches, adopts  "
+you3
+ 7533 01.6 his "
+miao4
+ 4473 53+12 59.0 (ancestral) temple, shrine 59.0
+   * li4
+ 3867 01.0 worthwhile, rewarding, productive 57.0
+jian4
+ 0860 01.2 to see, encounter, meet with, consult "
+da4
+ 5943 01.2 (a, the) mature, complete, realized, great "
+ren2
+ 3097 01.2 human being, character, one, person, man "
+   * heng1
+ 2099 01.0 make (ing) (a, an, the) offering, sacrifice
+   * li4
+ 3867 01.0 worthwhile, rewarding, beneficial 50.5
+zhen1
+ 0346 01.0 to be persistent, loyal, dedicated, steadfast "
+   * yong4
+ 7567 01.1 to use, try, dedicate, perform, present, offer
+da4
+ 5943 01.2 great, big, large, major, important
+sheng1
+ 5739 93+5 HL sacrifices(ificial) beasts, animals (livestock)
+ji2
+ 0476 01.7 (is) promising, auspicious, opportune, timely
+   * li4
+ 3867 01.0 worth(while), reward(ing), benefit(icial 57.0
+you3
+ 7533 01.6 (to) have, find, take on; (if) there is "
+you1
+ 7519 02.0 somewhere; (a) place, direction, purpose "
+wang3
+ 7050 02.0 to go, move towards; in going; ahead "
+45.T
+ Tuan Zhuan
+   P cui4
+ collectedness
+   * ju4
+ 1581 128+8 45.T (is, means) to congregate, gather, collect
+   S shun4
+ 5935 02.T agree(ment), accept, comply (ing, ance)
+yi3
+ 2932 04.1 with, behind, through; by way, means of
+yue4
+ 5939 17.T satisfaction, enjoyment, pleasure, persuasion
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness 46.T
+zhong1
+ 1504 03.3 (is) central, balanced, in the middle "
+er2
+ 1756 06.2 and (also) "
+ying4
+ 7477 02.T (cor)responds (ive), resonates (ant) "
+   * gu4
+ 3455 39.2 55.T co nsequently, therefore, thus, hence
+ju4
+ 1581 45.T 45.T congregation, gathering together, collecting
+   P wang2
+ (the) sovereign
+jia3
+ approaches
+you3
+ his
+miao4
+ temple
+296
+
+   * zhi4
+ 0984 05.3 47.X to carry out, transmit, convey, fulfill
+xiao4
+ 2601 39+4 HL (the) filial (to honor one’s parents)
+xiang3
+ 2552 41.0 50.T offering, sacrifice
+   S li4
+ rewarding
+jian4
+ to encounter
+da4
+ (a) mature
+ren2
+ human being
+heng1
+ making (an) offering
+   * ju4
+ 1581 45.T 45.T congregate(centrate); come (ing) together
+yi3
+ 2932 04.1 with, through; by way, means of
+zheng4
+ 0351 25.0 uprightness, integrity, correctness, rectitude
+   S yong4
+ to offer
+da4
+ great
+sheng1
+ sacrifices
+ji2
+ (is) promising
+   * li4
+ worthwhile
+you3
+ to have
+you1
+ somewhere
+wang3
+ to go
+   * shun4
+ 5935 02.T agree, comply with; accept, yield (ing) (to)
+tian1
+ 6361 01.5 heaven’s, the sky’s, celestial
+ming4
+ 4537 06.4 (higher) law, order, mandate, charge, course
+   P guan1
+ 3575 20.0 F observe, look to, study, comprehend 27.T
+qi2
+ 0525 02.6 the, this, one’s "
+suo3
+ 5465 06.1 function, role, place of; reason to "
+ju4
+ 1581 45.T F congregate, gather, collect (ing) (together)
+   * er2
+ 1756 06.2 and (then); with this; then
+tian1
+ 6361 01.5 heaven, the sky, celestial
+di4
+ 6198 36.6 (and) (the) earth, land, ground, terrestrial
+wan4
+ 7030 01.T (and) (the) myriad, ten thousand; all of  54.T
+wu4
+ 7209 01.T beings, creatures, things;              creation "
+zhi1
+ 0935 02.0 come(s) to have, arrive at; will now have 31.T
+qing2
+ 1170 31.T F quality, nature, tendency, inclination (s) "
+ke3
+ 3381 02.3 (which) can, may (then) be; permit, invite "
+jian4
+ 0860 01.2 seen, observed, met;               ^  sight, vision "
+yi3
+ 2938 05.T plainly, simply, in simplicity; plain, simple v "
+297
+
+45.X
+ Da Xiang
+   * ze2
+ 0277 10.X (a, the) lake, pool, pond, marsh
+shang4
+ 5669 40.6 (is) raised, elevated, lifted, brought up
+yu2
+ 7643 05.X 55.T upon, over, above, atop, on top of
+di4
+ 6198 36.6 (the) earth, ground, land
+   * cui4
+ 6880 45.0 collectedness
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+chu2
+ 1391 170+7 HL sets, puts aside, away; makes ready, caches +
+rong2
+ 3181 13.3 F weapons, weaponry, arms, armaments
+qi4
+ 0549 30+13 HL (and) tools, implem

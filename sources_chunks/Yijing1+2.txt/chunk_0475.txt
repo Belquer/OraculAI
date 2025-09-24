@@ -1,0 +1,187 @@
+pose "
+wang3
+ 7050 02.0 to go, move towards; in going; ahead "
+   * he2
+ 2122 73+5 HL how; what, when, where
+zhi1
+ 0935 02.0 is this; is, will be
+yong4
+ 7567 01.1 41.0 (to be) applied? practiced? carried out?
+   * er4
+ 1751 7+0 31.T two; a couple, pair of
+gui3
+ 3633 29.4 F (small, simple, plain) rice baskets; “gui” tureens
+ke3
+ 3381 02.3 could, may, might be (sufficient) 48.3
+yong4
+ 7567 01.1 presented, offered, consecrated, used " 42.2
+xiang3
+ 2552 8+6 42.2 (as, for, in) (an, the) offering, sacrifice "   "
+41.T
+ Tuan Zhuan
+   P sun3
+ decreasing
+   * sun3
+ decreasing
+xia4
+ 2520 57.2 below; (the) low(ly), humble, subordinate
+yi4
+ 3052 41.2 (and, while, to) increase(ing)
+shang4
+ 5669 40.6 above; (the) high, superior, best
+   * qi2
+ 0525 02.6 the, this, such a; one’s (own), its
+dao4
+ 6136 09.1 way, course, path, nature, principle, process
+shang4
+ 5669 40.6 ^    upwards; elevate, lifts, improve (s)   50.T
+xing2
+ 2754 11.2 acts, moves v; action, behavior, conduct "
+   P sun3
+ decreasing
+er2
+ 1756 06.2 and (also, still, yet); (even) while (also)
+you3
+ holding
+fu2
+ true
+   * yuan2
+ (is) (an) outstanding
+ji2
+ opportunity
+272
+
+   * wu2
+ nothing
+jiu4
+ (is) wrong
+   * ke3
+ (but it) calls for
+zhen1
+ persistence
+   * li4
+ worthwhile
+you3
+ to have
+you1
+ somewhere
+wang3
+ to go
+   * he2
+ how
+zhi1
+ is this
+yong4
+ applied?
+   * er4
+ two
+gui3
+ (small) rice baskets
+ke3
+ may be
+yong4
+ used for
+xiang3
+ the offering
+   * er4
+ two
+gui3
+ (small) rice baskets
+ying4
+ 7477 02.T ^(cor)respond, correlate, resonate, agree ^
+you3
+ 7533 01.6 will, would v                                   with, to
+shi2
+ 5780 54.4 (the) time (ing, liness), opportunity, season
+   * sun3
+ decreasing
+gang1
+ 3268 03.T the firm, strong, resolute; firmness
+yi4
+ 3052 41.2 to increase
+rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+you3
+ 7533 01.6 presumes, assumes, takes
+shi2
+ 5780 54.4 (opportune) timing, timeliness
+   * sun3
+ decrease
+yi4
+ 3052 41.2 (and) increase
+ying2
+ 7474 08.1 (are, mean) excess, surplus, overflow
+xu1
+ 2821 46.3 54.6x (and) want, lack, emptiness
+   * yu3
+ 7615 61.2 sharing, in concert with, interacting in 42.T
+shi2
+ 5780 54.4 (the) time, timing, season(s), opportunity "
+jie1
+ 0621 9+9 42.T ^ together, jointly, as a pair, in unison, accord "
+xing2
+ 2754 11.2 (and) act, behave, move, function (ing) v "
+41.X
+ Da Xiang
+   * shan1
+ 5630 17.6 ^                            (a, the) mountain
+xia4
+ 2520 57.2 below, beneath; at the base, foot of v
+you3
+ 7533 01.6 is, there is
+ze2
+ 0277 10.X (a, the) lake, pool, pond, wetland, marsh
+273
+
+   * sun3
+ 5548 41.0 decreasing
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+cheng2
+ 0384 61+15 HL corrects, curbs, rectifies, precludes, rules out
+fen4
+ 1854 61+4 HL hard feeling, ill will, resentment, indignity (s)
+zhi4
+ 0994 06.0 F (and) controls, contains, resists, restrains
+yu4
+ 7671 27.4 F desires, temptations, passions, cravings
+41.1
+ Chu Jiu , 1st 9  (Zhi Gua 04: Meng, Inexperience)
+   * ji3
+ 0429 49+0 HL one’s (own), personal, private
+shi4
+ 5787 02.3 affairs, concerns, tasks, endeavors, business
+chuan2
+ 1444 162+9 41.4 (are) rushed, hurried, cut short, abbreviated
+wang3
+ 7050 02.0 to go; in going, pass (ing, ed by); (and) left behind
+   * wu2
+ 7180 01.3 41.4 no; not, nothing; without;         no ^ (is) done
+jiu4
+ 1192 01.3 41.4 blame; (is) wrong; (a) mistake; v harm       v
+   * zhuo2
+ 1257 164+3 HL (but) weigh, consider, think about, ponder
+sun3
+ 5548 41.0 41.2 decreasing, doing less; (the) losses; ^(a) loss
+zhi1
+ 0935 02.0 (of) this;                       here;             this as v
+41.1x
+ Xiao Xiang  (Fan Yao 04.1: discipline to remove fetters, not to continue)
+   S ji3
+ one’s (own)
+shi4
+ affairs
+chuan2
+ (are) rushed
+wang3
+ (and) passed by
+   * shang4
+ 5670 06.T value, respect, appreciate, prize, treasure
+he2
+ 2117 01.T 46.1x (a, an) join, combine, integrate (ing, ation)
+zhi4
+ 0971 03.1x (of) purposes, aims, goals, objective

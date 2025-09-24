@@ -1,0 +1,60 @@
+e Wing set is often far wide of the real Zhouyi, although even its
+wilder speculations offer interesting structural refinements and insights. But most of al
+l
+these “elements [simply] function as a commentary starting point.” (Fendos. p. 132). In
+the Yiweishu set, according to Shaughnessy’s thesis:
+The two centuries of the Eastern Han marked the first documented fluorescence of
+Yijing scholarship. The works of [Ma Rong, Zheng Xuan, Xun Shuang, Lu Ji and Yu Fan ]
+fully developed the exigetical techniques of trigram symbolism (ba gua), line position (yao
+wei) and line virtue (yao de ) already incipient in the Tuan [Zhuan] and Xiang canonical
+commentaries. In addition, such new principles as ‘rising and falling lines’ ( sheng jiang),
+hexagrammatic changes (gua bian), internal forms (hu ti) and semi-images (ban xiang) gave
+to the basic hexagram structure a virtually infinite malleability by which these scholiasts
+could reconcile every aspect of the Yijing with a systematically integrated view of the world.
+p. 4 [Here Shaughnessy refers the reader to further study: Qu Wanli, Xianqin Han Wei Yili
+shuping, 1969, pp. 77-149 and Gao Huaimin, Liang-Han Yixue shi, 1970].
+A large number of the Yiweishu and the Post-Han dimensions are omitted here,
+many simply from my own ignorance of their existence and some for their irrelevance, not
+to Chinese culture, but to the historical construction of the Yijing. Among the latter are the
+Five Agents ( Wu Xing ), the Ten Celestial Stems (Shi Tian G an ), the Twelve Earthly
+Branches (Shi Er Di Zhi , touched upon here), the Twenty Eight Houses or Constellations
+(Er Shi Ba Gong or Xiu), the Luo River Diagram (Luo Shu, though anticipated in the XCZ),
+the Yellow River Map (He Tu ), the Five Notes (Wu Yin), the Twelve Pipe Pitches (Shi E r
+Lu) and the Xiang Shu auguristic systems of Cai Yi (concerning natural phenomena) and
+Gua Qi (concerning cyclical patterns in Time and Nature, especially calendars).
+2
+
+The traditional linear sequence of the chapters (Gua Xu), called the Hou Tian, Wen
+Wang or the Later Heaven Sequence, is practically useless in structural analysis and, as
+suggested earlier, this uselessness may have been deliberate. Far more useful here is the
+Xian Tian or the Primal Heaven Sequence, which was probably never even seen until Shao
+Yong (1011-1077) of the Song dynasty. Even this sequence does not display the beauty of
+the Yi’s structure until it is arranged in its Ba Gong  or Eight House Arrangement. This is
+because the Yi, even from the beginning, never was a lineal sequence: it was a geometry, one
+which sought, however unconsciously, whatever could be read into the formula:
+(A + B) + (A+B) 2 + (A+B) 3 + (A+B) 6 =
+A + B + A 2 + 2AB + B 2 + A3 + 3A2B + 3AB 2 + B3
++ A6 + 6A5B + 15A 4B2 + 20A3B3 + 15A2B4 + 6AB5+ B6
+or into the binary matrix:
+ox
+oxox
+ooxx
+oxoxoxox
+ooxxooxx
+ooooxxxx
+oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox
+ooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxxooxx
+ooooxxxxooooxxxxooooxxxxooooxxxxooooxxxxooooxxxxooooxxxxooooxxxx
+ooooooooxxxxxxxxooooooooxxxxxxxxooooooooxxxxxxxxooooooooxxxxxxxx
+ooooooooooooooooxxxxxxxxxxxxxxxxooooooooooooooooxxxxxxxxxxxxxxxx
+oooooooooooooooooooooooooooooxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+These two expressions contain, by implication, the entire skeletal superstructure of the
+Yijing and its many dimensions (in this analogy, the Yi Li dimensions may be seen as the
+flesh). They also contain the grammatical structure of the Yijing as a language. Iulian
+Shchutskii had an interesting take on looking backwards at the structures of the Yijing with
+more modern understanding:
+If we speak of beehives, then we must mention t hat their cells are in hexagonal
+sections. This is a concept of geometry, but no one will suspect us of an inclination to
+ascribe to the bees a knowledge of geometry. If the representatives of a culturally backward
+people know how to construct huts out of logs, this still does not mean that they have a
+know

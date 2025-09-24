@@ -1,0 +1,158 @@
+1 10.5 treading, stepping, walking (on, upon)
+hu3
+ 2161 10.0 27.4 (a, the) tiger’s
+wei3
+ 7109 10.0 33.1 tail
+   * su4
+ 5494 61+10 10.4 pleading, appealing;         caution; please (oh)
+su4
+ 5494 10.4 F (a nd) pleading, appealing; prudence; please
+zhong1
+ 1500 01.3 (will) end, conclude, result (s) (in, with) 22.5
+ji2
+ 0476 01.7 promise, hope, good fortune; happily "
+10.4x 
+ Xiao Xiang  (Fan Yao 61.4: moon approaches full, the team horse runs away)
+   S su4
+ pleading
+su4
+ (and) appealing
+zhong1
+ will end in
+ji2
+ good fortune
+   * zhi4
+ 0971 03.1x (the) aim, intention, purpose (s) 12.4x
+xing2
+ 2754 11.2 (is, are) carried out, advanced "
+10.5
+ Jiu Wu , 9 5th  (Zhi Gua 38: Kui, Estrangement)
+   * guai4
+ 3535 37+1 43.0 determined; decisive, resolute, serious (ly)
+lu3
+ 3893 02.1 10.6 tread, steps; treading, stepping
+   * zhen1
+ 0346 01.0 persistence, firmness, focus; to persist 21.5
+li4
+ 3906 01.3 18.1 (is) stressful, dangerous, rigorous, difficult "
+110
+
+10.5x
+ Xiao Xiang  (Fan Yao 38.5: their kind eats flesh, in going what error?)
+   S guai4
+ decisive
+lu3
+ steps,
+zhen1
+ persistence
+li4
+ (is) stressful
+   * wei4
+ 7116 45.5 (the) place, position, attitude, dignity 12.5x
+zheng4
+ 0351 25.0 (is) correct, (up)right, valid "
+dang1
+ 6087 05.6x 12.3x (and) appropriate, proper, suited "
+10.6
+ Shang Jiu , Top 9  (Zhi Gua 58: Dui, Satisfaction)
+   * shi4
+ 5789 10.3 27.4 study, examine, look at, observe (ing)
+lu3
+ 3893 02.1 30.1 (the) (foot)steps, conduct, performance
+kao3
+ 3299 125+2 18.1 (and) examine, investigate, inspect (ing)
+xiang2
+ 2577 113+6 47.3x (the) omens, signs, portents, forms, patterns
+   * qi2
+ 0525 02.6 11.1 (if, when, where) they, these, one has
+xuan2
+ 2894 70+7 HL come full circle; (make, made) a circuit
+yuan2
+ 7707 01.0 supreme, extreme; most, supremely 11.5
+ji2
+ 0476 01.7 good fortune;        promising, auspicious "
+10.6x
+ Xiao Xiang  (Fan Yao 58.6: drawn by satisfaction)
+   S yuan2
+ supreme
+ji2
+ good fortune
+zai4
+ 6657 01.2 at, on
+shang4
+ (the) top
+   * da4
+ 5943 01.2 (a) (success)fully, well-; great 27.6x
+you3
+ 7533 01.6 earned, claimed;              gains "
+qing4
+ 1167 55.5 26.5x reward;           (and) rewards, congratulations "
+10.m li3 3886 34.X propriety, manners, courtesy, respect
+10.xc de2 6162 06.3 character, virtue
+zhi1 0935 02.0 ...’s
+ji1 0399 32+8 basis, foundation, ground, settlement
+   * he2 2115 58.1 harmony, responsiveness, concordance
+er2 1756 06.2 and
+zhi4 0982 02.1 consummation, attainment
+   * yi3 2932 04.1 uses; the use, application of
+he2 2115 58.1 harmonious, responsive, concordant
+xing2 2754 11.2 conduct, behavior, action, movement
+10.xg li3 3886 34.X propriety, manners, courtesy, respect
+10.zg bu4 5379 02.2 does not
+chu3 1407 09.6 rest, abide, settle, stay, relax, keep still
+111
+
+11.M
+ TAI4  (6023):  INTERPLAY
+11.0 Gua Ci Binary 111 000, Decimal 56
+   * tai4
+ 6023 85+5 11.X interplay, harmony; harmonizing, flourishing
+   * xiao3
+ 2605 03.5 12.0 smallness, the small, common, mediocre
+wang3
+ 7050 02.0 11.3 depart, go, leave (s); move, pass (es) on
+da4
+ 5943 01.2 (while, as) greatness, the great, important
+lai2
+ 3768 05.6 12.0 arrive, come, approach, emerge (s)
+   * ji2
+ 0476 01.7 promise, good fortune, opportunity
+heng1
+ 2099 01.0 (and, of, for) fulfillment, satisfaction, success
+11.T
+ Tuan Zhuan
+   P tai4
+ interplay
+   * xiao3
+ smallness
+wang3
+ departs,
+da4
+ greatness
+lai2
+ arrives,
+ji2
+ (with) promise
+heng1
+ (and) fulfillment
+   * ze2
+ 6746 04.0 (as, when) ^occurs; (the) order here(in) 12.T
+shi4
+ 5794 62.6 12.T v              this       v; is that, is (so, this): "
+tian1
+ 6361 01.5 heaven, the sky, celestial
+di4
+ 6198 36.6 (and) (the) earth, land, ground, terrestrial
+jiao1
+ 0702 14.1 interact, unite, (inter)relate, combine, mingle
+er2
+ 1756 06.2 and (so, then, thus)
+wan4
+ 7030 01.T (the) myriad, ten thousand; all of 12.T
+wu4
+ 7209 01.T beings, creatures, things;    creation "
+tong1
+ 6638 162+7 12.T communicate, circulate, interconnect (s)
+   S shang4
+ 5669 40.6 (those) above; high, superior 12.T
+xi

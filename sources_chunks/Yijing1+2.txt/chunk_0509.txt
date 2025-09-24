@@ -1,0 +1,164 @@
+feathers
+ke3
+ (are) worthy
+yong4
+ (of) use
+wei2
+ (in) performing
+yi2
+ (the) sacred dance
+ji2
+ (is) promising
+346
+
+   * bu4
+ 5379 02.2 not (being); dis-; un-;                     (be) im-
+ke3
+ 3381 02.3 inclined, likely, about to; admitting; ^-able
+luan4
+ 4220 45.1 F (be) confused, distracted (ion);    perturb v
+53.xg jin4 1091 20.3 advance; (forward, making) progress
+53.zg nu3 4776 03.2 (a, the, this) (young) woman’s, maiden’s
+gui1 3617 06.2 marriage, engagement, homecoming
+dai4 6002 39.1x awaits, waits for, expects, bides time until
+nan2 4619 31.T (a, the, this) (young) man’s, bachelor’s
+xing2 2754 11.2 advance, initiative, move(ment), action (s)
+347
+
+54.M
+ GUI1  MEI4 (3617,4410):  LITTLE  SISTER’S  MARRIAGE
+54.0 Gua Ci Binary 110 100, Decimal 52
+   * gui1
+ 3617 06.2 54.1 ^marriage, betrothal;      marrying, engaging
+mei4
+ 4410 11.5 54.1 little sister’s v;  (the) maiden, youngest sister
+   * zheng1
+ 0352 09.6 to expedite; press, go boldly (forward)  64.3
+xiong1
+ 2808 03.5 (is) unfortunate, inauspicious; has pitfalls   "
+   * wu2
+ 7180 01.3 54.6 (this is) no, not: (this) lacks, has no 54.6
+you1
+ 7519 02.0 (a) direction, purpose; (an) aim, orientation "
+li4
+ 3867 01.0 with merit, of value, with rewards "
+54.T
+ Tuan Zhuan
+   P gui1
+ ^     marriage
+mei4
+ little sister’s v
+   * tian1
+ 6361 01.5 heaven, the sky, celestial
+di4
+ 6198 36.6 (and) (the) earth, land, ground, terrestrial
+zhi1
+ 0935 02.0 ...’s; in, with their; have (a, their)
+da4
+ 5943 01.2 gr eat, noble; ^full, complete, whole (ness)
+yi4
+ 3002 05.T principle, meaning, rightness (s) (in, of) (v)
+   S tian1
+ 6361 01.5 (if, when, where) heaven, the sky
+di4
+ 6198 36.6 (and) (the) earth, land, ground
+bu4
+ 5379 02.2 do not, did not, could not, fail to
+jiao1
+ 0702 14.1 unite, engage, interact, communicate, mingle
+er2
+ 1756 06.2 then; and so, thus
+wan4
+ 7030 01.T (the) myriad, ten thousand; all of 01.T
+wu4
+ 7209 01.T beings, creatures, things;     creation "
+bu4
+ 5379 02.2 do(es) not, would not, could not
+xing1
+ 2753 13.3 F arise, rise up, come to be, prosper, flourish
+   * gui1
+ ^      marriage
+mei4
+ little sister’s v
+   * ren2
+ 3097 01.2 (is) (a) human(ity, kind), person, somebody
+zhi1
+ 0935 02.0 ...’s; (in, at, with) its, their
+zhong1
+ 1500 01.3 end, closure, completion, conclusion
+shi3
+ 5772 01.T F (and) beginning, initiation, origin, renewal
+   P yue4
+ 5939 17.T satisfaction, pleasure, enjoyment, persuasion
+yi3
+ 2932 04.1 with, behind, by; in order; as (a) way, means
+dong4
+ 6611 47.6 movement, activity, energy; to move, act
+   * suo3
+ 5465 06.1 (is) (the) position, purpose, reason (of, for)
+gui1
+ ^      marriage
+mei4
+ little sister’s v
+   P zheng1
+ to go boldly
+xiong1
+ (is) inauspicious
+348
+
+   * wei4
+ 7116 45.5 (the) place, position, attitude, dignity 55.4x
+bu4
+ 5379 02.2 is not; in-; im-; less than "
+dang1
+ 6087 05.6x appropriate, proper, suited "
+   S wu2
+ not
+you1
+ (a) direction
+li4
+ (with) merit
+   * rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility, softness
+cheng2
+ 0398 03.2 59.T re lies on, upon; takes advantage of 03.2x
+gang1
+ 3268 03.T the firm, strong, resolute; firmness "
+54.X
+ Da Xiang
+   * ze2
+ 0277 10.X ^  (a, the) lake, pool, pond, marsh
+shang4
+ 5669 40.6 above, over, atop, across v
+you3
+ 7533 01.6 is, there is
+lei2
+ 4236 03.T (the) thunder
+   * gui1
+ 3617 06.2 ^     marriage
+mei4
+ 4410 11.5 little sister’s v
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 with, through; uses, makes use of, applies
+yong3
+ 7589 02.7 F enduring, lasting, sustained, far reaching
+zhong1
+ 1500 01.3 ends, goals, conclusions, outcomes, results
+zhi1
+ 0932 19.5 60.1x (to) know, understand, recognize (s)
+bi4
+ 5101 48.2 F (the) unworthy, ephemeral; disintegration +
+54.1
+ Chu Jiu , 1st 9  (Zhi Gua 40: Jie, Release)
+   * gui1
+ 3617 06.2 54.3 ^            marries, (is) engaged, betrothed
+mei4
+ 4410 11.5 54.3 (the) maiden; little, young(er, est) sister v
+yi3
+ 2932 04.1 as, to be (a, the)
+di4
+ 6202 38+7 54.3 se cond, youn

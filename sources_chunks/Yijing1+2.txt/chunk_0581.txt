@@ -1,0 +1,202 @@
+89 550a
+yi1 2990 550f
+yi2 2995 540m
+yi4 2999 395d
+yi2 3003 2u
+yi4 3006 2v
+yi4 3008 338a
+yi4 3009 954a
+yi4 3013 537a
+yi3 3017 505a
+yi4 3018 918a
+yi4 3042 957e
+yin1 7418 653a
+yin1 7423 448a
+yin2 7427 450h lumbar area, small of back
+yin3 7429 371a drawn out, guided, pulled, attracted
+yin3 7448 449a
+yin3 7454 654a
+yong1 7578 1185z
+yong2 8008 124p
+you1 7505 1115c retired
+you3 7507 1082a
+you1 7508 1071a
+you2 7513 1079a
+you3 7540 995e
+you4 7541 995i
+you4 7543 995 l
+you4 7536 995r
+you4 7539 995a
+yu2 7605 82a
+yu2 7606 82f
+yu2 7608 82 l lz 20o
+yu2 7635 125h
+yu2 7642 125o
+yu2 7648 59h
+fore(sight, thought); concern; benefit of experience
+yu3 7651 58t
+yu3 7658 98a
+yu4 7664 60 l
+yu4 7665 60p fend off, resist
+yu4 7666 1216a
+yu4 7667 1202h
+yu2 7668 29a
+478
+
+yu4 7671 1202d lz 01g
+yu4 7685 1215a l egal recourse, trial, litigation
+yu4 7687 1020a
+yu4 8009 507h
+yuan1 7714 260c
+yuan1 7723 367a
+yuan2 7725 258a
+yuan2 7731 256b
+yuan4 7740 171?
+yue1 7493 1120m
+yue4 7498 1119g made when stores and supplies are scarce and few
+yue4 7504 1124f Shamanic dance of flight, a rite of passage
+yue4 7697 306h
+yun3 7756 227g
+yun3 7759 468a trust, approval, sanction
+yun4 7765 945j
+yun4 7766 426e grievance, grief
+zai4 6658 941a
+zan1 6679 660g
+zang1 6704 727f
+zao4 6730 1051a
+ze4 6755 924f
+zhai2 0275 780b
+zhan1 8010 148i circle around, move with difficulty
+zhan1 0125 618a
+zhan4 0147 147r
+zhang1 0182 723a
+zhang1 0195 721h
+zhang4 0200 721a
+zhang3 0213 721a ap chang2, different meaning
+zhao1 0233 1143a
+zhao1 0236 1131m
+zhao4 0238 1131o
+zhe3 0263 45a
+zhe2 0267 287a
+zhen3 0308 656g
+zhen4 0313 455p
+zheng4 0355 833r
+zheng3 0360 896i
+zhou4 1302 1075a
+zhou4 1305 1092h
+zhu4 1361 45n'
+zhu1 1362 45p
+zhi1 0952 590p
+zhi2 0996 685a lz 14r
+479
+
+zhi2 1006 919a
+zhi3 0942 961k
+zhi4 0968 560e
+zhi4 0969 575y
+zhi4 0976 375x
+zhi4 0986 335a
+zhi4 0993 413i
+zhi4 0994 413h
+zhi4 1021 976z lz 03g
+zhi2 8000 877o
+zhou1 1291 1084a
+zhu1 1346 128a
+zhu1 1352 128k
+zhu1 1348 128f
+zhu2 1388 1224h
+zhuo2 1257 1120d
+zi1 6923 555 l word play here: zi4 555 e = alas, sigh
+zi1 6927 555h
+zi1 6932 969d
+zi1 6935 966b
+zi4 6942 964n
+zi3 6950 554g
+zong1 6896 1003a
+zu3 6815 46b'
+zu2 6827 490a
+zu2 6830 1206a
+zui4 6860 513a
+zun1 6884 430a
+zun1 6886 430i
+zuo3 6774 5a
+480
+
+Most Common Words
+Pinyin Mathews Sample Gloss Count, not including
+Wing Quotations
+Bu4 5379 Not 230
+Da4 5943 Great 117
+Dang1 6087 Right 38
+Dao4 6136 Path 58
+De2 6161 Get 67
+De2 6162 Virtue 35
+Di4 6198 Earth 51
+Dong4 6611 M ovement 25
+Er2 1756 And 172
+Fu2 1936 True 43
+Gang1 3268 Firm 7 5
+Guang1 3583 Exemplary 25
+Heng1 2099 Fu lfillment 48
+Hu1 2154 Preposition 42
+Hui3 2336 Regret 34
+Ji2 0476 Promise, Luck 148
+Jian4 0860 See 30
+Jiu4 1192 Harm, Blame 101
+Jun1 1715 Noble 87
+Ke3 3381 May 59
+Lai2 3768 Come 34
+Li4 3867 Reward 120
+Li4 3906 Harsh 27
+Ming2 4534 Light 44
+Nai3 4612 Then 30
+Qi2 0525 One's 172
+Qiong2 1247 Exhausted 27
+Ren2 3097 Person 80
+Ri4 3124 Day, Sun 26
+Rou2 3133 Flexible 49
+Ru2 3137 Like 35
+Shang4 5669 Above 78
+Shi2 5780 Time, Season 42
+Shi1 5806 Lose 35
+Shun4 5935 Accept 42
+Suo3 5465 Cause 28
+Tian1 6361 Heaven 91
+Wang2 7034 Pass 26
+Wang2 7037 Sovereign 30
+Wang3 7050 Go 59
+481
+
+Wei4 7114 Not Yet 50
+Wei4 7116 Place, Position 58
+Wu2 7173 No, Without 187
+Wu4 7208 Do Not, Not At All 26
+Wu4 7209 Thing 29
+Xia4 2520 Below 68
+Xiao3 2605 Small 42
+Xing2 2754 Advance 100
+Xiong1 2808 Misfortune 58
+Yi3 2932 In Order To, Thus 238
+Yi3 2938 Indeed 28
+Yong4 7567 Use 66
+You1 7519 Direction 32
+You3 7533 H ave, Be 184
+Yu2 7592 Preposition 80
+Yuan2 7707 Superlative 27
+Zai4 6657 In 45
+Ze2 6746 Therefore 36
+Zhen1 0346 Persistence 111
+Zheng4 0351 Correct 63
+Zhi1 0935 Go To, It's 208
+Zhi4 0971 Purpose 66
+Zhong1 1500 Complete 57
+Zhong1 1504 Center 114
+Zi3 6939 Young One 97
+Zi4 6960 From 31
+482
+
+Pronouncing Pinyin Chinese
+* Pinyin means spell-sound. It was developed in mainland China to replace the 
+Wade-Giles system of transliteration (see below to compare).
+The traditional Chinese characters, used in the Zhouyi Zhezhong, are called 
+Han Zi (the Han characters); they are s

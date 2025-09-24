@@ -1,0 +1,158 @@
+ou4
+ 5840 35.2 31.X to be given, subjected to; to accept, suffer
+fu2
+ 1999 74+4 15.3x burdens, servitude, suffering, a harness
+   * yi4
+ 3021 48.0 8.3x truly, plainly, really; indeed, in truth 27.1x
+bu4
+ 5379 02.2 (this is) no, not, without "
+zu2
+ 6824 23.1 10.3x a basis, foundation for; sufficient, enough "
+jing4
+ 1138 05.6 F (of) honor(s); respect, regard, veneration
+06.xg none
+06.zg bu4 5379 02.2 without, lacking;  not
+qin1 1107 08.X affection, affinity; to love
+91
+
+07.M
+ SHI1 (5760):  THE MILITIA
+07.0 Gua Ci Binary 010 000, Decimal 16
+   * shi1
+ 5760 50+7 07.1 the militia,* reserves, preparedness, training
+   * zhen1
+ 0346 01.0 persistence, firmness, resolve, commitment
+   * zhang4
+ 0200 1+2 17.2 (a, the) mature, elder. responsible, respectable
+ren2
+ 3097 01.2 one’s, man’s, person’s
+ji2
+ 0476 01.7 good fortune, promise, hope, opportunity
+   * wu2
+ 7180 01.3 07.2 no;      not, nothing; avoid
+jiu4
+ 1192 01.3 07.2 blame; wrong;         error(s), mistake(s)
+07.T
+ Tuan Zhuan
+   P shi1
+ the militia
+   * zhong4
+ 1517 35.3 07.T (is, means) (a, the) multitude, masses, many
+   S zhen1
+ persistence
+   * zheng4
+ 0351 25.0 (is, means) uprightness, correctness, integrity
+   S neng2
+ 4648 10.3 (the) skill, competence, expertise, ability
+yi3
+ 2932 04.1 to employ, use, utilize, lead, serve
+zhong4
+ 1517 35.3 07.X (the) multitude, masses, many
+zheng4
+ 0351 25.0 (with) uprightness, correctness, integrity
+   * ke3
+ 3381 02.3 (is) (^) suited, proper, fit, appropriate to
+yi3
+ 2932 04.1 ( ^) use, employment by, the purposes of
+wang2
+ 7037 02.3 ( ^) (a, the) sovereign, ruler, king
+yi3
+ 2938 05.T especially, only, alone, entirely, indeed (v)
+   P gang1
+ 3268 03.T the firm; firmness, strength, resolve 19.T
+zhong1
+ 1504 03.3 (is) central, balanced, in the middle "
+er2
+ 1756 06.2 and (also) "
+ying4
+ 7477 02.T (cor)responds(ive), resonates(ant) "
+   * xing2
+ 2754 11.2 (the) movement, action, behavior, practice
+xian3
+ 2689 29.2 (is) risky, hazardous, perilous, dangerous
+er2
+ 1756 06.2 but (also), (and) yet
+shun4
+ 5935 02.T compliant, responsive, accordant
+   * yi3
+ 2932 04.1 using; to use, employ, apply, practice
+ci3
+ 6972 77+2 HL this is, such is
+du2
+ 6509 21.3 F toxic, noxious, poison(ous), pernicious to
+tian1
+ 6361 01.5 heaven; ^                    heaven, the sky 12.T
+xia4
+ 2520 57.2 below;  (all) (things) under, beneath v "
+er2
+ 1756 06.2 but, (and) yet, nevertheless, still, but still
+min2
+ 4508 03.1x humanity; (a, the) people, society, citizens
+cong2
+ 6919 02.3 pursue(s), follow(s), endure(s) behind
+zhi1
+ 0935 02.0 it, this
+   * ji2
+ (for their) welfare:
+92
+
+   * you4
+ 7539 29+0 13.1x given, assuming this; if so
+he2
+ 2109 09.1 12.6x where is, what is; how is there 17.4
+jiu4
+ (the) blame, error, wrong "
+yi3
+ 2938 05.T ?, here? in this?
+07.X
+ Da Xiang
+   * di4
+ 6198 36.6 ^          (the) earth, ground
+zhong1
+ 1504 03.3 in, within, in the midst of v
+you3
+ 7533 01.6 is, there is
+shui3
+ 5922 06.X water
+   * shi1
+ 5760 07.0 the militia [reserves]
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus (is)
+rong2
+ 7560 40+7 19.X tolerant, accepting (towards, of); embraces
+min2
+ 4508 03.1x humanity; (a, the) people, society, citizens
+chu4
+ 1412 09.0 F (and) cares for, attends to, takes care of
+zhong4
+ 1517 35.3 36.X (the) multitude, masses, many
+07.1
+ Chu Liu , 1st 6  (Zhi Gua 19: Lin, Taking Charge)
+   * shi1
+ 5760 07.0 07.2 the militia, reserves
+chu1
+ 1409 05.4 09.4 set(s) out, go(es) forth, proceed(s), depart(s)
+yi3
+ 2932 04.1 09.5 by, with, by means of, using, according to
+lu4
+ 4297 60+6 HL code, order, rule, regulation (s); a tune +
+   * pi3
+ 1902 30+4 12.0 (if) not, no; (if) out of; to deny, dismiss
+zang1
+ 6704 131+8 HL right; good order; secret, classified, strategic
+xiong1
+ 2808 03.5 (is) unfortunate, ominous, foreboding
+07.1x
+ Xiao Xiang  (Fan Yao 19.1: united in commitment, persistence is promising)
+   S shi1
+ the militia
+chu1
+ sets out
+yi3
+ according to
+lu4
+ codes

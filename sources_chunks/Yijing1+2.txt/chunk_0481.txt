@@ -1,0 +1,171 @@
+lage, district, community   v
+   * bu4
+ 5379 02.2 (it is) not; (there is) nothing
+li4
+ 3867 01.0 worthwhile, rewarding, beneficial, profitable
+ji2
+ 0495 03.3 50.2 (in, to) go(ing) to, resort(ing) to, take(ing) up
+rong2
+ 3181 13.3 43.2 war, battle, hostility(ies), combat; arms
+   * li4
+ 3867 01.0 worth(while), reward(ing), benefit(icial) 45.0
+you3
+ 7533 01.6 (to) have, find, take on; (if) there is "
+you1
+ 7519 02.0 somewhere; (a) place, direction, purpose "
+wang3
+ 7050 02.0 to go, move towards; in going; ahead "
+43.T
+ Tuan Zhuan
+   P guai4
+ decisiveness (is, means)
+   * jue2
+ 1697 34.4 43.T to decide; open up, break through, cut off
+   S gang1
+ 3268 03.T the firm, strong, resolute; firmness
+jue2
+ 1697 34.4 43.T open(s) up, break(s) through, displace(s)
+rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+   S jian4
+ 0854 01.X F robust, dynamic, vigorous, ardent, tenacious
+er2
+ 1756 06.2 and (also, yet), but (also, then); while (also)
+yue4
+ 5939 17.T persuasive, satisfying, stimulating, pleasant
+   * jue2
+ 1697 34.4 F decisive; opening up, breaking through
+er2
+ 1756 06.2 and (also, yet), but (also, then); while (also)
+he2
+ 2115 58.1 F harmonious, concordant, responsive
+   P yang2
+ (a) disclosure
+yu2
+ at
+wang2
+ (the) royal
+ting2
+ court
+285
+
+   * rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+cheng2
+ 0398 03.2 47.3x relies, rides on, upon; avails (itself) of 47.3x
+wu3
+ 7187 7+2 HL five
+gang1
+ 3268 03.T firm, strong, resolute (lines) 47.3x
+   S fu2
+ (a) truthful
+hao4
+ appeal,
+you3
+ this will be
+li4
+ serious
+   * qi2
+ 0525 02.6 the, this, one’s, such
+wei2
+ 7056 26+4 51.5x (a) crisis, peril, danger, exposure; precipice
+nai3
+ 4612 03.2 is now, then; will then be
+guang1
+ 3583 05.0 revealed, made known, distinct; regarded
+   S gao4
+ inform
+zi4
+ (the) home
+yi4
+ town
+   * bu4
+ nothing
+li4
+ worthwhile
+ji2
+ (in) resorting to
+rong2
+ hostilities
+   * suo3
+ 5465 06.1 that which is; what is; (the) cause, reason for
+shang4
+ 5670 09.6 prized, treasured; value, esteem, respect (ed)
+nai3
+ 4612 03.2 is then, thereby; (will, would) then be
+qiong2
+ 1247 02.6x exhaust, impoverish, waste, diminish (ed)
+   S li4
+ (it is) worthwhile
+you3
+ to have
+you1
+ somewhere
+wang3
+ to go
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness
+chang2
+ 0213 07.5 endures, persists, continues, grows
+nai3
+ 4612 03.2 and (only) then, thereby, after this
+zhong1
+ 1500 01.3 completes, concludes, finishes; (it) ends
+43.X
+ Da Xiang
+   * ze2
+ 0277 10.X (a, the) lake, pool, pond, marsh
+shang4
+ 5669 40.6 above, high; rises;            ^high
+yu2
+ 7643 02.6 45.X in                  ; into, up to; is      v
+tian1
+ 6361 01.5 heaven, the sky;                 sky  v
+   * guai4
+ 3535 10.5 decisiveness
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+286
+
+shi1
+ 5768 01.T 44.X distributes, extends, dispenses, passes down
+lu4
+ 4196 12.X F credit, favor, reward (s); gifts, compensation
+ji2
+ 0468 62.2 61.T (until, to) reach, attain, connect (ing) with, to
+xia4
+ 2520 57.2 humility; (the) lowly, humble; those below
+   * ju1
+ 1535 03.1 49.T dwelling, resting in, on, upon; stockpiling
+de2
+ 6162 06.3 character, virtue, merit, authority
+ze2
+ 6746 04.0 (is) thereby, therefore, thus, consequently
+ji4
+ 0432 61+3 HL avoided, shunned, kept distant, prevented
+43.1
+ Chu Jiu , 1st 9  (Zhi Gua 28: Da Guo, Greatness in Excess)
+   * zhuang4
+ 1453 34.0 43.3 vigorous, potent, powerful, strong, forceful
+yu2
+ 7592 02.6 in, with, while
+qian2
+ 0919 08.5 05.T advancing, leading with, putting ^ forward
+zhi3
+ 0944 21.1 50.1 (the) toe(s), feet              v (the) toe(s)    v
+   * wang3
+ 7050 02.0 going (forward), proceeding, continuing
+bu4
+ 5379 02.2 is not, less than; without; does, will not (be)
+sheng4
+ 5754 33.2 53.5 success(ful, eed), triumph(ant); overcome
+   * wei2
+ 7059 04.6 45.1 making, performing; ^ (will be) made, done
+jiu4
+ 1192 01.3 43.3 mistakes, errors;   mistakes, errors; wrong (v)
+43.1x
+ Xiao

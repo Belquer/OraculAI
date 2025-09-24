@@ -1,0 +1,168 @@
+d 43.4
+wu2
+ 7180 01.3 44.3 without, with no; deprived of "
+fu1
+ 1958 21.2 F skin, flesh "
+   * qi2
+ 0525 02.6 one’s 43.4
+xing2
+ 2754 11.2 walk(ing), advance, movement, progress "
+ci4
+ 6980 07.4 56.2 (is) second-rate, inferior, halting "
+qie3
+ 0803 29.3 F (for) now, the time being; here "
+   * li4
+ 3906 01.3 har sh, difficult, severe, brutal, wicked
+   * wu2
+ 7180 01.3 44.4 (but) no, not, without, with no
+da4
+ 5943 01.2 (a) great, major, complete, vast, mighty
+jiu4
+ 1192 01.3 44.6 blame; harm (done); wrong, mistake, error (s)
+293
+
+44.3x
+ Xiao Xiang  (Fan Yao 06.3: incorporating long-standing virtue, steadfastness)
+   S qi2
+ one’s
+xing2
+ progress
+ci4
+ (is) inferior
+qie3
+ now
+   * xing2
+ advancing
+wei4
+ 7114 48.0 (a nd, but) still not; shy of; now not, not now
+qian1
+ 0881 09.2 F being led, dragged, drawn, pulled, [seduced]
+44.4
+ Jiu Si , 9 4th  (Zhi Gua 57: Xun, Adaptation)
+   * bao1
+ 4937 04.2 44.5 (a, the) creel, bag, tank, container
+wu2
+ 7180 01.3 44.6 without, with no; has, holds no; (de)void of
+yu2
+ 7668 23.5 61.0 (a, the) fish
+   * qi3
+ 0548 156+3 HL dawning, rising, awakening, beginning(er’s)
+xiong1
+ 2808 03.5 unhappiness, woe, disappointment
+44.4x
+ Xiao Xiang  (Fan Yao 57.4: regrets pass, in field take three kinds of game)
+   S wu2
+ wanting
+yu2
+ (the) fish
+zhi1
+ 0935 02.0 has; comes, leads to; in, with one’s, this
+xiong1
+ disappointment
+   * yuan3
+ 7734 24,1 51.T (so) distant, far (removed), remote from
+min2
+ 4508 03.1x (the) other(s), people, humanity, society
+44.5
+ Jiu Wu , 9 5th  (Zhi Gua 50: Ding, The Cauldron)
+   * yi3
+ 2932 04.1 ( ^) using, in, with
+qi3
+ 0547 75+3 HL ( ^) willow(s), medlar
+bao1
+ 4937 04.2 F (to) wrap, pack, protect, safeguard (ing) (v)
+gua1
+ 3504 97+0 HL (the) melons, gourds                              (v)
+   * han2
+ 2017 02.3 02.T restraint (ed, ing); ^       of restraint 02.3
+zhang1
+ 0182 02.3 55.5 (is) (a, the) display(ed); show, sign of v "
+   * you3
+ 7533 01.6 (these, they) will have;       something; about
+yun3
+ 7756 170+10 HL dropped, fallen, tumbled; to drop, fall, tumble
+zi4
+ 6960 05.4 62.5 from, out of
+tian1
+ 6361 01.5 61.6 heaven, the sky
+44.5x
+ Xiao Xiang  (Fan Yao 50.5: cauldron’s golden ears, rewarding to persist)
+   S jiu3
+ nine
+wu3
+ fifth’s
+han2
+ restraint
+zhang1
+ (is) displayed
+   * zhong1
+ 1504 03.3 (of) balance, concentration, focus 48.5x
+zheng4
+ 0351 25.0 (and) uprightness, correctness, integrity "
+294
+
+   S you3
+ (these) will have
+yun3
+ fallen
+zi4
+ from
+tian1
+ heaven
+   * zhi4
+ 0971 03.1x (the) intent(ion), aim, aspiration, plan (s)
+bu4
+ 5379 02.2 do(es) not, without; avoid
+she3
+ 5699 03.3 48.1x forsake, forget, surrender, dismiss (ing)
+ming4
+ 4537 06.4 (the) destiny, fortune; higher order, purpose
+44.6
+ Shang Jiu , Top 9  (Zhi Gua 28: Da Guo, Greatness in Excess)
+   * gou4
+ 3422 44.0 F encountering, coupling, greeting, meeting
+qi2
+ 0525 02.6 on, with one’s, these, those
+jiao3
+ 1174 34.3 F horns, antlers
+   * lin4
+ 4040 03.3 embarrassing, disgraceful, poor; (a) shame
+   * wu2
+ 7180 01.3 45.1 (though) no, not; without; no ^ (is) done
+jiu4
+ 1192 01.3 45.1 (to) blame; harm;              v harm        v
+44.6x
+ Xiao Xiang  (Fan Yao 28.6: too much to cross, over one’s head, blameless)
+   S gou4
+ encountering
+qi2
+ with those
+jiao3
+ horns
+   * shang4
+ the top
+qiong2
+ 1247 02.6x (is) exhausted, diminished, frustrated, needy
+lin4
+ (and) embarrassed
+44.m gou3 3413 94+5 the bitch, a dog; term of contempt; to hound
+44.xg yu4 7625 13.5 happening upon, meeting, encountering
+44.zg rou2 3133 02.T the flexible, gentle, yielding; flexibility
+yu4 7625 13.5 happens upon, meets, encounters
+gang1 3268 03.T the firm, strong, resolute; firmness
+295
+
+45.M
+ CUI4 (6880):  COLLECTEDNESS
+45.0 Gua Ci Binary 000 110, Decimal 06
+   * cui4
+ 6880 140+8 45.1 col lect(edness), assemble(ly); security
+   * heng1
+ 2099 01.0 fulfillment, satisfaction, success, completion
+   * wang2
+ 7037 02.3 (the) sovereign, king, ruler 55.0
+jia3
+ 0599 37.5 55.0 comes, draws near to; approaches, adopts  "
+you3
+ 7533 01.6 his "
+miao4

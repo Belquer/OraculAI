@@ -9,7 +9,7 @@ services:
     plan: free
     branch: main
     buildCommand: ''
-    startCommand: 'gunicorn --bind 0.0.0.0:$PORT app:app'
+  startCommand: 'gunicorn --bind 0.0.0.0:$PORT deploy.app:app --workers 1 --timeout 120 --log-level info --access-logfile - --error-logfile -'
     autoDeploy: true
     envVars:
       - key: ORACULAI_NO_RELOAD

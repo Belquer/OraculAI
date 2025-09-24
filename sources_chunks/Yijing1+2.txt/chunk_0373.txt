@@ -1,0 +1,52 @@
+n from the
+section immediately preceding, in the Gua Ci or the Yao Ci . These are the words which are
+italicized in Part One. Where the number is underlined this is the first occurrence of a
+character which is described in more detail in the main part of the Glossary. Use this number
+to search for characters.
+4) This column contains one of two kinds of numbers. If this is the first appearance of
+the character in the text, this number will contain a plus (+) sign (e.g. 109+13). The number
+found before the plus sign gives the conventional number of this character’s "radical" or
+root component. The number after the sign gives the number of additional strokes added to
+the radical (plus or m inus a stroke since some people count differently). This is the way
+many Chinese dictionaries are accessed. This will not work in a "modern" dictionary with
+simplified characters, and where some of the classical characters were edited out of the
+language itself. If this character has already appeared in the text, the number in this column
+will contain a decimal point (e.g 08.1 or 08.X).  This gives the location of the character’s
+first entry or appearance historically in the Yijing, that is, first in the Zhouyi, and then in the
+Wings. For example, if a character’s first appearance is at 01.1x (in the Xiao Xiang or the
+Third Wing) one may infer that the character did not appear at all in the Zhouyi. This word,
+by the way, is the familiar yang, as in yin and 
+yang, which many people wrongly assume has
+been with the Yi from the beginning.
+51
+
+5) This column gives the location of the character’s next appearance in the Yi, once
+again, first in the Zhouyi and then in the Wings. This feature is meant to take the place of a
+concordance, so that the use of a word can be traced throughout the remaining book. In
+cases where a word is used frequently, this space is simply left blank after the first few
+occurences. But these words will be found in the Glossary, where there is given a range of
+alternative English translations greater than that of the sum of their Matrix occurrences. If
+you are using an electronic version of the Matrix you will find it easier to use the Find
+command and the four-digit Mathews number to track the occurrences of a word. The letter
+"F" in this column means that this is the Final occurrence of the word. The letters "HL"
+indicate that the word is an Hapax Legomenon (in a lesser sense of the term), a word used
+only once in the Yijing.
+6) This column offers an average of three or four alternative English translations of
+the Chinese word as the word i s shaped by this specific context . Commas here usually
+separate interchangeable alternatives, while the semicolons separate slightly different
+syntactic or grammatical options. Words in parentheses are either alternative modifiers, or
+optional in an English rendering, or strictly inferred English grammar, or indicators of a
+specific facet of an English word. A word in brackets indicates an anachronistic English
+translation, not  suitable for use in translation, but still informative, or an explanatory
+comment. Up and Down pointers (^v) indicate that the word order may be reversed in the
+English translation. This is most often the case with the post-positioning of the Chinese
+prepositions. A plus sign (+) in this column means that you will find more notes and glosses
+on this character in the Glossary segment oddly titled "Characters not in the Glossary."
+7) At the far right, in cases where a phrase is repeated elsewhere in the Yi,
+ a number
+will give the location of the phrase’s next occurrence, with ditto marks below to indicate
+the extent of the phrase. The last occurrence of a phrase points cyclically back to the first.
+The versatile and oft-repeated wu jiu (no blame, not bad, nothing wrong, without a mistake,
+not a mistake, make no mistakes, no harm done, etc.) may be tracked through the Zhouyi by
+following jiu in column 5, from its first occurrence at 01.3.
+At the end of the Matrix

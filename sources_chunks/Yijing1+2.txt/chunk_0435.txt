@@ -1,0 +1,169 @@
+n
+zhi1
+ 0935 02.0 ...’s; has; comes, leads to
+xiong1
+ misfortune
+   * fan3
+ 1781 09.3 37.6x the opposite, reverse (of), perverting; against
+jun1
+ (a, the) noble, worthy, honorable; leader’s
+dao4
+ 6136 09.1 way, course, path, principle, truth
+185
+
+24.xc de2 6162 06.3 character, virtue
+zhi1 0935 02.0 ...’s
+ben3 5025 28.T root, source, beginning, foundation
+   * xiao3 2605 03.5 sm all, little, modest [seed-like]
+er2 1756 06.2 and yet; but also
+bian4 5240 23.2 distinguished, distinct; discerning
+yu2 7643 05.X among, amidst; with respect to
+wu4 7209 01.T things, creatures, entities, beings, matters
+   * yi3 2932 04.1 uses, makes use of, employs
+zi4 6960 05.4 inherent, natural, spontaneous, original
+zhi1 0932 19.5 wisdom, understanding, knowing
+24.xg fan3 1781 09.3 turning around, reversal, reversion
+24.zg fan3 1781 09.3 turning around, reversal, reversion
+186
+
+25.M
+ WU2  WANG4 (7180,7035):  WITHOUT  PRETENSE
+25.0 Gua Ci Binary 100 111, Decimal 39
+   * wu2
+ 7180 01.3 25.1 without, with no, having no
+wang4
+ 7035 38+3 25.1 pretense, presumption; falseness, guile
+   * yuan2
+ 7707 01.0 most; first-rate, supreme, excellent 46.0
+heng1
+ 2099 01.0 fulfilling; fulfillment, satisfaction, success "
+   * li4
+ 3867 01.0 (it is) worthwhile, rewarding, beneficial 26.0
+zhen1
+ 0346 01.0 (to) persist, (be) loyal, dedicated, steadfast "
+   * qi2
+ 0525 02.6 (if, for) one (who), those, someone
+fei3
+ 1820 03.2 30.6 (is) without, devoid of; not (being); never
+zheng4
+ 0351 77+1 01.T uprightness, integrity, ethics; upright, true
+you3
+ 7533 01.6 (there) will (be); has, have; will find
+sheng3
+ 5741 06.2 25.6 suffering, distress, injury; grave error, consequences*
+   * bu4
+ 5379 02.2 (and) (it is) not (much); will not be; nothing
+li4
+ 3867 01.0 worth(while), reward(ing), benefit(icial) 25.2
+you3
+ 7533 01.6 (to, in) have, find, take (ing) on "
+you1
+ 7519 02.0 somewhere; (a) place, direction, purpose "
+wang3
+ 7050 02.0 to go, move towards; in going; ahead "
+25.T
+ Tuan Zhuan
+   P wu2
+ without
+wang4
+ pretense
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness
+zi4
+ 6960 05.4 ^ from, out of 42.2x
+wai4
+ 7001 08.4 ^ (the) beyond, outside; without "
+lai2
+ 3768 05.6 come, arrive, arise, approach, appear (s) v "
+er2
+ 1756 06.2 and (so, thus, then), then, while
+wei2
+ 7059 04.6 assume, adopt, become, effect, act (s, ing) as
+zhu3
+ 1336 02.0 51.T mastery, command, authority; master, leader
+yu2
+ 7643 05.X 32.T on, over, of, within, with respect to
+nei4
+ 4766 08.2 (the) inside, internal, inner, interior
+   * dong4
+ 6611 47.6 energy, movement, action, impetus
+er2
+ 1756 06.2 and, (along, together) with
+jian4
+ 0854 01.X 26.T lasting vigor, strength, ardor, robustness
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness 45.T
+zhong1
+ 1504 03.3 (is) central, balanced, in the middle "
+er2
+ 1756 06.2 and (also) "
+ying4
+ 7477 02.T (cor)responds(ive), resonates(ant) "
+187
+
+   * da4
+ 5943 01.2 great, major, complete, much 49.T
+heng1
+ fulfillment "
+yi3
+ 2932 04.1 (is, comes) by way of, according to, serves "
+zheng4
+ integrity "
+   * tian1
+ 6361 01.5 heaven, the sky, celestial
+zhi1
+ 0935 02.0 ...’s; has (its)
+ming4
+ 4537 06.4 (a, the) higher law, order; charge, mandate
+   S qi2
+ for one
+fei3
+ without
+zheng4
+ integrity
+you3
+ there will be
+sheng3
+ suffering
+   * bu4
+ (and) not much
+li4
+ reward
+you3
+ in having
+you1
+ somewhere
+wang3
+ to go
+   * wu2
+ (while) without
+wang4
+ pretense
+zhi1
+ 0935 02.0 ...’s, has (its); there is, will be; leads to
+wang3
+ (forward) progress
+   * he2
+ 2109 09.1 28.5x (and) how, why, what
+zhi1
+ 0935 02.0 is this, is it
+yi3
+ 2938 05.T so?; ...?
+   * tian1
+ 6361 01.5 heaven’s, the sky’s, the celestial
+ming4
+ 4537 06.4 higher law, order; charge, mandate
+bu4
+ 5379 02.2 is not; does not; cannot be
+you4
+ 7543 14.6 41.5x assist(ance), protect(ion); succor, a shield
+   * xing2
+ 2754 11.2 (but, it is) movement, progression, conduct
+yi3
+ 2938 05.T itself, alone, as such, in truth, period
+zai1
+ 6650 01.T ...!
+25.X
+ Da Xiang
+   * tian1
+ 6361 01.5 ^            heaven,

@@ -1,0 +1,166 @@
+6939 01.3 09.6 son, brother, officer
+yu2
+ 7618 07.3 09.3 (would) (only) transport, haul, carry, cart (s)
+shi1
+ 5756 07.3 F (the) corpses, bodies, fatalities, casualties
+   * zhen1
+ 0346 01.0 persistence, firmness, predictability, resolve 17.4
+xiong1
+ 2808 03.5 (is) unfortunate, inauspicious; has pitfalls "
+07.5x
+ Xiao Xiang  (Fan Yao 29.5: pit not flowing over, appreciate level attained)
+   S zhang3
+ (the) elder
+zi4
+ son
+shuai4
+ captains
+shi1
+ the militia
+   * yi3
+ 2932 04.1 by way, means of, using, according to
+zhong1
+ 1504 03.3 tempered, balanced, correct, intermediate
+xing2
+ 2754 11.2 action, steps, conduct, behavior, procedure
+   S di4
+ (the) younger
+zi3
+ son
+yu2
+ transports
+shi1
+ fatalities
+95
+
+   * shi3
+ 5770 41.4 08.5x (a, an, this) commission, charge, assignment
+bu4
+ 5379 02.2 would not be, is not, is in-, is less than
+dang1
+ 6087 05.6x 10.3x appropriate, proper, satisfactory, fitting
+07.6
+ Shang Liu , Top 6  (Zhi Gua 04: Meng, Inexperience)
+   * da4
+ 5943 01.2 (a, the) great, successful, seasoned, mature
+jun1
+ 1715 01.3 noble, ruler, leader, chief (poss. Zhou Gong)
+you3
+ 7533 01.6 assumes, takes, gains, claims, seizes, acquires
+ming4
+ 4537 06.4 11.6 (full) command; (a, the) mandate, charter
+   * kai1
+ 3204 169+4 HL establish, found, proclaim, institute, open (s)
+guo2
+ 3738 31+8 15.6 (the) domains, dominions, realms, states
+cheng2
+ 0386 64+4 12.2 (and) recognizes, accepts, adopts, upholds
+jia1
+ 0594 04.2 26.0 (the) clans, (ruling) families, households
+   * xiao3
+ 2605 03.5 (the) lesser, common, mediocre, petty 63.3
+ren2
+ 3097 01.2 people, persons, folk [as recently tested] "
+wu4
+ 7208 01.1 (are) not at all; will not be; (are) denied "
+yong4
+ 7567 01.1 useful; used, employed; employment "
+07.6x 
+ Xiao Xiang  (Fan Yao 04.6: smiting the halfwit, defend from transgressions)
+   S da4
+ (the) seasoned
+jun1
+ noble
+you3
+ assumes
+ming4
+ (a, the) mandate
+   * yi3
+ 2932 04.1 by, through, with, according to
+zheng4
+ 0351 25.0 rig ht, principle; exacting, upright, consistent
+gong1
+ 3698 17.1 (of) merit, achievement, accomplishment
+   S xiao3
+ lesser
+ren2
+ people
+wu4
+ will not be
+yong4
+ used
+   * bi4
+ 5109 62.4 F (these, they would) certain, sure (ly)
+luan4
+ 4220 45.1 10.2x (to) confuse, perplex, distract
+bang1
+ 4910 07.2x 12.T (the) realm, domain, state
+07.xg zhong4 1517 35.3 the multitude, masses, many
+07.zg you1 7508 19.3 a cause for mourning, grief, suffering
+96
+
+08.M
+ BI3 (5077):  BELONGING
+08.0 Gua Ci Binary 000 010, Decimal 02
+   * bi3
+ 5077 81+0 08.1 belonging, affiilation, association; join, unite
+   * ji2
+ 0476 01.7 promising, fortunate, hopeful, auspicious
+   * yuan2
+ 7725 27+8 HL (if, for) (a, an, the) early, first, original, natural
+shi4
+ 5763 04.0 F divining, consultation, oracle, inquiry
+yuan2
+ 7707 01.0 first-rate, supreme, fundamental, essential
+yong3
+ 7589 02.7 22.3 (and) lasting, enduring, sustained, continued
+zhen1
+ 0346 01.0 p ersistence, resolve, loyalty, commitment
+   * wu2
+ 7180 01.3 08.1 no; not; nothing; without, with no
+jiu4
+ 1192 01.3 08.1 blame; (is) wrong; (a) mistake, (an) error (s)
+   * bu4
+ 5379 02.2 lacking, wanting; without, with no; if ^-less
+ning2
+ 4725 40+11 58.4 peace, tranquility, serenity, rest, (settledness)
+fang1
+ 1802 02.2 47.2 ^directly, promptly, honestly, squarely 47.2
+lai2
+ 3768 05.6 08.1 approach, come (forward)                 v "
+   * hou4
+ 2143 02.0 12.6 (it is) (the) tardy, late(r) (to come, in coming)
+fu1
+ 1908 04.3 09.3 who; one(s) who; (are) the ^ ones
+xiong1
+ 2808 03.5 (is, are) (v) unhappy, unfortunate, unlucky (v)
+08.T
+ Tuan Zhuan
+   P bi3
+ belonging
+   * ji2
+ (is, means) promise
+   S bi3
+ belonging
+   * fu3
+ 1945 31.6 11.X (is, means) assistance, support, confirmation
+   S xia4
+ 2520 57.2 those below; the lowly, humble, subordinate
+shun4
+ 5935 02.T agree, respond, comply, accept, make peace
+cong2
+ 6919 02.3 to follow; (and) follow, attend, conform
+   P yuan2
+ (for) a first
+shi4
+ consultation
+yuan2
+ supreme
+yong3
+ (and) enduring
+zhen1
+ loyalty
+wu2
+ (and) not
+jiu4
+ (a) mistake

@@ -1,0 +1,68 @@
+undaries
+29 Kan
+, Exposure, Chong Gua 61 Zhong Fu, The Truth Within
+30 Li, Arising, Chong Gua 62 Xiao Guo, Smallness in Excess
+31 Xian, Reciprocity 63 Ji Ji, Already Complete
+32 Heng, Continuity 64 Wei Ji, Not Yet Complete
+
+The Seventy-Eight Diagrams
+   O       W    R            H        Y            I
+     0            1        2    3            4        5    6                  7
+00, 02        01, 23    02. 08        03, 20        04, 16   05, 35         06, 45        07, 12
+08, 15        09, 52    10, 39         11, 53        12, 62         13, 56         14, 31         15, 33
+  16, 07        17, 04    18, 29         19, 59         20, 40    21, 64        22, 47         23, 06
+24, 46         25, 18   26, 48         27, 57         28, 32         29, 50        30, 28         31, 44
+  32, 24         33, 27        34, 03         35, 42         36, 51         37, 21         38, 17        39, 25
+  40, 36         41, 22        42, 63         43, 37         44, 55        45, 30         46, 49         47, 13
+  48, 19         49, 41         50, 60         51, 61         52, 54         53, 38        54, 58         55, 10
+56, 11          57, 26         58, 05        59, 09         60, 34         61, 14         62, 43         63, 01
+Two different numbering systems are used for the sixty-four larger diagrams.
+The sequence numbers on the right are the chapter numbers of the book, which
+most readers will use here. This sequence, called the Hou Tian, will require either a
+key like this or memory to move from the raw diagram to the number of its chap-
+ter. The sequence numbers on the left, called the Xian Tian, represent the most
+useful order, sequence and arrangement of the diagrams. These are the diagrams
+as the binary numbers from zero to sixty-three and no key is needed.
+
+The Dimensions
+Introduction
+Correlative Thought
+Gua Ming, The Hexagram Names
+Gua Bian, The Hexagram Changes
+Gua Xu, The Hexagram Sequences
+Qian Gua, The Inverse Pairs
+Pang Tong Gua, The Opposite Pairs
+Jiao Gua, The Reverse Pairs
+Hu Gua, The Nuclear Hexagrams
+Shi Er Di Zhi, The Twelve Earthly Branches
+Gua Xiang, The Hexagram Image
+Ban Xiang, The Half-Images
+San Cai, The Three Powers
+Yao Wei, The Line Positions
+Yao De, Line Character
+The Patterns of the Xian Tian
+Figures One through Forty
+1
+
+Introduction
+Except for a few forays into the role of structure in generating metaphors in the
+original Zhouyi, a discussion of the role of number in the form of scales in the Introduction
+to Xiao Gua, the Small Symbols and the statement of an hy pothesis that the Yijing is,
+perhaps even ultimately, a systematic counseling language about changing attitudes, this
+book has so far concerned itself with the words and phrases of the Book of Changes, or
+with the Yi Li (Meaning and Principle) school of interpretation. This section concentrates on
+the “third half” of the puzzle, the Xiang Shu or the Image and Number school. The focus
+here will be on the images and their structure.
+The many structural dimensions of the Yi’s images may be divided into four histori-
+cal categories: a) the Zhouyi dimensions, or those which were evidently a part of the thought
+processes of the original authors, b) the Wing dimensions, or those which make their first
+appearance in the Ten Appendices, either as conjecture about the original authors’ thought
+processes or as freshly minted algorithms and new exigetical techniques, c) the Yiweishu
+dimensions, or those which first appear in the Han dynasty apocryphal works, and d) Post-
+Han analyses and speculations, particularly in the Song, Ming and Qing dynasties. These
+categories will be pointed out as dimensions are discussed, although many placements can
+only be guessed at. The first set was partly obscured and partly just unmentioned by the
+original Zhouyi editors. The Wing set is often far wide of the real Zhouyi, although even its
+wilder speculations offer interesting structural refinements and insights. But most of al
+l
+these “elements [simply] function as a co

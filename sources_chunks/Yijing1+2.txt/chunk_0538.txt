@@ -1,0 +1,69 @@
+dical, plus the num-
+ber of additional strokes (plus or m inus a stroke). This is the “access code”
+(rather than alphabetizing) to many classical Chinese dictionaries.
+The fourth number ( e.g. 12.5x) gives the location of the character’s first
+occurrence in the Yi (this example: Chapter 12, Line 5, Xiao Xiang commentary).
+Words listed in the second part, "Characters not in the Glossary," do not
+meet the above criteria but their glosses may be scoped by tracking the use of the
+words through the Matrix. Here there are given the Pinyin pr onunciations, th
+e
+Mathews numbers, the Karlgren GSR numbers, alternative pronunciations, and
+miscellaneous references and notes. This is a complete list of all Matrix characters
+not found in the main Glossary. The note "ap" means "also pronounced"; the note
+"lz" means that the character is found in my Laozi glossary.
+The third part lists the 67 characters which occur 25 times or more in the
+Matrix section. Their occurrences make up about half of the Yijing's text. This is
+therefore a recommended first study list for those who are just b eginning to learn
+classical Chinese.
+The final part is a guide to Pinyin and to conversion from the Wade-Giles
+system of transliteration.
+416
+
+an1
+ 0026 146a 40+3 02.0 (to be) content(ed), at peace (with), at rest,
+secure, stable, quiet, serene, peaceful, tranquil, safe, calm, settled, still, steady, satisfactory
+(in); (to) secure, safeguard, settle (for), pacify, still, confirm, ensure, soothe, find a place for,
+place, arrange, lay down, rest in (s, ed, ing); (a, the) rest, peace, security, ease, quiet, quietude,
+serenity, steadiness, stillness, comfort, contentment (s) (with); how? where? why?; ... thus?;
+naturally, without effort
+ba1
+4845 281a 12+0 19.0 (a, the) eight; eight times, eightfold, eighth
+bai3
+  4976 781a 106+1 06.2 (a, the) hundred; hundredfold, hundredth,
+hundreds of; a hundred times; (to be) common; all of the
+ban4
+ 4875 181a 24+2 none (to be) half; halved, divided; (to) divide in
+two, make a pair of
+bang1
+4910 1197e 163+4 07.2x (a, the) state, country, realm, territory, land,
+dominion, domain, region, principality, jurisdiction, sovereignty, government, governance (s)
+bao1
+4937 1113a 20+3 04.2 (to) include, pack, wrap, envelop,
+surround, bundle, embrace, accept, cherish, undertake, safeguard, secure, warrant, guarantee,
+hold, contain, put up, cherish, protect (s, ed, ing); (a, the) cover, container, bag, bundle, creel,
+wrapping
+ben3
+5025 440a 75+1 28.T (a, the) root, trunk, origin, original, source,
+principal, basis, beginning, foundation, fundament, cause, stem; (to be) starting, initial, basis,
+fundamental, essential, natural, original, native
+bi4
+5027 437a 154+5 22.0 (to) adorn, dress (up), beautify, embellish,
+decorate, make graceful (s, ed, ing); (to be) elegant, brilliant, ornate, fancy, dressed up,
+sumptuous; superficial, nearsighted; (a, the) adornment, ornamentation; shell, treasure;
+model (s)
+bi3
+5077 566g 81+0 08.0 (to) accord, belong, combine, go together,
+join, affiliate, unite, associate (to, with); sort, compare, match, assemble, join, follow, (put,
+hold) together, draw an analogy (s, ed, ing); (to be) affiliated, paired (with), concordant, well-
+disposed; close, familiar; successive, comparable, analogous, similar; (a, the) union,
+belonging, affiliation, association, togetherness, congestion, commonality; on behalf of
+bian4
+5240 219b 160+9 23.2 (to) distinguish, differentiate, discriminate,
+discern, dispute, find fault with, scrutinize, identify, cut, divide, delineate, separate, regulate,
+distribute (s, ed, ing); (a, the) identification, discernment, distinction, distinctiveness,
+delineation, edge, boundary, frame, context, identity (s); (to be) distinguished, discerning,
+discriminating; everywhere
+bian4
+5245 170o 149+16  49.5 (to) change, alter, become, vary, amend,
+transform, reform, mutate, metamorphose, evolve, emerge (s, ed, ing); (to be) amenable,
+changeable; (a, the) emergence, transformation, metamorphosis, change, evol

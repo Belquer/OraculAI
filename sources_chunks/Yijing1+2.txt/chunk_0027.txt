@@ -1,0 +1,56 @@
+nal
+solution. This would be the "middle ground" fallacy. And I will readily admit to
+the fallacy called argumentum ad iudicum, appeal to judgment or common sense.
+I have already mentioned hasty generalization (a.k.a. converse accident) as
+one of the problems. One example is: "We have only seen Fu used as “captive”
+during this period, therefore Fu meant only this. It cannot be proved otherwise."
+Actually this example is more complex because it also relies on argumentum a d
+ignorantiam  (appeal to ignorance: absence of evidence is not evidence of
+absence), and "shifting the burden of proof." Burden of proof needs to be more
+fully assumed here. Even though instances exist where meanings were added
+retroactively to the Zhouyi, the millenia of tradition still carries respectable
+weight. This is especially true of the efforts to preserve the most reliable version
+of the original text, even though recast in the Han era characters. Much more
+justification is needed to emend this text than the whims the modernists use. A
+simpler example of hasty generalization: the text of Gua 07, Shi, the Militia, now
+contains military terminol
+ogy which cannot be established to have been in use
+before the time of Xuan Wang (827-787 BCE); therefore the Zhouyi could not
+have been composed before this date. Even other modernist scholars admit that
+this may simply have been an update made by an editor during this period.
+Another problem is the inverse (not the converse) of the above, known as
+the Straw Man fallacy. Misrepresent a position so that it can be attacked more
+easily, knock down that misrepresented position, then conclude that the original
+position has been demolished, for example: it is known that several traditionally
+understood glosses to Zhouyi terms were added during the Warring States period,
+therefore all traditional glosses must be scrapped.
+Biased Sample is a subset of hasty generalization. This fallacy is committed
+when a person draws a conclusion about a population based on a sample that is
+biased or prejudiced in some manner. Many generalizations turn out to be
+inaccurate because they are based on insufficient evidence. This may be most
+evident in the scholars' taking references to human sacrifice on ancient oracle
+bones, mostly Shang, and then making this practice out to be the center of the
+ancient Chinese culture. The sample is biased due to the fact that these records
+were among the only ones preserved on im perishable materials. Even if human
+sacrifice was only gradually discontinued in the Zhou, and made to focus more on
+war prisoners and criminals, still the modernists make it sound like it occupied a
+third of the king's waking attention, the rest being devoted to agonizing over the
+peasant omens and the meaning of hopping goats.
+Begging the Question (a.k.a. petitio principii  or circular argumentation) is
+a fallacy in which the premises include the claim that the conclusion is true or
+30
+
+(directly or indirectly) assume that the conclusion is true (assuming an answer in
+the way the question is phrased). This will admit only evidence consistent with
+the premises of the methodology and will avoid asking any questions about the
+basic assumptions. This leads to observational selection (counting the hits and
+forgetting the misses). This process yields results which must be explained or
+excused instead of questioned. If a hopping goat is the result of the method then
+some sort of peasant omen or ritual must be conceived wherein the hopping of
+goats has a deep meaning quite literally “fit for a king.” Tautology, or circular
+reasoning which begins by defining itself as true, is a contraption that is able to
+bootstrap itself into any fantasy world whatsoever.
+Reification (a.k.a. hypostatization) occurs whenever an abstract concept is
+treated as a concrete thing. This becomes very common in the Han dynasty
+apocryphal works when the structural dimensions of the Yijing, as they appear in
+the Wings and later, are taken to be inherent in

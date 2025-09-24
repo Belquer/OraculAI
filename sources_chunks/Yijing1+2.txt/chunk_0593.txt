@@ -1,0 +1,71 @@
+12
+Four of Swords Jupiter in Air 33
+Five of Swords Mars in Air 25
+Six of Swords Sol in Air 13
+Seven of Swords Venus in Air 10
+Eight of Swords Mercury in Air 44
+Nine of Swords Luna in Air 06
+Ten of Swords Pluto in Air 09
+Tarot: 10 Pentacles Astrology: Planets in Earth Yi:
+Ace of  Pentacles Saturn in Earth 23
+Two of  Pentacles Uranus in Earth 11
+Three of  Pentacles Neptune in Earth 02
+Four of  Pentacles Jupiter in Earth 15
+Five of  Pentacles Mars in Earth 24
+Six of  Pentacles Sol in Earth 36
+Seven of  Pentacles Venus in Earth 19
+Eight of  Pentacles Mercury in Earth 46
+Nine of  Pentacles Luna in Earth 07
+Ten of  Pentacles Pluto in Earth 26
+505
+
+                                     Wai Guang Key to the Hexagrams
+         Top Line: Qabalah     Middle Line: Tarot     Bottom Line: Astrology
+                 Bold: Scale of 12     Italic: Scale of 16     Regular: Scale of 40
+0     1         2 3     4         5 6     7
+Upper →
+Lower ↓    Earth     Earth    Water      Air         Fire        Fire       Water      Air
+       Bn-As     Kt-As      Bn-Br     Kt-Yt       Kt-At     Bn-At      Kt-Br     Bn-Yt
+          3-P          A-P         3-C         A-S         A-W        3-W         A-C         3-S
+3’s, A’s      Nep-E     Sat-E     Nep-W     Sat-A      Sat-F      Nep-F     Sat-W     Nep-A
+       Cd-As      As/As     Cd-Br      Yt/As      At/As     Cd-At     Br/As     Cd-Yt
+          4-P        Pss-P        4-C        Pce-P       K-P        4-W         Q-P          4-S
+4’s, E        Jup-E      CD-E     Jup-W     Tau-R    Cap-R    Jup-F      Vir-R      Jup-A
+       Ys-As     Mk:Hd    Ys-Br     Hd:Tp    Tp:Cd     Ys-At     Ys:Nt     Ys-Yt
+          9-P       Herm.       9-C        Lovs.      Temp.      9-W      Moon       9-S
+9’s, Mut     Lun-E     6 Hse     Lun-W    3 Hse      9 Hse     Lun-F    12 Hse    Lun-A
+       Hd-As      As/Yt     Hd-Br      Yt/Yt       At/Yt      Hd-At     Br/Yt     Hd-Yt
+          8-P        Pss-S        8-C        Pce-S       K-S         8-W         Q-S         8-S
+8’s, A        Mer-E     CD-E     Mer-W     Aqs-R     Lib-R     Mer-F    Gem-R   Mer-A
+       Gb-As     As/At      
+Gb-Br      Yt/At       At/At     Gb-At     Br-At     Gb-Yt
+         5-P         Pss-W       5-C       Pce-W      K-W       5-W        Q-W        5-S
+5’s, F        Mar-E     CD-F      Mar-W    Leo-R     Ars-R     Mar-F     Sag-R    Mar-A
+       Tp-As     Mk:Ys     Tp-Br     Nt:Tp     Tp:Gb    Tp-At      Ys:Tp     Tp-Yt
+          6-P        Dev.         6-C        Just.        Emp.       6-W       Char.        6-S
+6’s, Crd     Sol-E     10 Hse     Sol-W     7 Hse      1 Hse      Sol-F       4 Hse     Sol-A
+        Nt-As     As/Br      Nt-Br       Yt/Br      At/Br     Nt-At      Br/Br     Nt-Yt
+         7-P         Pss-C        7-C       Pce-C       K-C        7-W         Q-C         7-S
+7’s, W        Ven-E    CD-W     Ven-W     Sco-R    Can-R    Ven-F      Pis-R     Ven-A
+       Cm-As    Mk-As    Cm-Br    Mk-Yt     Mk-At    Cm-At    Mk-Br    Cm-Yt
+          2-P         10-P         2-C        10-S       10-W         2-W        10-C        2-S
+2’s, 10’s     Urs-E       Plu-E     Urs-W      Plu-A      Plu-F      Urs-F      Plu-W      Urs-A
+Abbreviations: Qabala: Tarot: Astrology:
+Kt ... Kether
+Ys ... Yesod P ... Pentacles E ... Earth
+Cm ... Chokmah Mk ... Malkuth S ... Swords A ... Air
+Bn ... Binah : ... Path W ... Wands F ... Fire
+Cd ... Chesed / ... Aspect of C ... Cups W ... Water
+Gb ... Geburah As ... Assiah Pss ... Princess CD ... Caput Drac.
+Tp ... Tipareth Yt ... Yetzirah Pce ... Prince R ... Rising
+Hd ... Hod At ... Atziluth K ... King Mut ... Mutable
+Nt ... Netzach Br ... Briah Q ... Queen Crd ... Cardinal
+506
+
+                                        Xian Tian Key to the Hexagrams
+                 Upper Number:  The Xian Tian (Primal Heaven) Sequence
+                   Lower Number: The Hou Tian (Later Heaven) Sequence
+0     1         2 3     4         5 6     7
+Upper →
+Lower ↓
+  00+              00           01           02

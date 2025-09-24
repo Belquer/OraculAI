@@ -1,0 +1,165 @@
+li2
+ 3902 12.4 53.3x abandon; depart, separate, get distance from
+zhi1
+ 0935 02.0 (this, that, such a) one
+   * xiong1
+ 2808 03.5 ill-omened, foreboding; (a) bad omen, sign
+   * shi4
+ 5794 72+5 64.6 (a) true, positive, sure (ly); indeed; thus
+wei4
+ 7079 149+9 19.5x (a) sign(alling, ifying); meaning; indication
+zai1
+ 6652 24.6 05.3x (of) calamity, disaster, adversity, misfortune24.6
+sheng3
+ 5741 06.2 F (and) harm, grave error, blindness, suffering "
+396
+
+62.6x
+ Xiao Xiang  (Fan Yao 56.6: bird burns nest, wanderer laughs, then weeps)
+   S fu2
+ with no
+yu4
+ acknowledgement
+guo4
+ (in) passing ^ by
+zhi1
+ v   (the) others v
+   * yi3
+ 2930 26.1 F beyond, past; complete(ly); too
+kang4
+ 3273 01.6 F arrogant(ance), pretension(ious); excessive
+62.m shao3 5675 42+1 (a, the) small, little (ness); few, young
+guo4 in, to excess, extreme; surpasses; inundation
+62.xg xing2 2754 11.2 action, behavior, conduct, movement
+62.zg guo4 3730 28.0 surpassing, exceptional, too much
+397
+
+63.M
+ JI4 JI4 (0453,0459):  ALREADY  COMPLETE
+63.0 Gua Ci Binary 101 010, Decimal 42; 2/3
+   * ji4
+ 0453 09.6 F already, entirely, finally, at last; after, since
+ji4
+ 0459 85+14 64.0 complete(ion, ing); done, across (the river)
+   * heng1
+ 2099 01.0 fulfillment, satisfaction, success, completion
+xiao3
+ 2605 03.5 (is) minor, modest, small, minimal, slight
+   * li4
+ 3867 01.0 (but, yet) (it is) worthwhile, rewarding 03.0
+zhen1
+ 0346 01.0 to persist; be determined, resolved, firm "
+   * chu1
+ 1390 04.0 F at, in the beginning, at the start, at first
+ji2
+ 0476 01.7 promise, hope, opportunity, timeliness
+zhong1
+ 1500 01.3 (but) (at, by, in) the end; eventually, finally
+luan4
+ 4220 45.1 07.6x disorder, confusion, chaos, turmoil, [entropy]
+63.T
+ Tuan Zhuan
+   P ji4
+ after
+ji4
+ completion
+heng1
+ (comes) fulfillment
+   * xiao3
+ (the) minor
+zhe3
+ 0263 28.T F (is, are) what; (is that, are those) which
+heng1
+ fulfills
+   P li4
+ worthwhile
+zhen1
+ to persist
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness
+rou2
+ 3133 02.T (and) the flexible, gentle, yielding; flexibility
+zheng4
+ 0351 25.0 (are) (all) correct, right, rectified, true
+er2
+ 1756 06.2 and (also)
+wei4
+ 7116 45.5 ( ^) placed, positioned, situated, dignified
+dang1
+ 6087 05.6x ap propriately, properly, suitably, duly (v)
+   P chu1
+ at the beginning
+ji2
+ promise
+   * rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+de2
+ 6161 02.0 gain, secure, find, occupy, claim (s) 64.T
+zhong1
+ 1504 03.3 the center, middle, mean; balance "
+   P zhong1
+ by the end
+zhi3
+ 0939 04.T (it is) stillness, stopping, rest, equilibrium
+ze2
+ 6746 04.0 (that) leads, proceeds to; precedes, results in
+luan4
+ disorder
+   * qi2
+ 0525 02.6 the, this; such a; one’s (own) 02.6x
+dao4
+ 6136 09.1 path, way, course, principle, process, truth  "
+qiong2
+ 1247 02.6x (is) exhausted, diminished, finished; ends    "
+398
+
+63.X
+ Da Xiang
+   * shui3
+ 5922 06.X (the) water
+zai4
+ 6657 01.2 (is) situated, placed, positioned, located
+huo3
+ 2395 13.X ^               (a, the) fire, flame
+shang4
+ 5669 40.6 over, above, atop, on top of v
+   * ji4
+ 0453 09.6 already
+ji4
+ 0459 63.0 complete
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+si1
+ 5580 31.4 F contemplates, considers, ponders, reflects on
+huan4
+ 2240 06.2x F problems, troubles, sorrow(s), sadness
+er2
+ 1756 06.2 and (then, so, thus)
+yu4
+ 7603 16.0 F prepares, readies, provides; makes ready
+fang2
+ 1817 62.3 F (a, to) defend(nse against); guard, maintain
+zhi1
+ 0935 02.0 it, this, them, such; (the) result, outcome (s)
+63.1
+ Chu Jiu , 1st 9  (Zhi Gua 39: Jian, Impasse)
+   * yi4
+ 3008 38.3 64.2 braking, dragging, holding 64.2
+qi2
+ 0525 02.6 the, those, one’s "
+lun2
+ 4254 159+8 64.2 wheels, cartwheels "
+   * ru2
+ 3149 22.3 63.6 soaking, wetting, immersing, saturating  64.0
+qi2
+ 0525 02.6 the, that, one’s (own) "
+wei3
+ 7109 10.0 64.0 tail "
+   * wu2
+ 7180 01.3 64.0 no; not; nothing; without;       no ^ (is) done
+jiu4
+ 1192

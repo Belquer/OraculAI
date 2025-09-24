@@ -14,12 +14,13 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"  # silence HF tokenizer warning
 
 from flask import Flask, render_template, request
 
-try:  # ensure runtime surfaces actionable guidance when extras are missing
-    from pinecone import Pinecone, ServerlessSpec
-except ImportError as exc:  # pragma: no cover - import guard
-    raise ImportError(
-        "Missing optional dependency 'pinecone'. Install it via 'pip install pinecone'."
-    ) from exc
+# Soft import pinecone so the webserver can start even if it's not installed.
+# We'll re-import inside the index build path and handle errors there.
+try:  # pragma: no cover - import guard
+    from pinecone import Pinecone, ServerlessSpec  # type: ignore
+except Exception:
+    Pinecone = None  # type: ignore
+    ServerlessSpec = None  # type: ignore
 
 from llama_index.core import (
     Settings,
@@ -97,6 +98,7 @@ Answer (1-3 poetic sentences, grounded in context):"""
 
 index: Optional[VectorStoreIndex] = None
 query_engine = None
+engine_backend = "dev"  # one of: dev | pinecone | local (future)
 
 # Chunking tuning for ingestion (chars, not strict tokens). We prefer larger
 # chunks to keep runtime vector counts low and retrieval fast. These constants
@@ -106,7 +108,10 @@ CHUNK_MAX_CHARS = 4000  # ~ 500-800 tokens depending on content
 CHUNK_OVERLAP = 200
 
 
-def _existing_index_names(pc: Pinecone) -> set[str]:
+from typing import Any as _Any
+
+
+def _existing_index_names(pc: _Any) -> set[str]:
     idx = pc.list_indexes()
     if hasattr(idx, "names") and callable(idx.names):
         return set(idx.names())
@@ -120,10 +125,18 @@ def _existing_index_names(pc: Pinecone) -> set[str]:
 
 def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
     """(Re)build vector index from ./sources and return (index, strict_query_engine)."""
+    import sys
+    print("[BUILD] Starting _build_index_and_engine function", flush=True)
+    sys.stdout.flush()
+    
     try:
+        print("[BUILD] About to perform lazy imports", flush=True)
+        sys.stdout.flush()
         # Lazy imports: bring in heavy or optional dependencies only when building
         # the index so the webserver startup remains fast.
         try:
+                print("[BUILD] Importing llama-index components", flush=True)
+                sys.stdout.flush()
                 from llama_index.embeddings.huggingface import (
                     HuggingFaceEmbedding,
                 )
@@ -132,33 +145,86 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
                 # uses the same embedding model as the ingestion pipeline
                 try:
                     from llama_index.embeddings.openai import OpenAIEmbedding
+                    print("[BUILD] OpenAI embedding adapter imported successfully", flush=True)
+                    sys.stdout.flush()
                 except Exception:
+                    print("[BUILD] OpenAI embedding adapter not available", flush=True)
+                    sys.stdout.flush()
                     OpenAIEmbedding = None
                 from llama_index.vector_stores.pinecone import PineconeVectorStore
+                print("[BUILD] All llama-index imports completed", flush=True)
+                sys.stdout.flush()
         except ImportError as exc:  # pragma: no cover - import guard
+            print(f"[BUILD] Import error: {exc}", flush=True)
+            sys.stdout.flush()
             raise ImportError(
                 "Missing llama-index extras for embedding/vector-store. Install 'llama-index-embeddings-huggingface' and 'llama-index-vector-stores-pinecone'"
             ) from exc
 
+        # (Re)import pinecone here to fail gracefully at build time rather than import time
+        global Pinecone, ServerlessSpec
+        if Pinecone is None:
+            print("[BUILD] Importing pinecone client", flush=True)
+            sys.stdout.flush()
+            try:
+                from pinecone import Pinecone as _Pinecone, ServerlessSpec as _ServerlessSpec  # type: ignore
+                Pinecone, ServerlessSpec = _Pinecone, _ServerlessSpec
+                print("[BUILD] Pinecone client imported successfully", flush=True)
+                sys.stdout.flush()
+            except Exception as e:
+                print(f"[BUILD] Pinecone import failed: {e}", flush=True)
+                sys.stdout.flush()
+                raise RuntimeError(
+                    "Missing optional dependency 'pinecone'. Install it via 'pip install pinecone'."
+                ) from e
+
         # Configure LLM and embedding model for index build
+        print(f"[BUILD] Configuring LLM with OpenAI key: {OPENAI_API_KEY[:10] if OPENAI_API_KEY else 'None'}...", flush=True)
+        sys.stdout.flush()
         Settings.llm = LlamaOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
+        print("[BUILD] LLM configured successfully", flush=True)
+        sys.stdout.flush()
+        
         # Prefer the OpenAI embedding adapter (text-embedding-3-small -> 1536 dims)
+        print(f"[BUILD] Configuring embeddings. OpenAI available: {OpenAIEmbedding is not None}, API key present: {OPENAI_API_KEY is not None}", flush=True)
+        sys.stdout.flush()
         if OpenAIEmbedding is not None and OPENAI_API_KEY:
             try:
+                print("[BUILD] Attempting to initialize OpenAI embeddings", flush=True)
+                sys.stdout.flush()
                 Settings.embed_model = OpenAIEmbedding(
                     model_name=os.environ.get("EMBEDDING_MODEL", "text-embedding-3-small"),
                     api_key=OPENAI_API_KEY,
                 )
-            except Exception:
+                print("[BUILD] OpenAI embeddings configured successfully", flush=True)
+                sys.stdout.flush()
+            except Exception as e:
+                print(f"[BUILD] OpenAI embedding initialization failed: {e}", flush=True)
+                sys.stdout.flush()
                 # if the OpenAI adapter is present but initialization fails,
                 # fall back to the HF embedding to keep the server usable
+                if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1":
+                    print("[BUILD] Falling back to HuggingFace model (ORACULAI_ALLOW_HF_EMBED=1)", flush=True)
+                    sys.stdout.flush()
+                    Settings.embed_model = HuggingFaceEmbedding(
+                        model_name="sentence-transformers/all-MiniLM-L6-v2"
+                    )
+                else:
+                    print("[BUILD] HF fallback disabled. No embedding model configured.", flush=True)
+                    sys.stdout.flush()
+                    Settings.embed_model = None # Explicitly disable embeddings
+        else:
+            if os.environ.get("ORACULAI_ALLOW_HF_EMBED") == "1":
+                print("[Embed] Using HuggingFace model (ORACULAI_ALLOW_HF_EMBED=1)")
                 Settings.embed_model = HuggingFaceEmbedding(
                     model_name="sentence-transformers/all-MiniLM-L6-v2"
                 )
-        else:
-            Settings.embed_model = HuggingFaceEmbedding(
-                model_name="sentence-transformers/all-MiniLM-L6-v2"
-            )
+            else:
+                print("[Embed] OpenAI embedding provider not found and HF fallback is disabled. No embedding model is configured.")
+                Settings.embed_model = None # Explicitly disable embeddings
+
+        if Settings.embed_model is None:
+            raise RuntimeError("Embedding model could not be configured. Check OpenAI keys and/or ORACULAI_ALLOW_HF_EMBED setting.")
 
         if not PINECONE_API_KEY:
             raise RuntimeError("Missing PINECONE_API_KEY")
@@ -196,7 +262,21 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
 
         pinecone_index = pc.Index(index_name)
 
-        vector_store = PineconeVectorStore(pinecone_index=pinecone_index)
+        # Build a PineconeVectorStore compatible with multiple llama-index versions
+        vector_store = None
+        last_err = None
+        try:
+            # Newer signature (common): pass the Index instance
+            vector_store = PineconeVectorStore(pinecone_index=pinecone_index)  # type: ignore[arg-type]
+        except Exception as e1:
+            last_err = e1
+            try:
+                # Alternate signature: via index_name and client
+                vector_store = PineconeVectorStore(index_name=index_name, pinecone_client=pc)  # type: ignore[call-arg]
+            except Exception as e2:
+                last_err = e2
+        if vector_store is None:
+            raise RuntimeError(f"Failed to create PineconeVectorStore: {last_err}")
         storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
         skip_build = os.environ.get("ORACULAI_SKIP_BUILD") == "1"
@@ -231,6 +311,10 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
             response_mode="compact",
             text_qa_template=STRICT_QA_PROMPT,
         )
+        try:
+            globals()["engine_backend"] = "pinecone"
+        except Exception:
+            pass
         return built_index, strict_engine
     except Exception as exc:  # pragma: no cover - defensive logging
         print(f"[ERROR] Pinecone setup/index build failed: {exc}")
@@ -257,6 +341,13 @@ if query_engine is None:
     query_engine = _DevQueryEngine()
 
 
+def _is_dev_engine(obj: Any) -> bool:
+    try:
+        return isinstance(obj, _DevQueryEngine)
+    except Exception:
+        return False
+
+
 def _clean_quote(text: str) -> str:
     if not text:
         return ""
@@ -281,7 +372,7 @@ def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
     # (re)build it now. This ensures the running worker has access to the
     # Pinecone-backed engine even when Flask's debug reloader has restarted
     # the process.
-    if query_engine is None:
+    if query_engine is None or _is_dev_engine(query_engine):
         try:
             built_index, built_engine = _build_index_and_engine()
             # only overwrite global state if build succeeded
@@ -669,10 +760,41 @@ def ask():
 @app.route("/refresh")
 def refresh_index():
     """Hot-reload ./sources into Pinecone without restarting the server."""
+    import sys
+    print("[REFRESH] Entering /refresh endpoint", flush=True)
+    sys.stdout.flush()
+    
+    # Optional admin protection: set ORACULAI_ADMIN_TOKEN to require a token
+    # provided via query param ?token=... or header X-Admin-Token.
+    admin_token = os.environ.get("ORACULAI_ADMIN_TOKEN")
+    provided = request.args.get("token") or request.headers.get("X-Admin-Token")
+    if admin_token and provided != admin_token:
+        print("[REFRESH] Authentication failed", flush=True)
+        sys.stdout.flush()
+        return "Forbidden", 403
+    
+    print("[REFRESH] Authentication passed, attempting index build", flush=True)
+    sys.stdout.flush()
+    
     global index, query_engine
-    index, query_engine = _build_index_and_engine()
+    try:
+        print("[REFRESH] Calling _build_index_and_engine()", flush=True)
+        sys.stdout.flush()
+        index, query_engine = _build_index_and_engine()
+        print(f"[REFRESH] Build completed. Index: {index is not None}, Engine: {query_engine is not None}", flush=True)
+        sys.stdout.flush()
+    except Exception as e:
+        print(f"[REFRESH] Exception during build: {type(e).__name__}: {e}", flush=True)
+        sys.stdout.flush()
+        return f"Index refresh failed with exception: {type(e).__name__}: {e}", 500
+    
     if query_engine is None:
+        print("[REFRESH] Build succeeded but query_engine is None", flush=True)
+        sys.stdout.flush()
         return "Index refresh failed. Check server logs.", 500
+    
+    print("[REFRESH] Success - returning success response", flush=True)
+    sys.stdout.flush()
     return "Index refreshed with new sources."
 
 
@@ -692,21 +814,24 @@ def health_check():
         except Exception as e:
             print(f"[Health] On-demand index build failed: {e}")
 
-    index_is_present = index is not None
+    index_is_present = (index is not None) and (not _is_dev_engine(query_engine))
     index_name = os.environ.get("PINECONE_INDEX_NAME") or os.environ.get("PINECONE_INDEX") or "oraculai"
     
     embed_model_name = "unknown"
-    if hasattr(Settings, "embed_model") and hasattr(Settings.embed_model, "model_name"):
+    if hasattr(Settings, "embed_model") and Settings.embed_model and hasattr(Settings.embed_model, "model_name"):
         embed_model_name = Settings.embed_model.model_name
 
     llm_model_name = "unknown"
-    if hasattr(Settings, "llm") and hasattr(Settings.llm, "model"):
+    if hasattr(Settings, "llm") and Settings.llm and hasattr(Settings.llm, "model"):
         llm_model_name = Settings.llm.model
 
     return {
         "status": "ok",
         "index_present": index_is_present,
         "index_name": index_name,
+        "engine_backend": engine_backend,
+        "openai_configured": bool(OPENAI_API_KEY),
+        "pinecone_configured": bool(PINECONE_API_KEY),
         "embedding_model": embed_model_name,
         "llm_model": llm_model_name,
     }

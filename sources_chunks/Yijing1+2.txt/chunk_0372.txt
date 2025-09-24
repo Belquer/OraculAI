@@ -1,0 +1,55 @@
+i by reading one favorite translation but to pick at least
+three and "add them together" to "broaden" the words. The "one word, one line" idea,
+forming a two-dimensional tapestry of potential meanings, came later and seemed to allow
+for an adequate breadth.
+The information in this Matrix translation is organized into seven columns with the
+alternative English words occupying the sixth. Following is a guide to the various kinds of
+information given in each of the columns (refer to the beginning of the Matrix itself, to see
+the columns numbered):
+1) Far left. The bold numbers indicate a new heading, by Hexagram or Gua number,
+followed by a section code:
+    .M Gua Ming, the Hexagram Name or Title.
+    .0 Gua Ci, the original or Zhouyi Hexagram Text.
+    .# Yao Ci, the original or Zhouyi Changing Line Text, line number, top last.
+    .T Tuan Zhuan, or the Commentary on the Judgment,  a later commentary on the Gua
+Ci, comprising the Yijing’s First and Second Wings or Appendices.
+    .X Da Xiang, or the Overall Image, a later commentary which looks at the Hexagram or
+the Gua itself as a composite of two Ba Gua ,
+ or Trigrams (aka Ban Xiang or half-images)
+and then derives lessons for living. This is a part of the Yijing’s Third and Fourth Wings or
+Appendices.
+    .x Xiao Xiang, or the Little Images, a later commentary on the Yao Ci, comprising the
+remainder of the Third and Fourth Wings.  Despite being included in the same Wing as the
+Da Xiang, the authors are entirely different.
+Within the area between headings are asterisks. These indicate a "parsing," or the
+separation of the text into groups of words. These were not found in the original text but
+were added later for clarity. They will sometimes act like periods, commas, colons, semi-
+colons, or breaks in a line of poetry: there is no certain rule. With only one exception (at
+02.0), I have followed fairly traditional parsing, usually as given in Z.D. Sung’s text. For
+50
+
+more information on variants see the Footnotes below. In the Tuan Zhuan and Xiao Xiang
+sections, a "harder" parsing is given for paragraphs by the letter "P," and for sentences by
+the letter "S". These will often take the place of the Chinese particle ye, which indicates the
+completion of a thought. Ye is the only Chinese word which has been left out of the Matrix.
+2) This column gives the Pinyin transliteration of the Chinese character. Many of the
+characters have alternate pronunciations, according to their intended meanings, so two
+different spellings here may refer to the same character. This happens at the Yi’s first word,
+qian2, to create, which is also gan1, to dry. Be aware also that the same Pinyin word and
+Chinese character can carry wildly different meanings. The word xu1 (2847), for example,
+means "beard" at 22.2, "female bondservant" at 54.3 and "necessity" at 05.T. The Pinyin
+system only recently replaced the Wade-Giles system as the standard for transcription. This
+was the transition where Peking became Beijing  and Taoism became Daoism. For readers
+unfamiliar with Pinyin, the two systems are compared at the end of the Glossary. The four
+pronunciation tones sometimes represent choices between optional pronunciations. Here I
+would generally follow Karlgren unless there was a significant preponderance of
+disagreement shared by Mathews, Schuessler, Kunst, Ulving and Wieger.
+3) This four-digit number is the character’s entry number in Harvard’s Mathew’s
+Chinese English Dictionary , 1993, which is organized alphabetically but in the Wade-Giles
+system. Only eleven of the words used in the Yijing, all of them in the Zhouyi, were left out
+of this dictionary. I have assigned these eleven reference numbers in
+ the 8000’s. Where the
+four-digit number is omitted from this column the character is a quoted citation from the
+section immediately preceding, in the Gua Ci or the Yao Ci . These are the words which are
+italicized in Part One. Where the number is underlined this is the first occurrence of a
+character

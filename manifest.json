@@ -1,0 +1,50 @@
+{
+  "The_Tibetan_Book_of_the_Dead_First_Complete_Translation_(Penguin_Classics_Deluxe_Edition).txt": {
+    "filename": "The Tibetan Book of the Dead First Complete Translation (Penguin Classics Deluxe Edition).txt",
+    "hash": "0836718d584684ea169bf5f79108a0b79071277feb0a6c2412250e8eb7e3f138",
+    "n_chunks": 298,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/The_Tibetan_Book_of_the_Dead_First_Complete_Translation_(Penguin_Classics_Deluxe_Edition).txt"
+  },
+  "The_Emerald_Tablet_of_Hermes.txt": {
+    "filename": "The_Emerald_Tablet_of_Hermes.txt",
+    "hash": "9be577451edc21d1f859325ea402f994c051f5eb55e0b7d37482b14c6233e200",
+    "n_chunks": 14,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/The_Emerald_Tablet_of_Hermes.txt"
+  },
+  "Yijing1+2.txt": {
+    "filename": "Yijing1+2.txt",
+    "hash": "cc8d8968fa78c4ec5ae724de1f8d73dea62382eb0ab9cdd4142679837adbfbdf",
+    "n_chunks": 595,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/Yijing1+2.txt"
+  },
+  "buddhist_suttas_sbe_vol11.txt": {
+    "filename": "buddhist_suttas_sbe_vol11.txt",
+    "hash": "6f6771cbb54415b85bdf02dfeb77dd8043c1191e478cc0f7e7368ff3b346030a",
+    "n_chunks": 1,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/buddhist_suttas_sbe_vol11.txt"
+  },
+  "dhammapada_sbe_muller.txt": {
+    "filename": "dhammapada_sbe_muller.txt",
+    "hash": "b9e03849e427e9bc0ccb37f8addd008cbb94b3743273ed80c04109c9ac170367",
+    "n_chunks": 1,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/dhammapada_sbe_muller.txt"
+  },
+  "jataka_vol6_cowell.txt": {
+    "filename": "jataka_vol6_cowell.txt",
+    "hash": "b9e03849e427e9bc0ccb37f8addd008cbb94b3743273ed80c04109c9ac170367",
+    "n_chunks": 1,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/jataka_vol6_cowell.txt"
+  },
+  "milinda_questions_vol1_rhys-davids_1890.txt": {
+    "filename": "milinda_questions_vol1_rhys-davids_1890.txt",
+    "hash": "b9e03849e427e9bc0ccb37f8addd008cbb94b3743273ed80c04109c9ac170367",
+    "n_chunks": 1,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/milinda_questions_vol1_rhys-davids_1890.txt"
+  },
+  "quotes.txt": {
+    "filename": "quotes.txt",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "n_chunks": 0,
+    "chunks_dir": "/Users/danielbelquer/Documents/GitHub/ORACULAI/sources_chunks/quotes.txt"
+  }
+}

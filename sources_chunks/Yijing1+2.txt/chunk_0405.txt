@@ -1,0 +1,162 @@
+* ze2
+ 6746 04.0 (as, when) ^occurs; (the) order here(in) 11.T
+shi4
+ 5794 62.6 v              this         v; is, that, is (so, this): "
+tian1
+ 6361 01.5 heaven, the sky
+di4
+ 6198 36.6 (and) (the) earth, ground, land
+bu4
+ 5379 02.2 do not, fail to
+jiao1
+ 0702 14.1 interact, unite, (inter)relate, combine, mingle
+er2
+ 1756 06.2 and (so, thus, then), while
+wan4
+ 7030 01.T (the) myriad, ten thousand; all of  25.X
+wu4
+ 7209 01.T beings, creatures, things;    creation "
+bu4
+ 5379 02.2 do(es) not; fail(s) to
+tong1
+ 6638 11.T 13.T communicate, circulate, interconnect
+118
+
+   S shang4
+ 5669 40.6 (those) above; high, superior 14.T
+xia4
+ 2520 57.2 (and) (those) below; low, subordinate "
+bu4
+ 5379 02.2 do not, fail to
+jiao1
+ 0702 14.1 interact, unite, inter(relate), combine, mingle
+er2
+ 1756 06.2 and (so, thus, then), while
+tian1
+ 6361 01.5 heaven; ^                    heaven, the sky 13.T
+xia4
+ 2520 57.2 below;  (all) (things) under, beneath v "
+wu2
+ 7180 01.3 (is, are) without; lack, want (s)
+bang1
+ 4910 07.2x 30.6x jurisdiction, government, sovereignty
+   S nei4
+ 4766 08.2 within, inside, inward
+yin1
+ 7444 61.2 F (is) (the) shadow, the unknown, darkness
+er2
+ 1756 06.2 and, while
+wai4
+ 7001 08.4 without, outside, outward
+yang2
+ 7265 01.1x F (is) (the) light, the known, brightness
+   * nei4
+ 4766 08.2 within, inside, inward
+rou2
+ 3133 02.T (is) softness, weakness, flexibility
+er2
+ 1756 06.2 and, while
+wai4
+ 7001 08.4 without, outside, outward
+gang1
+ 3268 03.T (is) firmness, strength, endurance
+   * nei4
+ 4766 08.2 within, inside, inward
+xiao3
+ 2605 03.5 (is, are) (the) common, ordinary, small 12.T
+ren2
+ 3097 01.2 one(s), person, people "
+er2
+ 1756 06.2 and, while
+wai4
+ 7001 08.4 without, outside, outward
+jun1
+ 1715 01.3 (is) (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+   * xiao3
+ 2605 03.5 (the) common, ordinary, average, small  23.T
+ren2
+ 3097 01.2 one’s, ones,’ person’s, peoples’ "
+dao4
+ 6136 09.1 na ture, course, path, way (s), principle(s)
+chang2
+ 0213 07.5 wax, survive, persist, develop, prevail (s)
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one’s, heir’s, disciple’s
+dao4
+ 6136 09.1 way, course, path, nature, principle (s)
+xiao1
+ 2607a 11.T 19.T wane, fade, decay, d eteriorate, dissipate (s)
+12.X
+ Da Xiang
+   * tian1
+ 6361 01.5 heaven, the sky
+di4
+ 6198 36.6 (and) (the) earth, ground, land
+bu4
+ 5379 02.2 do not, fail to
+jiao1
+ 0702 14.1 interact, unite, (inter)relate, combine, mingle
+119
+
+   * pi3
+ 1902 07.1 separating
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+jian3
+ 0848 9+13 62.X (is) restrained, frugal; conserves, reserves
+de2
+ 6162 06.3 (in) character, virtue, power, worth, integrity
+bi4
+ 5172 160+6 30.1x (and, to) avoid, shun; withdraw (s) from
+nan2
+ 4625 03.T 36.T difficulty, trouble, hardship, affliction (s)
+   * bu4
+ 5379 02.2 w ithout; avoiding, not (even)
+ke3
+ 3381 02.3 accepting, allowing, permitting, approving
+rong2
+ 7582 75+10 HL (himself) honor(s), esteem, distinction, luxury
+yi3
+ 2932 04.1 as, in, for, by way/means  of, in the form of
+lu4
+ 4196 113+8 43.X payment, compensation, credit, recompense
+12.1
+ Chu Liu , 1st 6  (Zhi Gua 25: Wu Wang, Without Pretense)
+   * ba2
+ 4848 11.1 F pulling, drawing (up, out), extracting 11.1
+mao2
+ 4364 11.1 28.1 thatch, mao grass; reeds "
+ru2
+ 3139 11.1 F (by the) roots "
+   * yi3
+ 2932 04.1 14.2 (and) thereby, thus, with this "
+qi2
+ 0525 02.6 (uprooting) its, the, another "
+hui4
+ 2349 11.1 F (whole) cluster, group, bunch; kindred, sort "
+   * zhen1
+ 0346 01.0 persistence, determination, resolve, focus
+ji2
+ 0476 01.7 (is) promising, auspicious, timely, hopeful
+heng1
+ 2099 01.0 (and) fulfilling, satisfying, thorough
+12.1x
+ Xiao Xiang  (Fan Yao 25.1: with no pretense, to go forward is promising)
+   S ba2
+ pulling up
+mao2
+ thatch grass,
+zhen1
+ persistence
+ji2
+ (is) promising
+   * zhi4
+ 0971 03.1x (the) purpose, objective, intention, a

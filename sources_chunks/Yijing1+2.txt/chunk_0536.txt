@@ -1,0 +1,97 @@
+slation.
+55.T HY has some character unfamiliar to me written in for 
+ , Ze4.
+59.X Chose 
+ , Xiang3, per HY, not 
+ , Heng1, per ZD Sung.
+409
+
+Big5 Character Notes:
+01.3
+ Substituted M7180 for M7173 throughout. M7173, as used in the printed
+ versions of the received texts, is not available in the Big5 character set.
+01.7 
+ , Qun2, is another version of the same character, and the only one available
+in Big5.
+11.3 Can't find the Ping2 character distinct from 
+ , Hu1, as used in older texts.
+Apparently not available in Big5.
+21.X
+ , Lai2, is another version of the same character, and the only one available
+in Big5.
+23.1 
+ , Chuang2, is another version of the same character, and the only one
+available in Big5.
+56.X 
+ , Liu2 is another version of the same character, and the only one available
+in Big5.
+Assorted characters for copy & paste:
+410
+
+Significant Parsing Discrepancies and Decisions:
+03.T Parsed Zhun1, Gang1... per HY.
+03.3 Sig nificantly, HY does not parse between Ji1 Bu2.
+04.T HY parses Xing2. Shi2.
+05.T Parsed Fu2, Guang1... per HY.
+05.2x HY writes Zhong1 Zhi2. Zhi2 Zhong1 works better with Sui1.
+06.0 HY parses You3 Fu2. Zhi4 Ti4 Zhong1 Ji2. Sung's works better.
+06.2 HY parses Gui1 Er2 Bu1 Qi2 Yi4. Ren2 San1...
+06.5 HY p arses Song4. Yuan2 Ji2.
+08.X HY parses Jian4 Wan4 Guo2. Qin1 Zhu1 Hou2.
+10.T HY parses Bu4 Die2 Ren2. Heng1.
+12.1 HY parses Zhen1 Ji2. Heng1.
+12.2 HY parses Da4 Ren2 Pi3. Heng1. I think this misses the point.
+13.T HY parses Tong2 Ren2 Yu2 Ye3. Heng1.
+14.4x HY parses Fei3 Qi2 Peng2. Wu2 Jiu4.
+14.5 HY parses Wei1 Ru2. Ji2.
+15.4 Z.D. Sung parses this Wu2 Bu4 Li4. Hui1 Qian1. I like it whole.
+16.6 Z.D. Sung parses this Cheng2. You3 Yu2.  I like it whole.
+17.T HY parses this Dong4 Er2 Yue4 Sui2.
+18.1 HY parses this You3 Zi3. Kao3 Wu2 Jiu4. This has merit too:
+ "There is a child. Investigation is not a mistake."
+19.2x HY parses Xian2 Lin2 Ji2. Wu2 Bu4 Li4
+20.T Z.D. Sung does not parse: Guan1 Guan4 Er2 Bu4 Jian4. I like HY.
+22.4x HY parses Liu4 Si4. Dang1 Wei1 Yi2 Ye3. Not consistent with Xiao Xiang
+formats or templates.
+25.1 HY parses this Wu2 Wang4. Wang3 Ji2. This has merit too, but the ideas are
+not independent here.
+25.6 HY parses this Wu2 Wang4. Xing2 You3 Sheng3. See note above.
+27.2 Z.D. Sung does not parse this: Fu2 Jing1 Yu2 Qiu1 Yi2.
+HY parses this Fu2 Jing1 Yu2 Qiu1. Yi2 Zheng1 Xiong1.
+I have not opted for either.
+27.4 HY parses this Dian1 Yi2. Ji2.
+34.4 Z.D. Sung does not parse this: Zhen1 Ji2 Hui3 Wang2.
+35.2 HY parses this: Shou4 Zi1 Jie4 Fu2. Yu2 Qi2 Wang2 Mu3.
+35.3x HY parses this: Zhong4 Yun3 Zhi1 Zhi4. Shang4 Xing2 Ye3.
+36.3x HY reverses Da4 & De2.
+411
+
+37.X Z.D. Sung does not parse this: Jun1 Zi3 Yi3 Yan2 You3 Wu4
+Er2 Xing2 You3 Heng2.
+47.4 HY parses this: Lin4. You3 Zhong1.
+47.6 HY parses this: Yue1 Dong4 Hui3 You3 Hui3. Zheng1 Ji2.
+48.5 HY parses this: Jing3 Lie4. Han2 Quan2 Shi2.
+49.0 HY parses this: Yuan2 Heng1. Li4 Zhen1. So do others. But Sung may be right
+here. The unparsed sentence says something with a subtle difference.
+50.0 HY parses this: Yuan2 Ji2. Heng1. I think there's a reason not to.
+56.T Z.D. Sung parses this: Shi4 Yi3 Xiao3 Heng1. Lu3 Zhen1 Ji2 Ye3.
+This may work better unparsed.
+56.2x Z.D. Sung has: Tong2 Pu2 De2 Zhen1, which has interesting possibilities:
+"The Young Servant (also) Learns Loyalty."
+But Xiao Xiang forms suggest the HY version adopted here.
+57.2 Z.D. Sung parses this: Yong4 Shi3 Wu1 Fen1 Ruo4. Ji2.
+HY parses this: Yong4 Shi3 Wu1. Fen1 Ruo4. Ji2.
+I have combined the two.
+58.T HY parses this: Yue4 Zhi1 Da4. Min2 Quan4 Yi3 Zai1
+59.5 HY parses this: Huan4. Wang2 Ju1 Wu2 Jiu4.
+61.T HY parses this: Yue4 Er2 Xun4 Fu2. Nai3 Hua4 Bang1 Ye3.
+62.T Z.D. Sung does not parse this: Ke3 Xiao3 Shi4
+Bu4 Ke3 Da4 Shi4.
+63.0 Z.D. Sung does not parse this: Chu1 Ji2 Zhong1 Luan4.
+412
+
+Other blocks of characters further parsed here and in Z.D. Sung
+but not parsed in Harvard-Yenching, as they appear in HY:
+01.3 xi4 ti4 ruo4 li4.
+02.0 yuan2 heng1 li4 pin4 ma3 zhi1 zhen1.
+03.0 yuan2 he

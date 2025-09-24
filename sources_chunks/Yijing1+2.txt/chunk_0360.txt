@@ -1,0 +1,56 @@
+first appeared
+in the Yiweishu in the Early Han. The development of the Shi Er Yue Gua, in the order of
+the 12 Moons (see Fig. 15), is attributed to Meng Xi (90-40) by Yu Fan (164-233) (Fendos,
+p. 406). The pairing of the 12 Branches to the 12 Lines of Qian and Kun and a system
+known as “Internalizing the 12 Branches” is attributed to Jing Fang (77-37) ( ib, p. 370).
+However, the Chinese had developed their 12-month calendar long before the Zhouyi was
+composed. Further, the references to the coming of the 8th Moon at Gua Ci 19.0 (Lin is the
+12th Moon, the 8th’s Inverse), the reference to the coming of solid ice at Yao Ci 02.1 (Zhi
+Gua 24) and the association of Gua 24 to the Winter Solstice in Da Xiang 24.X all suggest
+that a system of assignments was both in place and a part of both the Zhouyi  and Wing
+composers’ thought processes.
+The Sovereign Gua of the 12 Moons are derived by a method of permuting any
+given Gua through eleven others and back to itself. This came to be known later as the “ 1 2
+Earthly Branches Method” (this is distinguished from the earlier 12 Earthly Branches
+themselves). Beginning with any base Gua, the first l ine is changed into its opposite.
+Allowing the change to remain, the second line is then changed, then the third, etc. When the
+top is reached, the Gua has become the original’s Opposite. The six steps are then repeated
+from the bottom up to return the Gua to original form. The base Gua used in deriving the
+Families (see Figs. 15-18) are the Chong Gua (Doubled Trigrams) paired with their
+Opposites. Of these the best known family is Kun-Qian, more commonly called the
+Sovereign Gua of the 12
+ Moons. The No Family Gua are left out of this particular series
+even though each of these may also be permuted by the 12 Branch Method. The first two
+columns below give the 12 Moons, the 12 (approximate) western months and the Sovereign
+Gua of the Moons. The remaining columns are later attributions.
+Moon     Gua Branch   Zodiac * * * Seasons
+1 Feb     11 Tai Zi    Rat Aries Spring Begins; The rain
+2 Mar     34 Da Zh. Chou    Ox Taurus Insects Awaken; V. Equinox
+3 Apr     43 Guai Yin    Tiger Gemini Clear & Bright; Grain Rain
+4 May     01 Qian Mao    Hare Cancer Summer Begins; Grain Buds
+5 Jun     44 Gou Chen    Dragon Leo Grain in Ear; Summer Solstice
+6 Jul     33 Dun Si    Serpent V irgo Slight Heat; Great Heat
+7 Aug     12 Pi Wu    Horse Libra Autumn Begins; Heat Stops
+8 Sep     20 Guan Wei    Goat Scorpio White Dews; A. Equinox
+9 Oct     23 B Shen    Monkey Sagit. Cold Dews; Hoarfrost Falls
+10 Nov    00 Kun You    Cock Capr. Winter Begins; Light Snow
+11 Dec     24 Fu Xu    Dog Aquarius Heavy Snow; Winter Solstice
+12 Jan     19 Lin Hai    Boar Pisces Slight Cold; Great Cold
+*** Note: This is not the position of the Sun in the Western Zodiac Signs. With
+Precession considered (astronomy), it is roughly the Ascendant Sign at 11 AM (equinox,
+standard time); without (non-sidereal western astrology), about 9 AM.
+20
+
+The Gua Xiang or Hexagram Images
+The Zhouyi authors made use of a number of overall Gua characteristics, not
+respective of the meanings assigned to the individual Lines or Trigrams, in their search for
+illustrative metaphors and extended analogies. These are a few:
+The Shape (Xiang4, 2568 or Xing2, 2759) of the Gua became a significant factor
+when it resembled a familiar object. Gua 02 was wide open or accepting, like a ploughed
+furrow; 23 was a too-tall mountain; 20 was an observation tower; 62 was a bird in flight; 50
+was a ding cauldron; 44 was an undermining; 24 was a seed deep in the earth, or the road
+home; 27 was an open mouth; 61 was a window into a private space; 34 had horns; 43 was a
+too tall lake or something about to burst; 28 was something overloaded; and 01 was whole
+and full. This dimension could stand as an argument for the early existence of the two
+graphically distinct whole and broken lines depicting the Gua as an image, but it does not
+follow that this implies any binary cosmology

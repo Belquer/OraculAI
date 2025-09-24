@@ -1,0 +1,103 @@
+China to replace the 
+Wade-Giles system of transliteration (see below to compare).
+The traditional Chinese characters, used in the Zhouyi Zhezhong, are called 
+Han Zi (the Han characters); they are still used in Taiwan and Hong Kong. 
+Simplified characters are now used on the mainland.
+* There are only 411 Pinyin syllables. Most of these pronounce a large number of 
+different Chinese characters. Pronunciation is further modified by four tones
+which further narrow the meanings.
+* Each character is pronounced as one syllable. Diphthongs (combined vowels) 
+are spoken quicky, not drawn out. Modern Chinese is much more multiple- 
+character and polysyllabic than it was in the days of the Yijing’s origin.
+* Retroflex means pronounced with the tip of the tongue turned back or up 
+towards the hard palate, or the gums behind the upper canines.
+* Sounds are Aspirated with the breath (like P), Voiced with the larynx (like B). 
+More aspirated  means a stronger puhff of air.
+Initial Sounds:
+b b, a little softer and a little less voiced than English
+c ts, as in bats eat cats
+ch ch, retroflexed, as in wit ch hunt
+d d, a little softer and a little less voiced than English
+f f, no surprises, as in fan
+g g, a little softer and a little less voiced than English, not soft as in huge
+h h, a little more aspirated and a little more gutteral than English
+j dzh as in jump, but the tongue is a little more forward than in English
+k k, a little more aspirated than English
+l l, no surprises, as in lily
+m m, no surprises, as in madman
+n n, no surprises, as in ninny
+p p, a little more aspirated than English
+q ch, no surprises, as in cheap chicken
+r r, r as in run, but with a hint of a z or buzzing sound on top of it
+s s, no surprises, as in simplicity
+sh sh, retroflexed, as in fi sh hook, or sch as in Schubert
+t t, a little more aspirated than English
+w w, no surprises, as in win
+x sh, but with a hint of an s
+y y, no surprises, as in yes
+z dz, as in a dze or adds
+zh j, retroflexed, dzh, or dge as in fu dge. 
+Not zh as in vision.
+484
+
+Final Sounds:
+a ah
+a after y, as in yam
+ai aye
+an ahn as in autobahn, not as in tan
+an after y, ehn as in y en
+ang ah+ng, as in ankh, not ang as in hang
+ao ow as in how n ow
+e between eh and uh, as in al ert
+e after y, as in y et
+ê used alone, eh
+ei ae as in bay
+en uhn, as in un
+eng ung as in sung, but abbreviate the vowel, not eng as in strength
+er uhr, as in sir or surly or early
+i ee as in eat
+i after c, s, z: between ee and oh, an unstressed uh
+i after ch, r, sh, & zh: er as in herd, but shorten the r and voice with a
+ia ya                            hint of a z or buzz
+ian yen
+iang yang
+iao yow, with ow as in pow
+ie yeh as in yet
+in in
+ing ing as in sing
+iong üng, see ü, between yoong and yeeng
+iu yowh as in yolk
+o between awe and owe as on p ort
+ong uwng, as in lung but with a little more oo, not as in long
+ong after y, oong with more ee, üng, as in German yüng
+ou between ou and oa, as in out, boat
+u oo as in bl ue moon
+ü after j, l, q, x, y, like French & German, form to say oo but say ee
+ua wa
+uai wai as in winding
+uan wahn as in wan
+uang wah+ng
+ue wuh
+ue after j, q, x, y, weh as in wet
+üe in lüe and nüe, between oo and ee plus eh
+ui way
+un un as in fun but with u as in put and abbreviate the vowel
+uo waw with second w shortened
+485
+
+Pinyin to Wade-Giles Conversion
+Phonetic elements and syllables not found in this table are the same in both
+systems.
+Pinyin: Wade-Giles Pinyin: Wade-Giles Pinyin: Wade-Giles
+b... p...                    ...e ...o chi ch’ih
+c... ts’...                 ...ian ...ien ci tz’u
+ch... ch’...                  ...ie ...ieh gui kuei
+d... t...                        ...iong ...iung ju chu
+g... k...                      ...ong ...ung juan chuan
+j... ch...                   ...ue ...ueh jue chueh
+k... k’...                   ...uo ...o jun chun
+p... p’... kui k’uei
+q... ch’...                  e o, eh lue lueh
+r... j...                      er erh ri jih
+t... t’...                     o wo shi shih
+x..

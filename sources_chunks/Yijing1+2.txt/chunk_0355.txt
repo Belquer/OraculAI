@@ -1,0 +1,51 @@
+bove, here are some of the clearest examples, offered as an exercise, with
+the locations of explanatory footnotes underlined:
+01.6, 43.6; 02.3, 15.3; 03.3, 63.3; 05.3, 60.3; 05.4, 43.4; 06.4, 59.4
+; 07.5, 29.5; 09.2, 37.2;
+10.2, 25.2; 10.5, 38.5; 11.2, 36.2; 12.3, 33.3; 12.5, 35.5; 13.3, 25.3;13.5, 30.5; 14.4, 26.4;
+15.1, 36.1; 17.2, 58.2; 18.1, 26.1; 18.4, 50.4; 9.4, 54.4; 20.2, 59.2; 21.6, 51.6; 22.1, 52.1;
+22.3, 27.3; 23.4, 35.4; 24.3, 36.3; 25.4, 42.4; 27.2, 41.2; 28.1, 43.1; 28.5, 32.5; 29.6, 59.6;
+30.1, 56.1; 31.4, 39.4; 32.1, 34.1; 32.3, 40.3; 34.3, 54.3; 35.2, 64.2; 36.4, 55.4; 37.1, 53.1;
+37.3, 42.3; 38.6, 54.6; 40.1, 54.1; 40.5, 47.5; 43.2, 49.2; 44.4, 57.4; 49.5, 55.5; 54.5, 58.5;
+56.6, 62.6.
+While the neglected importance of these two fundamental dimensions might be
+considered one of main theses of this dissertation, the proof of this importance must be in
+that they solve persistent, intractable Yao Ci problems of translation and interpretation, that
+they eliminate some of the need for the more far-fetched speculations.
+13
+
+The Gua Xu or Hexagram Sequences
+In an English dictionary the words are alphabetized for convenience of reference. The
+alphabet itself remains in its familiar sequence strictly for mnemonic reasons, even though it
+would make a lot more sense if it were organized geometrically according to phoneme type.
+Chinese dictionaries are usually organized around enumerated radicals, with enumeration
+based upon the number of strokes used in writing the radical. None of these al phabetic or
+numerical organizing principles bear any consistent relationship to lexical meaning. On a
+slightly higher scale of order, the way in which we number our months has meaning in its
+reference to sequence, but both the number of months used and the point of origin on the
+circle is essentially arbitrary: the only “real” anchors for the seasonal cycle as a calendar
+would be one of the equinoxes or solstices (which also suggests that the number four be a
+factor in the number of months). Numerologists t end to make a b ig real deal about these
+arbitrary constructs. As I write this, the western year 2000 is fast approaching, as billions
+wait anxiously, believing that this arbitrary number will somehow “do” something to them.
+In the middle ages there were riots when a calendar reform led to an eleven-day adjustment:
+the people believed that eleven days were being stolen from their lives. Most traditional
+Qabalists assign great significance to the sequence of the Hebrew alphabet, all the while
+ignoring this alphabet’s much higher geometrical order (still not phoneme based). At least
+the Tarot card readers know better: they can simply shuffle their decks.
+The Sequence of the Hexagrams in the received Yijing text is known as the Hou Tian
+Xu (Later Heaven) or Wen Wang Xu (King Wen) Sequence. This is a good example of a
+little order into which far too much has been read. The algorithm for the little order is: Every
+even n
+umbered Gua is the Inverse of the Gua which precedes it, except in cases where a
+Gua is its own Inverse - then the preceding Gua is an Opposite. This gives thirty two
+structurally meaningful pairs which were then placed in random sequence. As suggested
+earlier, I have had a difficult time imagining that this was the original chapter sequence,
+preferring to think that this legacy was an editor’s tactic, one which was designed to leave
+only a single clue that other dimensions existed, and leave novices unintimidated.
+The Mawangdui manuscript, entombed in 168 BCE and uncovered in the twentieth
+century, arranges the chapters in a different sequence, one which clearly demonstrates an
+awareness of the Ba Gua as components of the Gua [this sequence and its full text may be
+found in both Kunst and Shaughnessy (1996)]. But I am not inclined to give this much
+weight as a candidate for the original sequence either. The text of Laozi' Daodejing  was
+found re arranged in this package as well. Rather, this appears to be one of the s

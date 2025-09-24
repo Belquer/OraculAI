@@ -1,0 +1,165 @@
+umstances
+ju1
+  1535 03.1 F remain, stay, hold (s)
+fang1
+  1802 02.2 F st raightforward, direct(ed), defined(ite)
+64.1
+  Chu Liu , 1st 6  (Zhi Gua 38: Kui, Estrangement)
+   * ru2
+  3149 22.3 64.6 soaking, wetting, immersing, saturating  63.1
+qi2
+  0525 02.6 the, that, one’s "
+wei3
+  7109 10.0 F tail "
+   * lin4
+  4040 03.3 embarrassing(ment), humiliating(ion); shame
+64.1x
+  Xiao Xiang  (Fan Yao 38.1: don’t pursue the missing horse, just avoid error)
+   S ru2
+ soaking
+qi2
+ one’s
+wei3
+ tail
+   * yi4
+  3021 48.0 64.6x truly, really, surely; such, what; still
+bu4
+  5379 02.2 ^ lack, want of; un-; in-; without
+zhi1
+  0932 19.5 64.6x ^ awareness, comprehension, discretion
+ji2
+  0484 60.2x F (a, an) extreme, ultimate, perfect (ly)    v
+64.2
+  Jiu Er , 9 2nd  (Zhi Gua 35: Jin, Expansion)
+   * yi4
+  3008 38.3 F braking, dragging, holding 63.1
+qi2
+  0525 02.6 the, those, one’s "
+lun2
+  4254 63.1 F wheels, cartwheels "
+404
+
+   * zhen1
+  0346 01.0 persistence, determination, resolve, focus
+ji2
+  0476 01.7 (is) promising, auspicious, opportune, timely
+64.2x
+  Xiao Xiang  (Fan Yao 35.2: no worry, accept present constraints as a blessing)
+   S jiu3
+ nine
+er4
+ second’s
+zhen1
+ persistence
+ji2
+ (is) promising
+   * zhong1
+  1504 03.3 in (the) center, middle, mean; balance
+yi3
+  2932 04.1 in order, thereby; means; through which
+xing2
+  2754 11.2 to act, advance, behave, move, progress
+zheng4
+  0351 25.0 correctly, rightly, properly
+64.3
+  Liu San , 6 3rd  (Zhi Gua 50: Ding, The Cauldron)
+   * wei4
+  7114 48.0 03.5x (if, when) not yet, still not, less than
+ji4
+  0459 63.0 15.T complete, done, across
+zheng1
+  0352 09.6 to expedite, go boldly, assert, aggress 09.6
+xiong1
+  2808 03.5 (is) unlucky, ill-omened; has pitfalls "
+   * li4
+  3867 01.0 (it is) worthwhile, rewarding, favorable  05.0
+she4
+  5707 05.0 F to cross, ford, ferry, venture, experience "
+da4
+  5943 01.2 (the) great, big, major "
+chuan1
+  1439 05.0 29.T stream, river, current, water (s) "
+64.3x
+  Xiao Xiang  (Fan Yao 50.3: cauldron’s ears altered, its function is impaired)
+   S wei4
+ (if) not yet
+ji4
+ across
+zheng1
+ to go boldly
+xiong1
+ has pitfalls
+   * wei4
+  7116 45.5 (the) place, position, attitude, dignity 10.3x
+bu4
+  5379 02.2 is not, in-; im-, less than, [mal-] "
+dang1
+  6087 05.6x appropriate, proper, suited, [adaptive] "
+64.4
+  Jiu Si , 9 4th  (Zhi Gua 04: Meng, Inexperience)
+   * zhen1
+  0346 01.0 persistence, determination, resolve, focus
+ji2
+  0476 01.7 (is) promising, auspicious, opportune, timely
+hui3
+  2336 01.6 (and, while) regret(s), remorse 31.4
+wang2
+  7034 11.2 pass, disappear, dissolve (s) "
+   * zhen4
+  0315 51.0 F shock, force, energy, power
+yong4
+  7567 01.1 (was) used, applied; spent, expended
+fa1
+  1765 15.5 F to subjugate, subordinate, chastise 63.3
+gui3
+  3634 38.6 15.T (the) barbarian, devils’, demons’, Gui "
+fang1
+  1802 02.2 20.X country, domain, quarter, region "
+405
+
+   * san1
+  5415 04.0 (but, though) three
+nian2
+  4711 03.2 F ye ars, harvests
+you3
+  7533 01.6 brought (about), achieved, earned, claimed
+shang3
+  5672 154+8 HL (the) grants, awards, rewards, endowments +
+yu2
+  7592 02.6 of, in, with
+da4
+  5943 01.2 great, vast, major, important, whole
+guo2
+  3738 07.6 01.T states, estates, domains, territories
+64.4x
+  Xiao Xiang  (Fan Yao 04.4: afflicted by ignorance, a shame)
+   S zhen1
+ persistence
+ji2
+ (is) promising
+hui3
+ (while) regrets
+wang2
+ pass
+   * zhi4
+  0971 03.1x the aim, intention, objective, purpose (s) 09.T
+xing2
+  2754 11.2 (is, are) carried out, advanced "
+64.5
+  Liu Wu , 6 5th  (Zhi Gua 06: Song, Contention)
+   * zhen1
+  0346 01.0 persistence, determination, resolve, focus
+ji2
+  0476 01.7 (is) promising, auspicious, opportune, timely
+   * wu2
+  7180 01.3 64.6 no, with no, without; nothing; despite 13.6
+hui3
+  2336 01.6 (the, to) regret(s), remorse; to repent (of) "
+   * jun1
+  1715 01.3 (a, the) noble, worthy, honored
+zi3
+  6939 01.3 young one, heir, disciple
+zhi1
+  0935 02.0 has, holds; resorts to; goes, moves toward(s)
+guang1
+  3583 0

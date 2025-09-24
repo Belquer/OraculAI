@@ -1,0 +1,121 @@
+ong, without a mistake,
+not a mistake, make no mistakes, no harm done, etc.) may be tracked through the Zhouyi by
+following jiu in column 5, from its first occurrence at 01.3.
+At the end of the Matrix section for each of the Gua there are miscellaneous sections:
+ ##.xc gives further glosses and insights on the Gua Ming,  excerpted from the Xi Ci Zhuan ,
+the Commentary on the Appended Phrases, a.k.a. Da Zhuan, the Great Commentary,
+Wings 5 and 6. The Xi Ci Zhuan  only examines nine of the Gua.
+##.xg does the same for the Xu Gua , the Sequence of the Hexagrams, Wing 9.
+##.zg does the same for the Za Gua, the Assorted or Miscellaneous Hexagrams, Wing 10.
+##.m gives the Hexagram Name as found in the Mawangdui manuscript. This is treated here
+as a simply another gloss of the Gua Ming in the received version. These names differ
+in thirty-two of the sixty-four cases. In several, the differences are significant.
+##.#wy offers selected quotations from the Wen Yan Zhuan , the Commentary on Words of
+the Text, Wing 7, which expands and expounds on only the first two Gua.
+52
+
+Col.1 Col.2            Col.3 Col.4 Col.5 Column 6 Col.7
+01.M
+ QIAN2 (3233):  CREATING
+01.0 Gua Ci  (Hexagram Text) Binary 111 111, Decimal 63
+   * qian2
+ 3233 5+10 01.3 creating, initiative, author-ity, mastery
+   * yuan2
+ 7707 10+2 02.0 first-rate, supreme, the finest, greatest 19.0
+heng1
+ 2099 8+5 02.0 fulfillment, satisfaction, success "
+li4
+ 3867 18+5 01.2 (is) worth, the harvest of; merits, rewards "
+zhen1
+ 0346 154+2 02.0 persistence, determination, resolve, loyalty "
+01.T
+ Tuan Zhuan  (Commentary on the Judgment)
+   P da4
+ 5943 01.2 ( ^) complete, great, grand, enormous, vast
+zai1
+ 6650 30+6 how, so (very) v; indeed
+qian2
+ (is) create (-ing’s, -ivity’s, -ion’s), mastery’s
+yuan2
+ source, beginning, basis, origin (!)
+   * wan4
+ 7030 140+9 (the) myriad, ten thousand;      all of 02.T
+wu4
+ 7209 93+4 beings, creatures, things (are); creation (is) "
+zi1
+ 6927 56.2 02.T endowed with, provided; (en)rich(ed) in, at
+shi3
+ 5772 38+5 01.T beginnings, birth; (the) origin, source, start
+   * nai3
+ 4612 03.2 along with, as well as, and so is, as is
+tong3
+ 6641 120+6 HL the whole of, all of
+tian1
+ 6361 01.5 heaven [higher nature]; the sky, firmament
+   P yun2
+ 7750 09.0 03.X (as) (the) clouds
+xing2
+ 2754 11.2 advance, proceed, move (on), pass
+yu3
+ 7662 09.0 03.T (the) rain
+shi1
+ 5768 70+5 01.2x (is) bestowed, granted, extended; falls
+   * pin3
+ 5281 57.4 02.T (the) varieties of, orders of, various
+wu4
+ 7209 01.T beings, (living) creatures, entities, things
+liu2
+ 4080 85+7 15.T flow into, assume, permeate, fulfill (their)
+xing2
+ 2759 50.4 F form, shape, embodiment, manifestation (s)
+   P da4
+ 5943 01.2 (a, the) complete, full, great, noble, strong
+ming2
+ 4534 17.4 clarity, light, intelligence, vision
+zhong1
+ 1500 01.3 ends, concludes, completes; (is) complete
+shi3
+ 5772 01.T 02.1x (then) begins, renews; (and yet) new, fresh
+   * liu4
+ 4189 12+2 01.T (the) six
+wei4
+ 7116 45.5 places, positions, degrees, dignities
+shi2
+ 5780 54.4 (are) by season, in time
+cheng2
+ 0379 02.3 completed, fulfilled, accomplished
+53
+
+ * shi2
+ 5780 54.4 seasons, times, opportunities, occasions
+cheng2
+ 0398 03.2 16.5x to mount, ride, avail of, ascend on
+liu4
+ 4189 01.T F (the) six
+long2
+ 4258 01.1 F dragons
+yi3
+ 2932 04.1 (and) thereby, with these; in order
+yu4
+ 7664 60+8 HL to master, manage, negotiate, navigate
+tian1
+ 6361 01.5 heaven, the sky(ies), celestial; higher nature
+   P qian2
+ creating’s, creativity’s, creation’s
+dao4
+ 6136 09.1 way, course, truth, principle, nature, process
+bian4
+ 5245 49.5 15.T (is) becoming, emergence, change 32.T
+hua4
+ 2211 21+2 20.T (and) transformation, metamorphosis "
+   * ge4
+ 3368 30+3 HL each being, individual; every thing
+zheng4
+ 0351 25.0 true to, obeying, upholding, confirming
+xing4
+ 2771 61+5 HL (its) natural disposition, inner spirit, nature
+ming4
+ 4537 06.4 (and) higher law, higher order, destiny
+   * bao3
+ 4946 9+7 19.X security, safety, protection, insurance
+h

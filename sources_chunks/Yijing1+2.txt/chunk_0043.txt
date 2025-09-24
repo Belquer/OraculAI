@@ -1,0 +1,82 @@
+erson walking the straightest of paths, with the best of
+intentions and attitudes, the clearest of comprehension, the kindest heart and the
+sharpest mind. More than occasionally, the situation itself is outside of one’s
+control. This may come up in a reading. Here the advice is often: make a choice to
+occupy this niche well by adapting to best advantage, or get out from under the
+circumstances by going somewhere else. But try to quit wringing your hands,
+rending your garments and weeping about it: since this is only a passing phase,
+grieve if you must and then help it past.
+There are times in one’s life when the grounds for one’s optimism are not to
+be doubted. And there are times when this optimism is purely self-fulfilling and,
+for this reason alone, should not be doubted. Where the Yijing points to troubles
+ahead, in the midst of one of these upswings, it may only be indicating a hiccup, a
+minor and temporary setback. This points out the importance of specifying a span
+of time in the framing of one’s question. The inquirer will be investigating the net
+changes, or lessons to be applied, across this specified span of time.
+There are 64 possible configurations of changing lines for each of the Gua or
+Hexagrams, including no change, and so there are 64
+2 or 4096 possible responses
+to any given inquiry. But the quantity  of verbal content for each response is
+fixed, and often fragmentary. Sometimes this content will be more than one needs
+to read and there is only one word, or number, in the text which seems relevant.
+And sometimes there is less: if this is the case, and imaginative extrapolation fails
+to fill in the blanks, a foray into the Matrix translation may be warranted, even for
+the novice. This will provide a number of alternative translations for each word
+and phrase in the introductory translation. There will also be cases where the
+Changing Line text seems to contradict the Hexagram text, at least in tone or
+mood. Where this occurs, the Changing Line text should be viewed as the most
+relevant to the crux or thick of the change, the attitude at that point in time where
+the choice is made.
+49
+
+List of Abbreviations
+##. Gua, or hexagram, number
+#. Ba Gua, or trigram, number
+.M Gua Ming, the hexagram name or title
+.m Mawangdui manuscript
+.0 Gua Ci, the original or Zhou Yi Hexagram Text
+.# Yao Ci, the original or Zhou Yi Changing Line Text, numbers 1-6
+.T Tuan Zhuan, or Commentary on the Judgment, the 1st and 2nd 
+Wings or Appendices
+.X Da Xiang, or Overall Image, part of the 3rd and 4th Wings
+.x Xiao Xiang, or Little Images, part of the 3rd and 4th Wings
+.xc Xi Ci Zhuan, the Commentary on the Appended Phrases, a.k.a.
+Da Zhuan, the Great Commentary, the 5th and 6th Wings
+.wy Wen Yan Zhuan, Commentary on Words of the Text, the 7th Wing
+.sg Shuo Gua, the Explanation of the Trigrams, the 8th Wing
+.xg Xu Gua, the Sequence of the Hexagrams, the 9th Wing
+.zg Za Gua, the Assorted or Miscellaneous Hexagrams, the 10th Wing
+O Rou
+I Gang
+W Tai Yin
+R Shao Yang
+Y Tai Yang
+H Shao Yin
+101 (5) The Trigram as a binary number (Decimal Equivalent)
+101 010 (42) The Hexagram as a binary number (Decimal Equivalent)
+F The final use of a word
+HL The only occurrence of a word
+P Paragraph break
+S Sentence break
+* Parsing break
+BCE Before Current Era
+CE Current Era
+Zhouyi The original Changes (1100-800 BCE)
+Yijing The Changes, with the Ten Wings
+Yi or The Changes as a tradition, The Yi Learning or Yi Studies
+Yixue
+4321 4-digit numbers refer to character entries in Harvard’s
+Mathews Chinese-English Dictionary
+50
+
+The Zhouyi and the First Four Wings of the Yijing
+In Simple, Literal Translation
+With the Rogue River Commentaries
+And Miscellaneous Notes
+51
+
+Introductory Notes
+The simple translation here in Part One attempts a literal, word-by-word
+translation of the “received text” of the Yijing, from the Chinese Imperial Edition of
+1715, the Zhouyi Zhezhong , substantially as found in the Harvard-Yenching
+Institute's Zhouyi Yinde (1935) and in Z.D. Su

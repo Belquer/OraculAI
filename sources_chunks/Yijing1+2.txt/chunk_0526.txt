@@ -1,0 +1,175 @@
+ng1
+ 1504 03.3 ^within, inside; central, core, internal, inner
+fu2
+ 1936 05.0 (the) truth(s) v; faith, trust, belief, conviction
+   * tun2
+ 6600 152+4 HL (for) piglets, (young, suckling) pigs; sons
+yu2
+ 7668 23.5 F (and) fish(es);                        (and) daughters
+ji2
+ 0476 01.7 (are) promising, auspicious; lucky, fortunate
+   * li4
+ 3867 01.0 (it is) worthwhile, rewarding, favorable  64.3
+she4
+ 5707 05.0 64.3 to cross, ford, ferry, venture, experience "
+da4
+ 5943 01.2 (the) great, big, major "
+chuan1
+ 1439 05.0 stream, river, current, water (s) "
+   * li4
+ 3867 01.0 (and) worthwhile, rewarding, gainful 62.0
+zhen1
+ 0346 01.0 to persist, continue; be genuine, true, real "
+61.T
+ Tuan Zhuan
+   P zhong1
+ ^      within
+fu2
+ (the) truth v
+   * rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+zai4
+ 6657 01.2 is, are (on); lies, dwells, belongs, remains
+nei4
+ 4766 08.2 (the) inside; within, internal; private, intrinsic
+er2
+ 1756 06.2 and (yet); while; but, yet
+gang1
+ 3268 03.T the firm, strong, resolute; firmness
+de2
+ 6161 02.0 gain, secure, find, occupy, claim (s) 62.T
+zhong1
+ the center, middle, mean, balance; true "
+   * yue4
+ 5939 17.T pleasure, satisfaction, enjoyment, persuasion
+er2
+ 1756 06.2 and (also, then); (along) with
+xun4
+ 5550 57.0 F adapt; accommodate, penetrate (ation)
+   * fu2
+ (the) true
+nai3
+ 4612 03.2 (only, will) then, now, thereby, after this
+hua4
+ 2211 01.T F t ransform, transfigure, change, alter (s)
+bang1
+ 4910 07.2x F (a, the) state, realm, domain, territory
+   P tun2
+ piglets
+yu2
+ (and) fishes -
+ji2
+ promising
+   * xin4
+ 2748 43.4 F trust, truth, confidence, assurance, credit
+ji2
+ 0468 62.2 F (is) reaches, extends (ed) to; connects with
+tun2
+ piglets
+yu2
+ (and) fishes
+386
+
+   S li4
+ worthwhile
+she4
+ to cross
+da4
+ (the) great
+chuan1
+ stream
+   * cheng2
+ 0398 03.2 F take advantage, avail of; rely (ing) on, upon
+mu4
+ 4593 47.1 (a, the) wooden
+zhou1
+ 1291 137+0 HL boat’s, dugout’s, vessel’s
+xu1
+ 2821 46.3 F hollowness, emptiness, openness, void
+   P zhong1
+ ^       within
+fu2
+ (the) truth v
+yi3
+ 2932 04.1 (is) considered; accordingly, therefore, thus
+li4
+ worth
+zhen1
+ (the) persistence
+   * nai3
+ 4612 03.2 (and, only) then; after this; and so
+ying4
+ 7477 02.T (one) resonates; responds, relates, replies
+hu1
+ 2154 03.T with, in, to
+tian1
+ 6361 01.5 heaven; higher nature; the sky, celestial
+61.X
+ Da Xiang
+   * ze2
+ 0277 10.X ^       (a, the) lake, pool, pond, marsh
+shang4
+ 5669 40.6 above, over, across, atop, on top of v
+you3
+ 7533 01.6 is, there is
+feng1
+ 1890 09.X (the) wind
+   * zhong1
+ 1504 03.3 ^      within
+fu2
+ 1936 05.0 (the) truth v
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+yi4
+ 3006 60.X F discusses, deliberates, ponders, considers
+yu4
+ 7685 21.0 F legal recourse, process; justice; incarceration
+huan3
+ 2242 120+9 HL (to, while) delay, stay, postpone, slow (ing)
+si3
+ 5589 16.5 F execution, death, capital punishment
+61.1
+ Chu Jiu , 1st 9  (Zhi Gua 59: Huan, Scattering)
+   * yu2
+ 7648 03.3 45.X readiness, provision; prepar(edness, ation)
+ji2
+ 0476 01.7 (is) promising, auspicious, opportune, timely
+   * you3
+ 7533 01.6 (in, to) be, have, claim, assume, presume (ing)
+ta1
+ 5961 08.1 F (even, much) more (than this); extra, other +
+bu4
+ 5379 02.2 (there) (is) no, not (much, very), little
+yan4
+ 7399 86+12 HL comfort, calm, satisfy (ing); rest, peace, ease
+387
+
+61.1x
+ Xiao Xiang  (Fan Yao 59.1: rely on assistance, the horse is powerful)
+   S chu1
+ first
+jiu3
+ nine’s
+yu2
+ readiness
+ji2
+ (is) promising
+   * zhi4
+ 0971 03.1x (the) purpose, goal, direction, aim (s) 37.1x
+wei4
+ 7114 48.0 (are, has, have) yet to, not yet, still not "
+bian4
+ 5245 49.5 F emerge, evolve, alter, vary, change (d) "
+61.2
+ Jiu Er , 9 2nd  (Zhi Gua 42: Yi, Increasing)
+   * ming2
+ 4535 15.2 F (a, the) call, cry (ing); voice, song, sound
+he4
+ 2131 196+10 HL (of) (a, the) crane
+zai4
+ 6657 01.2 (remaining) in; from; (from) within, inside
+y

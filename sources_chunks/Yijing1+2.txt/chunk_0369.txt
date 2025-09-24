@@ -1,0 +1,81 @@
+Gang
+Fig. 29 Symmetry in 3 or More Gua Dimensions
+Fig. 30 Symmetry in 2 or More Gua Dimensions
+Fig. 31 Wai Guang, Scale of Ten
+Fig. 32 Wai Guang, Scale of Twelve
+Fig. 33 Wai Guang, Scale of Sixteen
+Fig. 34 Wai Guang, Scale of Forty
+Fig. 35 Work Sheet
+Fig. 36 Work Sheet
+Fig. 37 Work Sheet
+Fig. 38 Work Sheet
+Fig. 39 Wujitu, Chen Tuan
+Fig. 40 Taijitu, Zhou Dunyi
+31
+
+  O     W   R         H     Y I
+        1      2   3 4      5   6         7
+              Fig. 1:  The Xian Tian  or Primal Heaven Arrangement
+                          In the Ba Gong or Eight House Matrix
+   0
+00,  02     01,  23      02,  08      03,  20     04,  16     05,  35      06,  45     07, 12
+08,  15     09,  52     10,  39     11,  53     12,   62     13,  56       14,  31     15,   33
+16,  07     17,  04       18,  29     19,  59      20,  40     21,  64     22,  47     23,   06
+24,  46      25,  18     26,  48     27,  57      28,  32      29,  50     30,  28      31,  44
+32,  24      33,  27     34,  03     35,  42      36,  51      37,  21     38,  17     39,   25
+40,  36      41,  22      42,  63     43,  37     44,  55      45,  30      46,  49      47,  13
+48,  19     49,  41     50,  60     51,   61      52,  54      53,  38      54,  58     55,   10
+56,  11     57,  26      58,  05     59,  09      60,  34     61,  14     62,  43      63,  01
+32
+
+  Shang Jiu,  Top Nine,  Value: 1      Jiu San,  Nine Third,  Value: 8
+ Jiu Wu,  Nine Fifth,  Value: 2
+ Jiu Si,  Nine Fourth,  Value: 4
+Fig. 2: The Six Lines and Their Binary Values
+    Jiu Er,  Nine Second,  Value: 16
+    Chu Jiu,  First Nine,  Value: 32
+33
+
+      Fig. 3:  The Pairs of the Hou Tian Xu or Later Heaven Sequence
+34
+
+                         Fig. 4:  The Qian Gua  or Inverse Pairs
+35
+
+                   Fig. 5:  The Pang Tong Gua  or Opposite Pairs
+36
+
+                         Fig. 6:  The Jiao Gua or Reverse Pairs
+37
+
+    02   23 02 02 23 23 39 39 53 53
+40 40 64 64 28 28 44 44
+24 24 27 27 63 63 37 37
+54 54 38 38 43 43 01 01
+    24   27 02 02 23 23 39 39 53 53
+40 40 64 64 28 28 44 44
+24 24 27 27 63 63 37 37
+54 54 38 38 43 43 01 01
+  Fig. 7:  The Hu or Nuclear Gua                  Fig. 8:  The Hu Gua Domains
+  Hou Tian Numbers                                         Hou Tian Numbers
+  Fig. 9:  Lower Nuclear Ba Gua                   Fig. 10:  Upper Nuclear Ba Gua
+  Binary Numbers                                             Binary Numbers
+                    39   53
+                                    40    64
+                                                    28    44
+                    63    37
+                                    54    38
+                                                    43   01
+      0     0      0     0      1      1      1      1                  0       0       1      1       2      2       3      3
+      2     2      2     2      3      3     3      3                  4      4      5      5      6      6      7      7  
+     6      6     6      6      7      7     7      7                  4      4      5      5      6      6      7      7   
+     4      4      4     4      5      5     5      5                  0     0      1      1      2      2       3      3     
+      0     0      0     0      1      1      1      1                  0      0      1      1      2      2      3      3     
+     2      2      2     2      3      3     3      3                  4      4      5      5      6      6      7     7    
+      6     6      6     6      7      7     7      7                  4      4      5     5      6      6      7     7     
+      4     4      4     4      5      5     5      5                  0     0      1      1      2      2       3      3   
+38
+
+  Fig. 11:  Clustered Lines                               Fig. 12:  Singletons
+                                                                              Same as  5:1,  Line # shown
+     0                      1                                                 10    9              8

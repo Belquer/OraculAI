@@ -1,0 +1,177 @@
+s
+   * heng1
+ 2099 01.0 10.0 fulfillment, satisfaction, success, completion
+   * mi4
+ 4464 40+8 62.5 thick, dense, plump, plenty(-ful, of); close 62.5
+yun2
+ 7750 173+4 62.5 clouds "
+bu4
+ 5379 02.2 (but, yet, still) no; without, with no "
+yu3
+ 7662 173+0 09.6 rain "
+   * zi4
+ 6960 05.4 09.1 (coming) from, out of 62.5
+wo3
+ 4778 04.0 20.3 our, my "
+xi1
+ 2460 02.0 17.6 western "
+jiao1
+ 0714 05.1 13.6 horizon, frontier, border, outskirts "
+09.T
+ Tuan Zhuan
+   P xiao3
+ ^  small         ^
+chu4
+ raising v beasts
+   * rou2
+ 3133 02.T 10.T the flexible, gentle, yielding; flexibility 13.T
+de2
+ 6161 02.0 gains, acquires, attains, finds, occupies "
+wei4
+ 7116 45.5 (a special) place, position, attitude, dignity "
+er2
+ 1756 06.2 and, while, as
+shang4
+ 5669 40.6 (those) above; high, superior 10.X
+xia4
+ 2520 57.2 (and) (those) below; low, subordinate "
+ying4
+ 7477 02.T (cor)respond, complement, resonate with
+zhi1
+ 0935 02.0 (to) it, this
+   * yue1
+ 7694 47.6 13.T (so, thus) (it, this) is (said, called, named)
+xiao3
+ minor
+chu4
+ concerns
+   P jian4
+ 0854 01.X 11.T strong, vigorous, dynamic, ardent
+er2
+ 1756 06.2 and yet, and also, while also, but also
+xun4
+ 5550 57.0 18.T adaptive, accommodating, versatile, [plastic]
+   * gang1
+ 3268 03.T the firm, strong, resolute; firmness
+zhong1
+ 1504 03.3 (is) central, within; in the middle, center
+er2
+ 1756 06.2 and so, and thus, with this
+zhi4
+ 0971 03.1x 09.4x (the) aim, intention, purpose (s); will 10.4x
+xing2
+ 2754 11.2 (is, are) carried out, advanced, furthered "
+   * nai3
+ 4612 03.2 (and, only) then; after this
+heng1
+ fulfillment
+102
+
+   P mi4
+ thick
+yun2
+ clouds
+bu4
+ (but) no
+yu3
+ rain
+   * shang4
+ 5670 09.6 appreciate, honor, respect, value 34.4x
+wang3
+ 7050 02.0 the process, (any)(forward) progress(ion) "
+   S zi4
+ from
+wo3
+ our
+xi1
+ western
+jiao1
+ horizon
+   * shi1
+ 5768 01.T 15.X (the) gift, grant, influence; full extent, reach
+wei4
+ 7114 48.0 (has) not yet, still not, incompletely; is not yet
+xing2
+ 2754 11.2 come to pass, developed, occurred; in motion
+09.X
+ Da Xiang
+   * feng1
+ 1890 182+0 (the) wind
+xing2
+ 2754 11.2 moves, advances, passes, journeys, travels
+tian1
+ 6361 01.5 ^heaven; the sky, heavens
+shang4
+ 5669 40.6 over, across, up in, high in v
+   * xiao3
+ 2605 03.5 ^  small         ^
+chu4
+ 1412 09.0 raising v beasts
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+yi4
+ 2999 61+18 HL restrains, disciplines, trains; improves
+wen2
+ 7129 02.5x (and) refines, cultivates, articulates
+de2
+ 6162 06.3 (the) character, integrity, merit, virtue
+09.1
+ Chu Jiu , 1st 9  (Zhi Gua 57: Xun, Adaptation)
+   * fu4
+ 1992 06.4 09.2 returning, coming back to; recovering
+zi4
+ 6960 05.4 11.6 one’s own; (a, the) personal, natural, original
+dao4
+ 6136 162+9 10.2 path, way, course, truth, nature
+   * he2
+ 2109 9+5 17.4 where, how, why, what  [pron he4 in places]
+qi2
+ 0525 02.6 09.5 (is) one’s, the; (is) this, that
+jiu4
+ 1192 01.3 09.4 (an) error ?; (a) mistake?; harmful? wrong?
+   * ji2
+ 0476 01.7 promising, auspicious, timely; good fortune
+09.1x
+ Xiao Xiang  (Fan Yao 57.1: advancing, retreating, worth a warrior’s resolve)
+   S fu4
+ returning to
+zi4
+ one’s own
+dao4
+ path
+103
+
+   * qi2
+ this;                                              one
+yi4
+ 3002 05.T ought to, should be, suggests; deserves
+ji2
+ promising;                  good fortune
+09.2
+ Jiu Er , 9 2nd  (Zhi Gua 37: Jia Ren, Family Members)
+   * qian1
+ 0881 93+7 43.4 drawn, pulled, led, attracted, persuaded
+fu4
+ 1992 06.4 11.3 to return, come back, recover (ing)
+   * ji2
+ 0476 01.7 promising, auspicious, timely; good fortune
+09.2x
+ Xiao Xiang  (Fan Yao 37.2: having no other goals, inside preparing meals)
+   S qian1
+ drawn to
+fu4
+ returning
+zai4
+ 6657 01.2 (is) in, here in, situated in, belongs in; on
+zhong1
+ 1504 03.3 within; the center, middle; the inside
+   * yi4
+ 3021 48.0 20.2x (and) so, truly, really
+bu4
+ 5379 02.2 nothing 08.2x
+zi4
+ 6960 05.4 intrinsic, of one’s ow

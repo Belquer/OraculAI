@@ -20,7 +20,7 @@ COPY . .
 RUN --mount=type=secret,id=PINECONE_API_KEY,required=false \
         --mount=type=secret,id=PINECONE_ENVIRONMENT,required=false \
         --mount=type=secret,id=OPENAI_API_KEY,required=false \
-        bash -lc "set -e; \
+        sh -lc "set -e; \
           if [ -s /run/secrets/PINECONE_API_KEY ] && \
              [ -s /run/secrets/PINECONE_ENVIRONMENT ] && \
              [ -s /run/secrets/OPENAI_API_KEY ]; then \
@@ -56,4 +56,4 @@ USER appuser
 EXPOSE 5001
 
 # Run the application
-CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-5001} app:app --timeout 120 --workers 1"]
+CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-5001} deploy.app:app --workers 1 --timeout 120 --log-level info --access-logfile - --error-logfile -"]

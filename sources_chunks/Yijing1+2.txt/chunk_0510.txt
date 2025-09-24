@@ -1,0 +1,162 @@
+ui1
+ 3617 06.2 54.3 ^            marries, (is) engaged, betrothed
+mei4
+ 4410 11.5 54.3 (the) maiden; little, young(er, est) sister v
+yi3
+ 2932 04.1 as, to be (a, the)
+di4
+ 6202 38+7 54.3 se cond, younger, junior, subordinate wife
+   * bo3
+ 5317 10.3 F (the) lame, limping 10.3
+neng2
+ 4648 10.3 54.2 can (manage); (are) (still) able, capable of "
+lu3
+ 3893 02.1 34.X (to) walk, tread, take (ing) steps, carry on "
+   * zheng1
+ 0352 09.6 to expedite; press, push, go on, forward
+ji2
+ 0476 01.7 (is) promising, auspicious, hopeful, timely
+54.1x
+ Xiao Xiang  (Fan Yao 40.1: no blame)
+   S gui1
+ ^     marries
+mei4
+ little sister v
+yi3
+ as
+di4
+ (a) second wife
+   * yi3
+ 2932 04.1 in order;                        for (the sake of)
+heng2
+ 2107 05.1 F to endure, continue, last, go on; duration
+349
+
+   S bo3
+ (the) lame
+neng2
+ can (still)
+lu3
+ take steps
+   * ji2
+ fortunate
+   * xiang1
+ 2562 13.5 F (in, with) mutual, reciprocal; ^ each other
+cheng2
+ 0386 07.6 60.4x accept(ance), assist, support, uphold (ing); (v)
+54.2
+ Jiu Er , 9 2nd  (Zhi Gua 51: Zhen, Arousal)
+   * miao3
+ 4476 10.3 F (the) one-eyed; weak, feeble-sighted 10.3
+neng2
+ 4648 10.3 07.T can; (are) (still) able, capable of "
+shi4
+ 5789 10.3 F (to) see, watch, look, observe (ing) "
+   * li4
+ 3867 01.0 reward, benefit, merit, warrant, favor (ing)
+you1
+ 7505 10.2 55.4x (an, the) obscure, secluded, solitary +; ^ 10.2
+ren2
+ 3097 01.2 one, person; ^} hermit, recluse;           ^ "
+zhi1
+ 0935 02.0 ...’s; in his;  of (a, the) v;             } recluse’s
+zhen1
+ 0346 01.0 persistence, determination, resolve, focus "
+54.2x
+ Xiao Xiang  (Fan Yao 51.2: countless losses, up 9 hills, to chase wastes 7 days)
+   S li4
+ warranting
+you1
+ (the) secluded
+ren2
+ one
+zhi1
+ ...’s
+zhen1
+ persistence
+   * wei4
+ 7114 48.0 not (yet), less than ready; still not; yet 61.1x
+bian4
+ 5245 49.5 61.1x (to) alter, change, vary, amend (ing) "
+chang2
+ 0221 02.T F (t he) principle, rule, constant, standard (s)
+54.3
+ Liu San , 6 3rd  (Zhi Gua 34: Da Zhuang, Raising Great Beasts)
+   * gui1
+ 3617 06.2 54.3 ^            marries; (is) engaged, betrothed
+mei4
+ 4410 11.5 54.4 (the) maiden; little, young(er, est) sister v
+yi3
+ 2932 04.1 as, to be
+xu1
+ 2847 22.2 05.T (a) bondmaid, servant, waiting maid
+   * fan3
+ 1781 09.3 01.3x (then) turns around, comes back, reverses
+gui1
+ 3617 06.2 54.4 to marry, be engaged, betrothed
+yi3
+ 2932 02.0 as, to be (a, the)
+di4
+ 6202 54.1 54.5 se cond, younger, junior, subordinate wife
+54.3x
+ Xiao Xiang  (Fan Yao 34.3: nets, not force, goat butting hedge gets stuck)
+   S gui1
+ ^     marries
+mei4
+ little sister v
+yi3
+ as
+xu1
+ (a) bondmaid
+   * wei4
+ 7114 48.0 still not, less than, short of; not yet
+dang1
+ 6087 05.6x appropriate, right, suited, fitting, satisfactory
+350
+
+54.4
+ Jiu Si , 9 4th  (Zhi Gua 19: Lin, Taking Charge)
+   * gui1
+ 3617 06.2 54.4 ^                marriage, engagement, betrothal
+mei4
+ 4410 11.5 54.5 (the) maiden; little, young(er, est) sister’s v
+qian1
+ 0889 61+9 HL exceeds; (is) delayed (goes) beyond
+qi2
+ 0526 74+8 HL (the) appointed, allotted term, time; set date +
+   * chi2
+ 1024 16.3 F (a, the) late(er), delayed, deferred
+gui1
+ 3617 06.2 54.5 marriage, engagement; capitulation
+you3
+ 7533 01.6 has, will be, have; becomes, grows; assumes
+shi2
+ 5780 72+6 01.T timing, timeliness; timely, timelier; well-timed
+54.4x
+ Xiao Xiang  (Fan Yao 19.4: complete commitment, without mistakes)
+   S qian1
+ exceeding
+qi2
+ (the) allotted term
+zhi1
+ 0935 02.0 has, holds (its)
+zhi4
+ 0971 03.1x (a) purpose, aim, objective (s); focus, intent
+   * you3
+ 7533 01.6 t here is, will be; one has, will have
+dai4
+ 6002 39.1x F (a) wait, delay; biding of time
+er2
+ 1756 06.2 but still; before; and then; along with
+xing2
+ 2754 11.2 progress, motion, movement; (an) advance
+54.5
+ Liu Wu , 6 5th  (Zhi Gua 58: Dui, Satisfaction)
+   * di4
+ 6204 11.5 10.T (as, when) Lord; Emperor; the divine 11.5
+yi3
+ 3017 11.5 F Yi(’s) [ the penultimate Shang Emperor] "
+gui1
+ 3617 06.2 F giving; gift of; gave ^  in marriage "
+mei4
+ 4410

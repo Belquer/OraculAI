@@ -1,0 +1,156 @@
+t (much); without, with no
+fu4
+ 1952 09.5 37.4 enrichment, wealth, prosperity 09.5
+yi3
+ 2932 04.1 17.4 making use of, by way of, due to "
+qi2
+ 0525 02.6 one’s, this, these "
+lin2
+ 4033 09.5 51.6 neighbor(s), neighborhood, connection(s) "
+138
+
+   * li4
+ 3867 01.0 (it is) worthwhile, beneficial, gainful 15.6
+yong4
+ 7567 01.1 (and) useful, productive, practical "
+qin1
+ 1108 9+7 HL to occupy, appropriate, invade, raid, campaign against
+fa1
+ 1765 9+4 35.6 (and) subjugate, subordinate, chastise, punish
+   * wu2
+ 7180 01.3 16.6 without; (there is) nothing 19.2
+bu4
+ 5379 02.2 doubt; (that) (is) not; (which) cannot be "
+li4
+ 3867 01.0 worthwhile, (turned to) advantage(ous) "
+15.5x
+ Xiao Xiang  (Fan Yao 39.5: at a major impasse, companions appear)
+   S li4
+ worthwhile
+yong4
+ (and) useful
+qin1
+ to occupy
+fa1
+ (and) subjugate
+   * zheng1
+ 0352 09.6 24.6 (to) expedite, assert, go boldly; to discipline
+bu4
+ 5379 02.2 without, with no, regardless of; the un-, dis-
+fu2
+ 1999 06.6x 16.T consent, permission; willing(ness), obedient
+15.6
+ Shang Liu , Top 6  (Zhi Gua 52: Gen, Stillness)
+   * ming2
+ 4535 15.2 16.1 proclaiming, expressing, announcing, calling
+qian1
+ 0885 15.0 F authenticity, modesty
+   * li4
+ 3867 01.0 (it is) worthwhile, rewarding, gainful 20.4
+yong4
+ 7567 01.1 (and) useful, productive, practical "
+xing2
+ 2754 11.2 16.0 to move, advance, mobilize, deploy 16.0
+shi1
+ 5760 07.0 16.0 (the) militia, military, reserves, army "
+   * zheng1
+ 0352 09.6 24.6 to advance on, upon; discipline, subjugate
+yi4
+ 3037 06.2 25.3 (home) town, village, community, district
+guo2
+ 3738 07.6 20.4 (and) province, domain, realm, region
+15.6x
+ Xiao Xiang  (Fan Yao 52.6: authentic stillness is promising)
+   S ming2
+ expressive
+qian1
+ modesty
+   * zhi4
+ 0971 03.1x (the) aim, destination, goal, purpose(s) 47.5x
+wei4
+ 7114 48.0 (is, are) not yet, still not, have yet to be "
+de2
+ 6161 02.0 gained, attained, achieved, secured "
+   S ke3
+ 3381 02.3 (a, an) acceptable, appropriate, permitted 41.0
+yong4
+ practice "
+xing2
+ to mobilize
+shi1
+ (the) reserves
+   * zheng1
+ to discipline
+yi4
+ home town
+guo2
+ (and) province
+139
+
+15.m qian1 0883 30+10 deficient, unsatisfied, unworthy, lowly, unsatisfied
+15.xc de2 6162 06.3 character, virtue
+zhi1 0935 02.0 ...’s
+bing4 5286 75+5 handle, grip
+   * zun1 6884 14.T honors, distinguishes, dignifies, ennobles
+er2 1756 06.2 and
+guang1 3583 05.0 regards, reveals, illuminates, exemplifies
+   * yi3 2932 04.1 uses
+zhi4 0986 32.5x restraint, definition, paring, control
+li3 3886 34.X (and) respect, observance(s), regulation, courtesy
+15.xg bu4 5379 02.2 not
+ke3 3381 02.3 suited, inclined
+yi3 2932 04.1 to, for
+ying2 7474 08.1 excessiveness, superfluity, overflow
+   * neng2 4648 10.3 competence, ability, proficiency
+15.zg  qing1 1156 159+7 easy, simple, light, basic, mean
+140
+
+16.M
+ YU4 (7603):  READINESS
+16.0 Gua Ci Binary 000 100, Decimal 04
+   * yu4
+ 7603 152+9 16.1 readiness, willingness, responsive movement
+   * li4
+ 3867 01.0 worthwhile, rewarding, beneficial 03.0
+jian4
+ 0853 03.0 08.X to enlist, appoint, install, establish "
+hou2
+ 2135 03.0 18.6 delegates, chiefs, (lord) archers; priorities "
+xing2
+ 2754 11.2 24.4 (and) (to) move, advance, mobilize, deploy 24.6
+shi1
+ 5760 07.0 24.6 (the) militia, military, reserves, army "
+16.T
+ Tuan Zhuan
+   P yu4
+ readiness
+   * gang1
+ 3268 03.T the firm; firmness, strength, resolve
+ying4
+ 7477 02.T (cor)responds, resonates, reciprocates
+er2
+ 1756 06.2 and (so, then)
+zhi4
+ 0971 03.1x (the) aim, intention, purpose (s) 16.4x
+xing2
+ 2754 11.2 (is, are) carried out, advanced "
+   * shun4
+ 5935 02.T responsiveness, compliance, acceptance
+yi3
+ 2932 04.1 uses, using, makes use of; with; for; serves
+dong4
+ 6611 47.6 energy, movement, activity; to energize
+   * yu4
+ readiness
+   P yu4
+ readiness
+shun4
+ 5935 02.T responds, complies, follows, accepts, obeys
+yi3
+ 2932 04.1 with, through, behind
+dong4
+ 6611 47.6 energy, movement, action, arousal
+   * gu4
+ 3455 39.2 16.T since, because, as, given that
+tian1
+ 6361

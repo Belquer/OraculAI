@@ -1,0 +1,55 @@
+ion of the “received text” of the Yijing, from the Chinese Imperial Edition of
+1715, the Zhouyi Zhezhong , substantially as found in the Harvard-Yenching
+Institute's Zhouyi Yinde (1935) and in Z.D. Sung’s The Text of the Yi King (1935).
+All of the minor corrections made to these versions (primarily subtle changes in
+parsing) are discussed at the end of the Matrix translation, where the full Chinese
+text is given.
+This simple version should be considered no more than a sample translation,
+derived from the multi-dimensional Matrix translation. There exists no single string
+of English words able to convey the breadth and play of thought and meaning in the
+Chinese original. English tends to be too specific in its focus and definition to do
+this, while the Chinese text plays much with multiple levels and meanings. The
+Matrix format has the ability to capture some of these other layers of meaning.
+Because of these multiple layers, it would be pretentious to call any literal and/or
+straightforward translation “definitive.”
+This introductory version had four objectives:
+1) To represent each Chinese term with an English counterpart (sometimes
+this was only a punctuation mark) so that no part of the original idea was left out of
+the text. In a few cases, a single English word carried the meaning of two or three
+Chinese words (e.g. pin m a zhi = mare’s). More often, it would take two or more
+English words to render a Chinese character. An insistence on this word-for-word
+discipline prevented me from ignoring all of the little words and particles when they
+seemed unimportant or inconvenient, as most translators, including the modernists
+and other scholars, have consistently done. And, with a book this short and succinct,
+I think it proved a useful suspicion t hat all of these characters had contributions
+to make to the meanings of the texts.
+2) To add as few words as possible, without embellishment. Much of the
+meaning of the Chinese text is merely implied b
+y the position of the words within a
+phrase, and often this implication will include the part of speech, as well as tense,
+gender, plurality, voice and mood. Possessives and conjunctions are often implied.
+I often had need to make these implications explicit by adding words sparingly in
+parentheses. Sometimes a word in parenthesis is added to bring out the humor (or
+other nuance) seemingly intended in the original text, but almost always missed by
+translators. Finally, many of the English expressions were allowed to stand as mere
+sentence fragments, as soon as they could stand alone. No apology is made for this.
+Too much has been added in translations only to satisfy English grammatical rules.
+3) To preserve the original word order, wherever this could be rendered in a
+way which made sense. This was not always possible, or always desirable. Chinese
+prepositions usually follow their objects; where they do, except in a few cases, this
+required a switch. Words like ru and ruo were also difficult to keep in order. Such
+switches of word order are indicated only in the Matrix translation, by up and down
+symbols ^ v.
+52
+
+4) To avoid the arbitrary assignment of gender to Chinese pronouns. When
+taken as singular, for example, the pronoun qi2 can be translated as he, him, his, she,
+her or hers. There are many other options here as well, including the plural forms of
+they, them or their. In places, I think I just needed to prove the point that this could
+be done. Sometimes this led to a more awkward construction than I would have
+liked, and sometimes I reached further and rendered qi2 as that or those. At any rate,
+this was successful, but at some cost to other literary values. I did not even attempt,
+however, to carry this determination into the commentary.
+It might strike some readers as odd that I chose to place the Da Xiang or the
+Overall Image before the Tuan or Judgment. The Da Xiang is from the Ten Wings
+while the Tuan belongs to the original Zhouyi. I did this only because it provides a

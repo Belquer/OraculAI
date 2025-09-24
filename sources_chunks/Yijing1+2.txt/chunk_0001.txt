@@ -1,0 +1,67 @@
+46 Sheng, Advancement
+15 Qian, Authenticity 47 Kun, Exhaustion
+16 Yu, Readiness 48 Jing, The Well
+17 Sui, Following 49 Ge, Seasonal Change
+18 Gu, Detoxifying 50 Ding, The Cauldron
+19 Lin, Taking Charge 51 Zhen, Arousal, Chong Gua
+20 Guan, Perspective 52 Gen, Stillness, Chong Gua
+21 Shi He, Biting Through 53 Jian, Gradual Progress
+22 Bi, Adornment 54 Gui Mei, Little Sister’s Marriage
+23 Bo, Decomposing 55 Feng, Abundance
+24 Fu, Returning 56 Lu, The Wanderer
+25 Wu Wang, Without Pretense 57 Xun (Sun), Adaptation, Chong Gua
+26 Da Chu, Raising Great Beasts 58 Dui, Satisfaction, Chong Gua
+27 Yi, Hungry Mouth 59 Huan, Scattering
+28 Da Guo, Greatness in Excess 60 Jie, Boundaries
+29 Kan, Exposure, 
+Chong Gua 61 Zhong Fu, The Truth Within
+30 Li, Arising, Chong Gua 62 Xiao Guo, Smallness in Excess
+31 Xian, Reciprocity 63 Ji Ji, Already Complete
+32 Heng, Continuity 64 Wei Ji, Not Yet Complete
+
+The Seventy-Eight Diagrams
+   O       W    R            H        Y            I
+     0            1        2    3            4        5    6                  7
+00, 02        01, 23    02. 08        03, 20        04, 16   05, 35         06, 45        07, 12
+08, 15        09, 52    10, 39         11, 53        12, 62         13, 56         14, 31         15, 33
+  16, 07        17, 04    18, 29         19, 59         20, 40    21, 64        22, 47         23, 06
+24, 46         25, 18   26, 48         27, 57         28, 32         29, 50        30, 28         31, 44
+  32, 24         33, 27        34, 03         35, 42         36, 51         37, 21         38, 17        39, 25
+  40, 36         41, 22        42, 63         43, 37         44, 55        45, 30         46, 49         47, 13
+  48, 19         49, 41         50, 60         51, 61         52, 54         53, 38        54, 58         55, 10
+56, 11          57, 26         58, 05        59, 09         60, 34         61, 14         62, 43         63, 01
+Two different numbering systems are used for the sixty-four larger diagrams.
+The sequence numbers on the right are the chapter numbers of the book, which
+most readers will use here. This sequence, called the Hou Tian, will require either a
+key such as this or memory to move from the raw di agram to the number of its
+chapter. The sequence numbers seen on the left, called the Xian Tian, represent
+the most useful order, sequence and arrangement of the diagrams. These are the
+diagrams as the binary numbers from zero to sixty-three and no key is needed.
+
+Introduction
+The Seventy-Eight Diagrams (2+4+8+64)
+Preface
+Notes on this Translation
+Problems with Academia
+The Structure of the Diagrams
+Methods of Divination
+List of Abbreviations
+
+Preface
+Welcome to the world's oldest unsolved Chinese puzzle. By the time you
+are done here it will still be unsolved. This little Book of Changes, which in its
+native Chinese will fit onto less than forty pages, has been teasing and tormenting
+scholars for thousands of years, and translators for centuries. Many more than ten
+thousand lifetimes have been spent in its study. Over the centuries it has been
+consulted more often than the Bible, the Koran or the Vedas, and been read more
+than Shakespeare or Homer. And yet it lays down no law. It founds no religion. It
+tells no story. So what is this odd, inscrutable little tome all about?
+The safest thing to say at the beginning is that the Yijing (formerly spelled
+I Ching) began its career as a divination manual at some time during China's Early
+Zhou dynasty, roughly or nearly three thousand years ago. However, without an
+understanding of what is, or was, meant by "divination," particularly of what it
+meant to the book's authors and its intended readers, we do not know the book's
+purpose. Within this question dwell many competing schools, and this work will
+attempt to construct yet another. If divination means "predicting the future" then
+the Yijing is nothing more than what the sheep think it is: a fortune telling device.
+And if divination means simply "uncovering the hidden" th

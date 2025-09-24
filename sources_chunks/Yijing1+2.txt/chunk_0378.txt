@@ -1,0 +1,176 @@
+ery, command, authority, control
+  [*] li4
+ 3867 01.0 02.2 worthwhile, rewarding, productive 39.0
+xi1
+ 2460 146+0 09.0 (from) west "
+nan2
+ 4620 24+7 36.3 (and, to) south* "
+de2
+ 6161 02.0 11.2 find, gain, meet, acquire
+peng2
+ 5054 74+4 02.0 companions, friends, allies, associates
+   * dong1
+ 6605 75+4 39.0 (from) east 39.0
+bei3
+ 4974 21+3 39.0 (and, to) north* "
+sang4
+ 5429 30+9 34.5 fo rgo, do without, fail to find, lose, forget
+peng2
+ 5054 02.0 11.2 companions, friends, allies, associates
+   * an1
+ 0026 40+3 06.4 secure, confirm, be content with; peaceful 06.4
+zhen1
+ 0346 01.0 02.3 (a, the) certain, true, genuine; persistence "
+ji2
+ 0476 01.7 02.5 good fortune; (is) promising, opportune "
+02.T
+ Tuan Zhuan
+   P zhi4
+ 0982 02.1 ( ^) consummate, complete, perfect, realized
+zai1
+ 6650 01.T how, so (very) v; indeed
+kun1
+ (is) accepting’s, receptivity’s, acceptance’s
+yuan2
+ source, beginning, basis, origin (!)
+   * wan4
+ 7030 01.T (the) myriad, ten thousand;     all of 11.T
+wu4
+ 7209 01.T beings, creatures, things (are); creation (is) "
+60
+
+zi1
+ 6927 56.2 F endowed, provided; (en)rich(ed) in, with
+sheng1
+ 5738 20.3 03.T life, vitality, existence, development
+   * nai3
+ 4612 03.2 and so, (and) then, after this
+shun4
+ 5935 181+3 02.T (in, by) response, acceptance, compliance
+cheng2
+ 0386 07.6 7.2x inherit, receive, enjoy, uphold (s)
+tian1
+ 6361 01.5 heaven, higher nature; the sky, firmament
+   P kun1
+ accepting
+hou4
+ 2147 27+7 02.X (with) tolerance, generosity (ly); genuinely
+zai4
+ 6653 09.6 02.X carries, upholds, sustains, bears, conveys
+wu4
+ 7209 01.T the outer world, all things, reality, substance
+   * de2
+ 6162 06.3 (the) virtue, merit, character, integrity, nature, spirit
+he2
+ 2117 01.T 09.4x (of) harmony; accommodates, concurs, unites
+wu2
+ 7180 01.3 without, with no, regardless of
+jiang1
+ 0643 102+14 02.T (drawing) limits, boundaries, borders, lines
+   * han2
+ 2017 02.3 F containing, embracing, comprehending
+hong2
+ 2380 57+2 HL (the) vast(ness), expanse(s), breadth, space
+guang1
+ 3583 05.0 (and) revealing, illuminating, exemplifying
+da4
+ 5943 01.2 (the) wholeness, completeness, greatness
+   * pin3
+ 5281 57.4 44.T (the) varieties of, orders of, various
+wu4
+ 7209 01.T beings, (living) creatures, entities, things
+xian2
+ 2666 19.1 44.T (are) joined in; share, unite, converge in
+heng1
+ (the) fulfillment
+   P pin4
+ ^ [fem]
+ma3
+ } (a, the) mare
+di4
+ 6198 36.6 (is) (the) earth’s, world’s, land’s;^earth’s ^
+lei4
+ 4244 181+10 02.T kindred spirit, relation;       shares v qualities
+   * xing2
+ 2754 11.2 (and) travel, wander, move (-s, -ing) (about)
+di4
+ 6198 36.6 (a, an, the) Earth, world, land, fields
+wu2
+ 7180 01.3 without, with no, regardless of
+jiang1
+ 0643 02.T 02.T limits, boundaries, borders, lines
+   * rou2
+ 3133 75+5 03.T flexible(ility), gentle(ness), yielding (and)
+shun4
+ 5935 02.T acceptance, compliance, responsiveness
+li4
+ reward
+zhen1
+ persistence
+   * jun1
+ (the) noble
+zi3
+ young one’s
+you1
+ purpose
+xing2
+ 2754 11.2 in going
+61
+
+   P xian1
+ to initiate
+mi2
+ confusion
+shi1
+ 5806 08.5 (is) to lose, forget, neglect, stray from
+dao4
+ 6136 09.1 (the) way, course, path, principle, truth
+   * hou4
+ to follow
+shun4
+ 5935 02.T (and) accept, comply, respond (ing)
+de2
+ (is) to learn
+chang2
+ 0221 50+8 03.2x (the) principle, constant, norm, rule (s)
+   P xi1
+ west
+nan2
+ (to) south
+de2
+ find
+peng2
+ companions
+   * nai3
+ 4612 03.2 then, and so, and then
+yu3
+ 7615 61.2 (along) with (the help of), accompanied by
+lei4
+ 4244 02.T 13.X like kind, one’s kind, kindred spirits, peers
+xing2
+ 2754 11.2 make progress, advance, act, move (on)
+   * dong1
+ east
+bei3
+ (to) north
+sang4
+ forgo
+peng2
+ companions
+   * nai3
+ 4612 03.2 but, however, although, nevertheless, then
+zhong1
+ 1500 01.3 in the end, at last, eventually, finally, after all
+you3
+ 7533 01.6 there are, will be; one has, will have; claim
+qing4
+ 1167 55.5 10.6x reward(s), satisfaction, happiness
+   P an1
+ securing
+zhen1
+ (the) certain
+zhi1
+ 0935 02.0 has, holds, leads to
+ji2
+ promise
+   *

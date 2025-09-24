@@ -1,0 +1,169 @@
+86 56.0 56.4 (a, the) wanderer, wayfarer, traveler, stranger
+fen2
+ 1866 30.4 56.6 burns, sets fire to, ignites, singes
+qi2
+ 0525 02.6 the, this, that; his, her (own); someone else’s
+ci4
+ 6980 07.4 F camp, encampment, inn, hostel, lodging
+   * sang4
+ 5429 02.0 56.6 (and) lose, forfeit, forego, fail (s, ing)
+qi2
+ 0525 02.6 the, this, that, his, her
+tong2
+ 6626 04.0 F young, youthful
+pu2
+ 5401 56.2 F servant, helper, retainer, assistant
+   * zhen1
+ 0346 01.0 persistence(ing), constancy; to keep going 09.6
+li4
+ 3906 01.3 (is) difficult, hard (to do), harsh, distressing "
+56.3x
+ Xiao Xiang  (Fan Yao 35.3: many liberties, regrets pass)
+   S lu3
+ (the) wanderer
+fen2
+ sets fire to
+qi2
+ their
+ci4
+ camp
+   * yi4
+ 3021 48.0 64.1x and (only) then; furthermore; (then) truly
+yi3
+ 2932 04.1 considers, thinks of; comes to
+shang1
+ 5666 08.3x 60.T (the) harm, hurt, injury, pain; grief, distress
+yi3
+ 2938 05.T itself, here; in this, as it is
+   S yi3
+ 2932 04.1 unt il, before (one) (can); try, consder
+lu3
+ wanders
+yu3
+ 7615 61.2 amidst, among; (along) with, accompanied by
+xia4
+ 2520 57.2 (the) lowly, humble; humility; subordinates
+   * qi2
+ the, this; (this) one’s
+yi4
+ 3002 05.T aptness, rightness; meaning, principle (s)
+sang4
+ (is) lost
+363
+
+56.4
+ Jiu Si , 9 4th  (Zhi Gua 52: Gen, Stillness)
+   * lu3
+ 4286 56.0 56.6 (a, the) wanderer, wayfarer, traveler, stranger
+yu2
+ 7592 02.6 (is, stays) in, within, inside, under
+chu3
+ 1407 09.6 31.3x (a, the) shelter, refuge, bivouac; place to rest
+   * de2
+ 6161 02.0 (having) secured, acquired, gained, obtained
+qi2
+ 0525 02.6 the, his, her, those, that, some 57.6
+zi1
+ 6927 56.2 57.6 resources, valuables, means; wherewithal "
+fu3
+ 1934 69+4 57.6 (and) (an) axe, (a) hatchet "
+   * wo3
+ 4778 04.0 61.2 (but) (lamenting) "my...;  "our...
+xin1
+ 2735 29.0 11.4x heart, mind, desire, feeling, affection (s)  52.2
+bu4
+ 5379 02.2 is n ot, without, less than; has no, not much "
+kuai4
+ 3547 52.2 F happy, gratified, cheer(ful); (at) ease, peace "
+56.4x
+ Xiao Xiang  (Fan Yao 52.4: stilling one’s being, not a mistake)
+   S lu3
+ (the) wanderer
+yu2
+ (stays) in
+chu3
+ (a) shelter
+   * wei4
+ 7114 48.0 (has, having) not yet, still not
+de2
+ secured
+wei4
+ 7116 45.5 (a) place, position, dignity, context, situation
+   S de2
+ securing
+qi2
+ some
+zi1
+ valuables
+fu3
+ (and) (an) axe
+   * xin1
+ (but) (with a) heart
+wei4
+ 7114 48.0 (but) not yet; still not, less than
+kuai4
+ peaceful
+56.5
+ Liu Wu , 6 5th  (Zhi Gua 33: Dun, Distancing)
+   * she4
+ 5703 40.6 F shooting; hunting (down)
+zhi4
+ 0968 50.3 F (a, the) pheasant [as a gift for the local noble]
+   * yi1
+ 3016 38.6 32.5x one, (a) single, (the) first
+shi3
+ 5784 21.4 F arrow
+wang2
+ 7034 11.2 (is) lost, spent, gone; vanishes, disappears
+   * zhong1
+ 1500 01.3 (but) in the end; ultimate, eventual, final (ly)
+yi3
+ 2932 04.1 for (the sake of); (a, the) way, means to
+yu4
+ 7617 02.4 F praise, recognition, respect, appreciation
+ming4
+ 4537 06.4 01.T (and) commission, appointment; purpose
+364
+
+56.5x
+ Xiao Xiang  (Fan Yao 33.5: commendable retreat, persistence is promising)
+   S zhong1
+ in the end
+yi3
+ (a) means to
+yu4
+ recognition
+ming4
+ (and) appointment
+   * shang4
+ 5669 40.6 those above         ; (a) height: (a, the) superior
+dai4
+ 5992 162+8 HL (is, are) sought out, attained;  reaches; reach +
+56.6
+ Shang Jiu , Top 9  (Zhi Gua 62: Xiao Guo, Smallness in Excess)
+   * niao3
+ 4688 196+0 62.0 (like) (a, the, this) bird
+fen2
+ 1866 30.4 F (that, who) burns, sets fire to
+qi2
+ 0525 02.6 its (own)
+chao2
+ 0253 47+8 HL nest
+   * lu3
+ 4286 56.0 24.X (the, this) wandering, traveling; strange
+ren2
+ 3097 01.2 one, person, individual, character
+xian1
+ 2702 02.0 57.5 begins, starts in, with; at first
+xiao4
+ 2615 13.5 F (to) laugh(ter, ing, s); mirth, glee
+hou4
+ 2143 02.0 57.5 followed by; (and, but, then) follows (with)
+hao4
+ 2064 13.5 59.5 wailing, howling, crying out; outcry 13.5
+tao2
+ 6152 13.5 F (and) weeping; lament, complaint "
+   * sang4
+ 5429 02.0 57.6 forfeiting, losing, giving up 34.5
+niu2
+ 4737 25.3

@@ -1,0 +1,117 @@
+Other blocks of characters further parsed here and in Z.D. Sung
+but not parsed in Harvard-Yenching, as they appear in HY:
+01.3 xi4 ti4 ruo4 li4.
+02.0 yuan2 heng1 li4 pin4 ma3 zhi1 zhen1.
+03.0 yuan2 heng1 li4 zhen1.
+03.3 jun1 zi3 ji1 bu4 ru2 she3.
+05.T xu1 you3 fu2.
+06.T song4 you3 fu2. zhi4 ti4 zhong1 ji2.
+07.T ji2 you4 he2 jiu4 yi3.
+07.2 zai4 shi1 zhong1 ji2.
+12.4 you3 ming4 wu2 jiu4.
+14.6 ji2 wu2 bu4 li4.
+15.3 you3 zhong1 ji2.
+17.0 yuan2 heng1 li4 zhen1.
+18.T gu3 yuan2 heng1 er2 tian1 xia4 zhi4 ye3.
+18.1 li4 zhong1 ji2.
+19.1 xian2 lin2 zhen1 ji2
+19.2 xian2 lin2 ji2.
+20.x xian1 wang2 yi3 xing3 fang1 guan1 min2 she4 jiao4.
+25.0 yuan2 heng1 li4 zhen1.
+26.T gang1 jian4 du3 shi2 hui1 guang1.
+30.X ming2 liang3 zuo4 li2.
+31.T shi4 yi3 heng1 li4 zhen1 qu3 nu3 ji2 ye3.
+31.4 zhen1 ji2 hui3 wang2.
+33.5 jia1 dun4 zhen1 ji2.
+35.1 yu4 wu2 jiu4.
+35.3 zhong4 yun3 hui3 wang2.
+35.5 wang3 ji2 wu2 bu4 li4.
+36.2 yong4 zheng3 ma3 zhuang4 ji2.
+37.3 hui3 li4 ji2.
+37.4 fu4 jia1 da4 ji2.
+38.1 sang4 ma3 wu4 zhu2 zi4 fu4.
+38.4 li4 wu2 jiu4.
+38.6 wang3 yu4 yu3 ze2 ji2.
+39.1 wang3 jian3 lai2 yu4.
+39.5 da4 jian3 peng2 lai2.
+40.0 wu2 jiu4 ke3 zhen1.
+40.T wu2 jiu4 ke3 zhen1.
+42.1 yuan2 ji2 wu2 jiu4.
+413
+
+42.2 wang2 yong4 xiang3 yu2 di4 ji2.
+43.0 fu2 hao4 you3 li4.
+43.1 wang3 bu4 sheng4 wei2 jiu4.
+43.5 zhong1 xing2 wu2 jiu4.
+45.1 ruo4 hao4 yi1 wo4 wei2 xiao4.
+45.2 yin3 ji2 wu2 jiu4.
+46.1 yun3 sheng1 da4 ji2.
+46.5 zhen1 ji2 sheng1 jie1.
+47.0 zhen1 da4 ren2 ji2.
+47.2 zheng1 xiong1 wu2 jiu4.
+48.0 qi4 zhi4 yi4 wei4 yu4 jing3.
+48.4 jing3 zhou4 wu2 jiu4.
+49.2 zhi1 zheng1 ji2 wu2 jiu4.
+49.3 zheng1 xiong1 zhen1 li4.
+49.4 hui3 wang2 you3 fu2.
+52.T gen4 zhi3 ye3.
+52.T xing2 qi2 ting2 bu4 jian4 qi2 ren2.
+52.6 dun1 gen4 ji2.
+53.T qi2 wei4 gang1 de2 zhong1 ye3.
+53.1 xiao3 zi3 li4 you3 yan2.
+54.1x bo3 neng2 lu3 ji2.
+54.5 yue4 ji1 wang4 ji2.
+55.T feng1 da4 ye3.
+55.5 you3 qing4 yu4 ji2.
+56.0 lu3 zhen1 ji2.
+57.3 pin2 xun4 lin4.
+57.5 zhen1 ji2 hui3 wang2.
+58.1 he2 dui4 ji2.
+58.2 fu2 dui4 ji2.
+58.3 lai2 dui4 xiong1.
+59.1 yong4 zheng3 ma3 zhuang4 ji2.
+59.4 huan4 qi2 qun2 yuan2 ji2.
+59.6 qu4 ti4 chu1.
+60.4 an1 jie2 heng1.
+60.5 gan1 jie2 ji2.
+60.6 ku3 jie2 zhen1 xiong1.
+62.T rou2 de2 zhong1 shi4 yi3 xiao3 shi4 ji2 ye3.
+64.5 zhen1 ji2 wu2 hui3.
+64.5 you3 fu2 ji2.
+414
+
+Glossary
+Introduction
+Words
+Phrases
+Characters Not in the Glossary
+Most Common Words
+Pronouncing Pinyin Chinese
+Pinyin to Wade-Giles Conversion
+415
+
+Introduction
+The words listed in the first part of this glossary fall into one or more of the
+following categories:
+a) They appear more than five times in the Matrix translation, exclusive of the
+repetitions of the characters in the Tuan Zhuan  and Xiao Xiang  quotes.
+b) They appear in Hexagram or Gua names and numbers.
+c) They appear as substitutes for Trigram or Ba Gua names.
+d) They appear in the names of sections or segments of the Yijing.
+e) They appear in the names of major dimensions of the Yijing.
+The Chinese words are given in the Pinyin system of transliteration. For
+readers familiar only with the older Wade-Giles system, a table of the differences
+between the two systems is given at the end of this Section. Phonetic el ements
+not found in this table are the same in both systems. See also Pronouncing Pinyin
+Chinese, below.
+The first number (e.g. 7999) is the character’s entry number in Harvard’s
+1993 edition of the Mathews Chinese English Dictionary . This was one of the
+twelve dictionaries I used in glossing the Chinese terms. It contains all but eleven
+of the characters found in the Zhouyi, and all of those found in the Ten Wings.
+These eleven missing characters were assigned numbers in the 8000’s.
+The second number (e.g. 197f) is the character's entry number in Ber nard
+Karlgren's Grammata Serica Rescensa .
+The third number (e.g. 214+19) gives the character’s radical, plus the num-
+ber of additional strokes (plus or m inus a stroke). This is the “access code”
+(rather than alphabetizing) to many classical Chinese dictionaries.
+The fourth number ( e.g. 12.5x)

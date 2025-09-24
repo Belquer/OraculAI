@@ -1,0 +1,171 @@
+09.3 coming back around, returning, reverting to
+qi2 0525 02.6 one’s (own)
+jia1 0594 04.2 family, home, household
+37.zg nei4 4766 08.2 within, inside, internal, interior, intrinsic
+255
+
+38.M
+ KUI2 (3660):  ESTRANGEMENT
+38.0 Gua Ci Binary 110 101, Decimal 53
+   * kui2
+ 3660 109+9 38.4 estrangement, divergence, polarization; odd
+   * xiao3
+ 2605 03.5 (in) little, small, minor, ordinary, common
+shi4
+ 5787 02.3 41.1 matters, concerns, affairs, endeavors (are)
+ji2
+ 0476 01.7 promising, auspicious, opportune, timely
+38.T
+ Tuan Zhuan
+   P kui2
+ estrangement
+   * huo3
+ 2395 13.X (a, the) fire, flame
+dong4
+ 6611 47.6 acts, moves, excites, stimulates
+er2
+ 1756 06.2 but, yet (only)
+shang4
+ 5669 40.6 above, upwards; rises
+   * ze2
+ 0277 10.X (a, the) lake, pool, pond, marsh
+dong4
+ 6611 47.6 acts, moves, excites, stimulates
+er2
+ 1756 06.2 but, yet (only)
+xia4
+ 2520 57.2 below, downwards; descends
+   * er4
+ 1751 41.0 49.T (the) two; a pair of 49.T
+nu3
+ 4776 03.2 (y oung) women, ladies "
+tong2
+ 6615 13.0 38.T ^               together; share "
+ju1
+ 1535 03.1 43.X live, dwell, reside v; (a) dwelling, home "
+   * qi2
+ 0525 02.6 (but, yet) their 49.T
+zhi4
+ 0971 03.1x aims, purposes, goals, objectives, intentions "
+bu4
+ 5379 02.2 do not; are not, will not "
+tong2
+ 6615 13.0 38.T ^                   as one; share, converge, concur
+xing2
+ 2754 11.2 act, function, move v; (in) action, endeavors
+   P yue4
+ 5939 17.T enjoyment, pleasure, satisfaction, persuasion
+er2
+ 1756 06.2 and; (along, together) with
+li4
+ 3914 30.T 56.T dependence, reliance, conditioning
+hu1
+ 2154 03.T on, upon
+ming2
+ 4534 17.4 clarity, light, intelligence, vision
+   * rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+jin4
+ 1091 20.3 42.T advances, progresses, goes, moves forward
+er2
+ 1756 06.2 and (so, then)
+shang4
+ 5669 40.6 ^     above, up; elevate, lift, improve (s) 41.T
+xing2
+ 2754 11.2 acts, moves; v; (its) behavior, conduct "
+256
+
+   * de2
+ 6161 02.0 gain, secure, find, occupy, claim (ing) 39.T
+zhong1
+ 1504 03.3 the center, middle, mean, balance "
+er2
+ 1756 06.2 and (then); while 50.T
+ying4
+ 7477 02.T (c or)responding, reciprocating, resonating "
+hu1
+ 2154 03.T with, in, to "
+gang1
+ 3268 03.T the firm, strong, resolute; firmness "
+   * shi4
+ 5794 62.6 (and) so it is; this is 46.T
+yi3
+ 2932 04.1 that;               how, why "
+xiao3
+ ordinary
+shi4
+ matters
+ji2
+ (are) promising
+   P tian1
+ 6361 01.5 heaven, the sky, celestial
+di4
+ 6198 36.6 (and) (the) earth, land, ground, terrestrial
+kui2
+ (are) diverge(nt)
+er2
+ 1756 06.2 but (still), (and) yet; (even) as, while
+qi2
+ 0525 02.6 their
+shi4
+ affairs, concerns, endeavors, functions, tasks
+tong2
+ 6615 13.0 38.X converge, come together, harmonize
+   S nan2
+ 4619 31.T F (the) male, masculine, man
+nu3
+ 4776 03.2 (and) (the) female, feminine, woman
+kui2
+ (are) diverge(nt)
+er2
+ 1756 06.2 but (still); (and) yet; (even) as, while
+qi2
+ 0525 02.6 their
+zhi4
+ 0971 03.1x aims, purposes, goals, objectives, intentions
+tong1
+ 6638 11.T 60.T interconnect, interact, communicate
+   S wan4
+ 7030 01.T (the) myriad, ten thousand; all of 45.T
+wu4
+ 7209 01.T beings, creatures, things;    creation "
+kui2
+ (is) diverges(ent)
+er2
+ 1756 06.2 but (still); (and) yet; (even) as, while
+qi2
+ 0525 02.6 its, their
+shi4
+ affairs, concerns, endeavors, functions, tasks
+lei4
+ 4244 02.T 61.4x (are) (inter)related, akin; kindred in spirit
+   S kui2
+ estrangement
+zhi1
+ 0935 02.0 ...’s 39.T
+shi2
+ 5780 54.4 t imely, opportunely-timed, well-timed "
+yong4
+ 7567 01.1 application, use, operation, practice "
+da4
+ 5943 01.2 (is) very, of great, crucial import(ant, ance) "
+yi3
+ 2938 05.T indeed, now, at present, here "
+zai1
+ 6650 01.T ...! "
+257
+
+38.X
+ Da Xiang
+   * shang4
+ 5669 40.6 (up) above;                   ^                 rises
+huo3
+ 2395 13.X (is) (a, the) fire, flame; (the) fire, flame v
+xia4
+ 2520 57.2 (and, while) (down) below; ^descends
+ze2
+ 0277 10.X (is) (a, the) lake, pool, pond, marsh (v)
+   * kui2
+ 3660 38.0 estrangement
+   * jun1
+ 1715 01.3 (a, the)

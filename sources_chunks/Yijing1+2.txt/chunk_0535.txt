@@ -1,0 +1,149 @@
+remorse; to repent (of) "
+   * jun1
+  1715 01.3 (a, the) noble, worthy, honored
+zi3
+  6939 01.3 young one, heir, disciple
+zhi1
+  0935 02.0 has, holds; resorts to; goes, moves toward(s)
+guang1
+  3583 05.0 02.T honor, regard; (the) light (of example)(s)
+   * you3
+  7533 01.6 be, hold, stay (ing); have; remember 64.6
+fu2
+  1936 05.0 true, sincere; confidence; to trust "
+   * ji2
+  0476 01.7 (is) promising, auspicious, opportune, timely
+64.5x
+  Xiao Xiang  (Fan Yao 06.5: the contest is most promising)
+   S jun1
+ (a, the) noble
+zi3
+ young one
+zhi1
+ moves toward(s)
+guang1
+ (the) light of example
+   * qi2
+  0525 02.6 the, this, that, such (a), one’s
+hui1
+  2319 72+9 HL brightness, light, radiance, sunshine, flame
+ji2
+ (is) promising
+64.6
+  Shang Jiu , Top 9  (Zhi Gua 40: Jie, Release)
+   * you3
+  7533 01.6 being, holding, staying; having, finding 64.6
+fu2
+  1936 05.0 true, confident, assured, sure; confidence "
+yu2
+  7592 02.6 amidst, in, (along) with, on top of
+yin3
+  7454 53.2 05.X (the) drinking, imbibing (of)
+jiu3
+  1208 05.5 F wine, spirits
+406
+
+   * wu2
+  7180 01.3 02.T no; not; nothing; without, with no
+jiu4
+  1192 01.3 34.6x blame; (is) wrong; (a) mistake, (an) error
+   * ru2
+  3149 22.3 F (but) (to) soak, wet, immerse, saturate (ing)
+qi2
+  0525 02.6 the, that, one’s (own)
+shou3
+  5839 01.7 01.T head
+   * you3
+  7533 01.6 (even) being; with, having 05.0
+fu2
+  1936 05.0 true, confident, sure; truth, confidence "
+shi1
+  5806 08.5 02.T (is) ( ^) (to) lose, forgo, fail, relinquish (s) (^)
+shi4
+  5794 62.6 10.T that; truly, surely, certainly (v)            it, this
+64.6x
+  Xiao Xiang  (Fan Yao 40.6: the duke takes aim at raptor high on battlement)
+   S yin3
+ drinking
+jiu3
+ wine
+ru2
+ (and) soaking
+shou3
+ (the) head
+   * yi4
+  3021 48.0 F truly, really, especially, surely; so; still
+bu4
+  5379 02.2 not; without, lacking in;          ^         no
+zhi1
+  0932 19.5 F com prehending; (a) prudent; knowing v
+jie2
+  0795 60.0 F (the) boundaries, limits, terms; restraint
+64.xg wu4 7209 01.T (the) beings, creatures, entities
+bu4 5379 02.2 are not; have no; will not
+ke3 3381 02.3 inclined(ation) to; about to; accept, admit
+qiong2 1247 02.6x (be)(ing) finished, ended, exhausted
+64.zg nan2 4619 31.T (the) masculine, male, [gang, yang]
+zhi1 0935 02.0 ...’s
+qiong2 1247 02.6x e xhaustion, end, finish, far limit, waning
+407
+
+Matrix Footnotes
+Location Abbreviations:
+.0 = Gua Ci
+.2 = Yao Ci
+.T = Tuan Zhuan
+.X = Da Xiang
+.x = Xiao Xiang
+Source Text Discrepancies & Emendations:
+01.T HY has
+, Da4, not
+ , Tai4.
+02.0 Normally parsed De2 Zhu3 Li4. Xi1 Nan2 ... Emending.
+This disagrees with both HY and Z.D. Sung.
+08.1 Used 
+ , Ta1, per Sung, interchangeable with 
+ , Tuo1, per HY.
+HY uses 
+ , Ta1, at 61.1. HY and Sung use
+ , Tuo1, at 28.4.
+14.4x HY uses 
+ , Bian4 (to argue, dispute) for 
+ , Bian4.
+Text has the character right at 30.3 though.
+15.X HY and Sung both have 
+ , Pou2 (collect, assemble). I think this is a 
+mistaken transcription of 
+ , Shuai1 (to decrease). May be an old error. 
+Emending.
+24.1x Used 
+ , per HY, not 
+ , per Sung. Also at 39.X and 51.X
+26.3 Used 
+ , Ri4, per Sung, not 
+  , Yue1, per HY, the Zhouyi Zhezhong,
+Wang Bi and the MWD mss. If Yue1 is a transcription error it is a very old and
+persistent one. Here I follow a fairly large group of rebels, Wen Yiduo  and a
+majority of western translators, including Rutt. I would be a lot more reluctant to
+emend this if Ri4 did not make so much more sense in this context. See footnote
+to simple translation. See also Ri4 at 26.T.
+33.T Adding
+Rou2
+ . Emending.
+48.6 HY's
+ , Wu4, is correct, an error in Z.D. Sung's text.
+51.T HY omits .... "Bu4 Sang4 Bi3 Chang4." between Ye3 & Chu1.
+51.5 Used 
+, Yi4, per HY, Kunst and Shaughnessy, not
+ , Yi4, per the
+Zhouyi Zhezhong and Sung. See footnote to simple translation.
+55.T HY has some character unfamiliar to me written in for 
+ , Ze4.
+59.X Chose 
+ , Xiang3, per HY, not 
+ , Heng1, per ZD Sung.
+409
+
+Big5 Character Notes:
+01.3
+ Substituted M7180 for M7173 thr

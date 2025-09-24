@@ -1,0 +1,158 @@
+angue,
+mie4
+ hiding
+er3
+ (the) ears
+   * cong1
+ 6916 128+11 43.4x (quick at, to) hear(ing); astute, clever(ness) 43.4x
+bu4
+ 5379 02.2 (but) without; not much; devoid of; not "
+ming2
+ 4534 17.4 (with) clarity, intelligence, vision; clearly "
+21.xg he2 2117 01.T convergence, coming together, closing, closure
+21.zg shi2 5810 05.5 consuming, devouring, eating, feeding
+170
+
+22.M
+ BI4 (5027):  ADORNMENT
+22.0 Gua Ci Binary 101 001, Decimal 41
+   * bi4
+ 5027 154+5 22.1 adorn, embellish (ment); dressing up; ornate
+   * heng1
+ 2099 01.0 fulfillment, satisfaction, success; satisfying
+   * xiao3
+ 2605 03.5 (a, of) little, (some) small, minor
+li4
+ 3867 01.0 worth(while), reward(ing), benefit(icial) 23.0
+you3
+ 7533 01.6 (to, in) have, find, take (ing) on; (if) there is "
+you1
+ 7519 02.0 23.0 somewhere; (a) place, direction, purpose "
+wang3
+ 7050 02.0 to go, move towards; in going; ahead "
+22.T
+ Tuan Zhuan
+   P bi4
+ adornment
+heng1
+ satisfies
+   P rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+lai2
+ 3768 05.6 comes (forward), arrives, appears, arises
+er2
+ 1756 06.2 and (so, then, thus); while
+wen2
+ 7129 02.5x refine, enhance, stylize (s, ing)
+gang1
+ 3268 03.T the firm, strong, resolute; firmness
+   * gu4
+ 3455 39.2 22.T consequently, therefore, hence, and so
+heng1
+ satisfaction
+   * fen1
+ 1851 21.T 60.T alternately, in turn, reciprocally
+gang1
+ 3268 03.T the firm, strong, resolute; firmness
+shang4
+ 5669 40.6 ascends, arises, rises (up, upwards)
+er2
+ 1756 06.2 and (so, then, thus); while
+wen2
+ 7129 02.5x refine, enhance, stylize (s, ing)
+rou2
+ 3133 02.T the flexible, gentle, yielding; flexibility
+   * gu4
+ 3455 39.2 30.T consequently, therefore, hence, and so
+xiao3
+ a little
+li4
+ worthwhile
+you3
+ to have
+you1
+ somewhere
+wang3
+ to go
+   * tian1
+ 6361 01.5 (even) heaven, the sky, celestial (is, has)
+wen2
+ 7129 02.5x refine, enhance (ed, ment); (a) pattern, style (ed)
+   P wen2
+ 7129 02.5x refinement, enhancement, pattern, style 36.T
+ming2
+ 4534 17.4 (and, with) clarity, vision, light, intelligence "
+yi3
+ 2932 04.1 lead to, mean, serve, (are) useful to; behind
+zhi3
+ 0939 04.T stability, equilibrium, poise, stillness
+   * ren2
+ 3097 01.2 (such is) (in, to) human(ity) beings (are, have)
+wen2
+ 7129 02.5x refine, enhance (ed, ment);  (a) style(ed); culture
+171
+
+   P guan1
+ 3575 20.0 22.T look, attend, gaze, examine, study
+hu1
+ 2154 03.T at, to, into, within, upon
+tian1
+ 6361 01.5 heaven’s, the sky’s, celestial(’s)
+wen2
+ 7129 02.5x refinement, enhancement, pattern, style (s)
+   * yi3
+ 2932 04.1 thereby, thus, in order; as a way, means
+cha2
+ 0111 40+11 HL to discover, examine, investigate, discern
+shi2
+ 5780 54.4 (a, the) time’s, season’s, seasons’, seasonal
+bian4
+ 5245 49.5 23.T change, variation, emergence (s)
+   S guan1
+ 3575 20.0 23.T look, attend, gaze, examine, study
+hu1
+ 2154 03.T at, to, into, within, upon
+ren2
+ 3097 01.2 human beings’, society’s, humanity’s
+wen2
+ 7129 02.5x refinement, enhancements, pattern, style (s)
+   * yi3
+ 2932 04.1 thereby, thus, in order; as a way, means
+hua4
+ 2211 01.T 30.T to transform, transfigure, transmute 30.T
+cheng2
+ 0379 02.3 (and) complete, fulfill, perfect, develop "
+tian1
+ 6361 01.5 (the) heaven; ^           heaven, the sky 30.T
+xia4
+ 2520 57.2 below; (all) (things) under, beneath v "
+22.X
+ Da Xiang
+   * shan1
+ 5630 17.6 ^                            (a, the) mountain
+xia4
+ 2520 57.2 below, beneath; at the base, foot of v
+you3
+ 7533 01.6 is, there is
+huo3
+ 2395 13.X (a, the) fire, flame
+   * bi4
+ 5027 22.0 ad ornment
+   * jun1
+ 1715 01.3 (a, the) noble, worthy, honored
+zi3
+ 6939 01.3 young one, heir, disciple
+yi3
+ 2932 04.1 accordingly, therefore, thus
+ming2
+ 4534 17.4 clarifies, elucidates, explains, makes evident
+shu4
+ 5874 35.0 F (a) (great) many, multitude of; numerous
+zheng4
+ 0355 66+5 HL policies, regulations, rules, legal measures
+   * wu2
+ 7180 01.3 without; but (does) not, (has) no; avoids
+gan3
+ 3229 66+8 HL presume(ption)(s), dare, make (ing) bold
+zhe2
+ 0267 30.6 55.X (to, in, when) exe
