@@ -7,7 +7,8 @@ FROM python:3.11-slim AS builder
 WORKDIR /app
 
 # Copy only the necessary files for dependency installation and build script
-COPY requirements.txt manage.py app.py ./
+COPY deploy/requirements.txt requirements.txt
+COPY manage.py app.py ./
 
 # Install dependencies
 RUN --mount=type=cache,target=/root/.cache/pip \
