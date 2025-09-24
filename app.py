@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import sys
+print("[STARTUP] Beginning app.py imports", flush=True)
+sys.stdout.flush()
+
 import json
 import os
 import random
@@ -10,32 +14,58 @@ import pathlib
 from datetime import date
 from typing import Any, Dict, List, Optional, Tuple
 
+print("[STARTUP] Basic imports completed", flush=True)
+sys.stdout.flush()
+
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # silence HF tokenizer warning
 
+print("[STARTUP] About to import Flask", flush=True)
+sys.stdout.flush()
 from flask import Flask, render_template, request
+print("[STARTUP] Flask imported successfully", flush=True)
+sys.stdout.flush()
 
 # Soft import pinecone so the webserver can start even if it's not installed.
 # We'll re-import inside the index build path and handle errors there.
+print("[STARTUP] About to import pinecone (soft import)", flush=True)
+sys.stdout.flush()
 try:  # pragma: no cover - import guard
     from pinecone import Pinecone, ServerlessSpec  # type: ignore
-except Exception:
+    print("[STARTUP] Pinecone imported successfully", flush=True)
+    sys.stdout.flush()
+except Exception as e:
+    print(f"[STARTUP] Pinecone import failed (expected): {e}", flush=True)
+    sys.stdout.flush()
     Pinecone = None  # type: ignore
     ServerlessSpec = None  # type: ignore
 
+print("[STARTUP] About to import llama_index.core", flush=True)
+sys.stdout.flush()
 from llama_index.core import (
     Settings,
     SimpleDirectoryReader,
     StorageContext,
     VectorStoreIndex,
 )
+print("[STARTUP] llama_index.core imported successfully", flush=True)
+sys.stdout.flush()
+
+print("[STARTUP] About to import PromptTemplate", flush=True)
+sys.stdout.flush()
 from llama_index.core.prompts import PromptTemplate
+print("[STARTUP] PromptTemplate imported successfully", flush=True)
+sys.stdout.flush()
 
 # Heavy ML / vector-store imports are performed lazily inside the index build
 # function to keep the webserver start fast. See _build_index_and_engine().
 
+print("[STARTUP] All imports completed - creating Flask app", flush=True)
+sys.stdout.flush()
 print("Loading OraculAI app (sources-only QA + interpretive daily quote)")
 
 app = Flask(__name__)
+print("[STARTUP] Flask app created successfully", flush=True)
+sys.stdout.flush()
 
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 PINECONE_ENVIRONMENT = os.environ.get("PINECONE_ENVIRONMENT")  # e.g. "us-east-1"
