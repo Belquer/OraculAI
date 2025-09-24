@@ -831,6 +831,9 @@ def ask():
 @app.route("/refresh")
 def refresh_index():
     """Hot-reload ./sources into Pinecone without restarting the server."""
+    # Declare global variables at the very top of the function
+    global index, query_engine, engine_backend
+    
     import sys
     print("[REFRESH] Entering /refresh endpoint", flush=True)
     sys.stdout.flush()
@@ -846,9 +849,6 @@ def refresh_index():
     
     print("[REFRESH] Authentication passed, attempting index build", flush=True)
     sys.stdout.flush()
-    
-    # Declare global variables at the top before any assignments
-    global index, query_engine, engine_backend
     
     # Memory-safe mode for Render: bypass heavy operations
     render_mode = os.environ.get("RENDER") == "true" or os.environ.get("ORACULAI_RENDER_MODE") == "1"
