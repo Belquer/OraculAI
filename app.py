@@ -1,4 +1,6 @@
-"""Flask app powering OraculAI."""
+"""Flask app powering OraculAI.
+Force rebuild: 2025-09-24T03:05:00Z - Apply memory optimizations
+"""
 
 from __future__ import annotations
 
@@ -60,6 +62,8 @@ sys.stdout.flush()
 # function to keep the webserver start fast. See _build_index_and_engine().
 
 # Import heavy ML libraries at startup to avoid memory spikes during requests
+print("[STARTUP] Starting heavy imports at startup (before Flask app creation)", flush=True)
+sys.stdout.flush()
 try:
     print("[STARTUP] Pre-importing llama-index components to avoid request-time memory spikes", flush=True)
     sys.stdout.flush()
@@ -68,13 +72,17 @@ try:
     from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext, Settings
     from llama_index.core.prompts import PromptTemplate
     from llama_index.vector_stores.pinecone import PineconeVectorStore
+    print("[STARTUP] Core llama-index components imported", flush=True)
+    sys.stdout.flush()
     
     try:
         from llama_index.embeddings.openai import OpenAIEmbedding
         OPENAI_EMBEDDING_AVAILABLE = True
         print("[STARTUP] OpenAI embedding adapter pre-imported successfully", flush=True)
-    except ImportError:
-        print("[STARTUP] OpenAI embedding adapter not available", flush=True)
+        sys.stdout.flush()
+    except ImportError as e:
+        print(f"[STARTUP] OpenAI embedding adapter not available: {e}", flush=True)
+        sys.stdout.flush()
         OpenAIEmbedding = None
         OPENAI_EMBEDDING_AVAILABLE = False
         
