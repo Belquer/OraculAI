@@ -1,6 +1,23 @@
 """Flask app powering OraculAI.
 Force rebuild: 2025-09-24T03:10:00Z - Apply memory optimizations
-DEPLOYMENT VERIFICATION: If you see this message in logs, the new code is deployed.
+DEPLOYMENT VERIFICATION: If you see this message in logs, tINTERPRETIVE_QUOTE_PROMPT = PromptTemplate(
+    """You will receive context chunks from the user's private sources.
+Synthesize ONE concise, aphoristic sentence (your own words) that captures a key idea present in the context.
+
+Rules:
+- Ground strictly in the provided context; do not add outside knowledge.
+- If the context is insufficient, reply exactly: "I don't have that in my sources yet."
+- Keep it under 220 characters.
+- Do not include citations or metadata.
+- Avoid academic phrases like "careful reading" or "suggests that" - speak directly and mystically.
+
+Context:
+{context_str}
+
+Instruction: Produce one paraphrased, reflective sentence grounded in the context.
+
+Answer:"""
+)ployed.
 """
 
 from __future__ import annotations
@@ -160,9 +177,10 @@ Synthesize ONE concise, aphoristic sentence (your own words) that captures a key
 
 Rules:
 - Ground strictly in the provided context; do not add outside knowledge.
-- If the context is insufficient, reply exactly: "I don’t have that in my sources yet."
+- If the context is insufficient, reply exactly: "I don't have that in my sources yet."
 - Keep it under 220 characters.
 - Do not include citations or metadata.
+- Avoid academic phrases like "careful reading" or "suggests that" - speak directly and mystically.
 
 Context:
 {context_str}

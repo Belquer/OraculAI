@@ -24,6 +24,7 @@ COPY requirements.txt /app/
 # Copy application files and templates only
 COPY app.py /app/
 COPY manage.py /app/
+COPY quotes.txt /app/
 COPY templates/ /app/templates/
 COPY scripts/ /app/scripts/
 COPY manifest.json /app/  
