@@ -1,3 +1,13 @@
-Force rebuild timestamp: 2025-09-24T03:10:00Z
+Force rebuild timestamp: 2025-09-24T03:15:00Z
+CRITICAL: Previous deployments failed - code changes not applied
 This file forces Docker cache invalidation and ensures new code is deployed.
 Memory optimization fixes and Render bypass mode must be deployed.
+
+DEPLOYMENT VERIFICATION CHECKLIST:
+1. Look for "[DEPLOYMENT] NEW CODE ACTIVE" in logs
+2. Look for "[STARTUP] Starting heavy imports at startup"  
+3. Look for "[REFRESH] Render mode detected" during /refresh
+4. NO MORE memory crashes during /refresh
+
+If this deployment still shows old behavior, there is a fundamental 
+Render configuration or webhook issue that needs manual intervention.

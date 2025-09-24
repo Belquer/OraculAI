@@ -2,14 +2,14 @@
 # See https://render.com/docs/deploy-your-service
 services:
   - type: web
-    name: OraculAI
+    name: oraculai-latest
     env: docker
     dockerContext: .
     dockerfilePath: deploy/Dockerfile
     plan: free
     branch: main
-    buildCommand: ''
-    startCommand: 'gunicorn --bind 0.0.0.0:$PORT deploy.app:app --workers 1 --timeout 120 --log-level info --access-logfile - --error-logfile -'
+    buildCommand: 'echo "FORCE REBUILD 2025-09-24T03:15:00Z"'
+    startCommand: 'gunicorn --bind 0.0.0.0:$PORT deploy.app:app --workers 1 --timeout 120 --log-level debug --access-logfile - --error-logfile -'
     autoDeploy: true
     envVars:
       - key: ORACULAI_NO_RELOAD
