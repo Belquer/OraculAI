@@ -896,6 +896,7 @@ def refresh_index():
 def health_check():
     """Return a JSON object with the status of the application."""
     global index, query_engine
+    
     # Optionally rebuild the index, but skip by default so health responds fast
     if (query_engine is None or index is None) and os.environ.get(
         "ORACULAI_HEALTH_BUILD", "0"
