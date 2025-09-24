@@ -11,9 +11,9 @@ WORKDIR /app
 COPY deploy/requirements.txt requirements.txt
 COPY manage.py app.py ./
 
-# Install dependencies
+# Install dependencies with pip optimizations
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir --root-user-action=ignore -r requirements.txt
 
 # Copy the rest of the application source code (e.g., ./sources)
 COPY . .
@@ -39,14 +39,19 @@ RUN --mount=type=secret,id=PINECONE_API_KEY,required=false \
 # and puts it into a clean, smaller image.
 FROM python:3.11-slim
 
+# Install only essential packages to reduce warnings
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
 WORKDIR /app
 
 # Create a non-root user
 RUN useradd --create-home --uid 1000 appuser
 
-# Copy installed python packages from builder stage
+# Copy only necessary binaries and python packages from builder stage
 COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
-COPY --from=builder /usr/local/bin /usr/local/bin
+COPY --from=builder /usr/local/bin/gunicorn /usr/local/bin/python* /usr/local/bin/
 
 # Copy application code and the generated index from the builder stage
 COPY --from=builder /app /app

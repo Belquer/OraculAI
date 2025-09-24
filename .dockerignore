@@ -11,7 +11,6 @@ __pycache__
 *.pyd
 
 # Large data and sources
-sources/
 sources_chunks/
 archive/
 *.pdf
@@ -22,11 +21,24 @@ archive/
 *.log
 flask.log
 gunicorn.log
+daily_content.json
 
 # Editor and OS files
 .vscode/
+.idea/
 *.swp
 *.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+TESTER_README.md
+*.md
+
+# Backup files
+backups/
+*.bak
+*.tmp
 
 # Node/npm
 node_modules/

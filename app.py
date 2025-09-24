@@ -70,9 +70,7 @@ try:
     print("[STARTUP] Pre-importing llama-index components to avoid request-time memory spikes", flush=True)
     sys.stdout.flush()
     
-    # Pre-import all the heavy dependencies
-    from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageContext, Settings
-    from llama_index.core.prompts import PromptTemplate
+    # Pre-import vector store adapter (core components already imported above)
     from llama_index.vector_stores.pinecone import PineconeVectorStore
     print("[STARTUP] Core llama-index components imported", flush=True)
     sys.stdout.flush()
@@ -389,10 +387,7 @@ def _build_index_and_engine() -> Tuple[Optional[VectorStoreIndex], Any]:
         print("[BUILD] Memory cleanup completed", flush=True)
         sys.stdout.flush()
         
-        try:
-            globals()["engine_backend"] = "pinecone"
-        except Exception:
-            pass
+        engine_backend = "pinecone"
         return built_index, strict_engine
     except Exception as exc:  # pragma: no cover - defensive logging
         print(f"[ERROR] Pinecone setup/index build failed: {exc}")
@@ -445,7 +440,7 @@ def _clean_quote(text: str) -> str:
 
 def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
     """Return (answer_text, sources payload)."""
-    global query_engine
+    global query_engine, index
     # If the query engine hasn't been built in this process, attempt to
     # (re)build it now. This ensures the running worker has access to the
     # Pinecone-backed engine even when Flask's debug reloader has restarted
@@ -455,8 +450,7 @@ def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
             built_index, built_engine = _build_index_and_engine()
             # only overwrite global state if build succeeded
             if built_engine:
-                globals()["index"] = built_index
-                globals()["query_engine"] = built_engine
+                index = built_index
                 query_engine = built_engine
         except Exception as e:
             print(f"[Query] On-demand index build failed: {e}")
@@ -554,7 +548,6 @@ def get_oracle_response(user_query: str) -> Tuple[str, List[Dict[str, Any]]]:
         forbidden = "I don’t have that in my sources yet."
         if not answer or answer.strip() == forbidden:
             # Build a secondary interpretive engine from the index if available
-            global index
             if index:
                 try:
                     poetic_engine = index.as_query_engine(
@@ -910,8 +903,8 @@ def health_check():
         try:
             built_index, built_engine = _build_index_and_engine()
             if built_engine:
-                globals()["index"] = built_index
-                globals()["query_engine"] = built_engine
+                index = built_index
+                query_engine = built_engine
         except Exception as e:
             print(f"[Health] On-demand index build failed: {e}")
 

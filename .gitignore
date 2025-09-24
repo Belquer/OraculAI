@@ -2,12 +2,14 @@ __pycache__/
 *.pyc
 .DS_Store
 daily_content.js
-__pycache__/
 daily_content.json
 .env
 backups/
 *.zip
 app.py.bak
+
+# Generated content (should be built dynamically)
+sources_chunks/
 
 # Virtual environments
 .venv/
