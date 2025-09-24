@@ -24,3 +24,5 @@ services:
         value: oraculai
       - key: ORACULAI_SKIP_BUILD
         value: '1'
+      - key: ORACULAI_RENDER_MODE
+        value: '1'
