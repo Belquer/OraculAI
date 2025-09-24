@@ -848,12 +848,20 @@ def health_check():
     index_name = os.environ.get("PINECONE_INDEX_NAME") or os.environ.get("PINECONE_INDEX") or "oraculai"
     
     embed_model_name = "unknown"
-    if hasattr(Settings, "embed_model") and Settings.embed_model and hasattr(Settings.embed_model, "model_name"):
-        embed_model_name = Settings.embed_model.model_name
+    try:
+        # Only check if embed_model is already set, don't trigger initialization
+        if hasattr(Settings, "_embed_model") and Settings._embed_model and hasattr(Settings._embed_model, "model_name"):
+            embed_model_name = Settings._embed_model.model_name
+    except Exception:
+        embed_model_name = "not_initialized"
 
     llm_model_name = "unknown"
-    if hasattr(Settings, "llm") and Settings.llm and hasattr(Settings.llm, "model"):
-        llm_model_name = Settings.llm.model
+    try:
+        # Only check if llm is already set, don't trigger initialization
+        if hasattr(Settings, "_llm") and Settings._llm and hasattr(Settings._llm, "model"):
+            llm_model_name = Settings._llm.model
+    except Exception:
+        llm_model_name = "not_initialized"
 
     return {
         "status": "ok",
