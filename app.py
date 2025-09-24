@@ -1,11 +1,13 @@
 """Flask app powering OraculAI.
-Force rebuild: 2025-09-24T03:05:00Z - Apply memory optimizations
+Force rebuild: 2025-09-24T03:10:00Z - Apply memory optimizations
+DEPLOYMENT VERIFICATION: If you see this message in logs, the new code is deployed.
 """
 
 from __future__ import annotations
 
 import sys
 print("[STARTUP] Beginning app.py imports", flush=True)
+print("[DEPLOYMENT] NEW CODE ACTIVE - 2025-09-24T03:10:00Z", flush=True)
 sys.stdout.flush()
 
 import json
